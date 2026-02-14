@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EmployeeProfile
   personImage: {fileID: 0}
   profileImage: {fileID: 0}
-  age: 
-  employeeName: 
-  position: 
-  yearsExperience: 
-  behaviorDescription: 
-  fireScore: 0
-  maintainScore: 0
-  moneySaved: 0
+  age: 50
+  employeeName: Ellana Jackson
+  position: Manager
+  yearsExperience: 20
+  behaviorDescription: Extremely commited and hard worker. Is willing to help out
+    her suboordinates and is a real team player. She has offered to take pay cuts
+    to keep other employees around.
+  fireScore: -10
+  maintainScore: 5
+  moneySaved: 3000

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EmployeeProfile
   personImage: {fileID: 0}
   profileImage: {fileID: 0}
-  age: 18
+  age: 25
   employeeName: Owen Frey
   position: Engineer
   yearsExperience: 2

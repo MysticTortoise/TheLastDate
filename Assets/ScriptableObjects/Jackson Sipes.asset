@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EmployeeProfile
   personImage: {fileID: 0}
   profileImage: {fileID: 0}
-  age: 
-  employeeName: 
-  position: 
-  yearsExperience: 
-  behaviorDescription: 
-  fireScore: 0
-  maintainScore: 0
-  moneySaved: 0
+  age: 60
+  employeeName: Jackson Sipes
+  position: Manager
+  yearsExperience: 15
+  behaviorDescription: Has recieved numerous H.R. violations for misconduct in the
+    workplace. Has often been caught trying to steal the work of suboordinates.
+  fireScore: 10
+  maintainScore: -5
+  moneySaved: 5000
