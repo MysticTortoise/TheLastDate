@@ -8,6 +8,8 @@ TagManager:
   - food
   - self
   - shelf
+  - basket
+  - customer
   layers:
   - Default
   - TransparentFX
