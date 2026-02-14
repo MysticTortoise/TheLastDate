@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -5,8 +7,8 @@ public class MainPlayerHandler : MonoBehaviour
 {
     private RectTransform playerViewRect;
     private Camera playerViewCamera;
-    
-    
+
+    public static MainPlayerHandler PlayerHandler;
 
     public Vector2 ProjectMouseToWorld()
     {
@@ -30,15 +32,27 @@ public class MainPlayerHandler : MonoBehaviour
 
         return cursorPosition;
     }
+
+    private void Interact()
+    {
+        Vector2 mousePos = ProjectMouseToWorld();
+        foreach (EnvironmentButton button in EnvironmentButton.buttonList
+                     .Where(button => button.hoverCollider.OverlapPoint(mousePos)))
+        {
+            button.Click();
+        }
+    }
+
+    public void InteractInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+            Interact();
+    }
     
     void Start()
     {
         playerViewRect = GameTag.GetFirstObjectWith("PlayerCameraImage").GetComponent<RectTransform>();
         playerViewCamera = GetComponent<Camera>();
-    }
-
-    void Update()
-    {
-        
+        PlayerHandler = this;
     }
 }
