@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3244641bc68a34b41922ff374ce4dce5, type: 3}
   m_Name: Q9
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
-  question: 
+  question: Have I seen you before?
   answers:
-  - 
-  - 
-  - 
-  - 
-  questionPersonalities: 00000000000000000000000000000000
+  - I do some Intramural Sports, do you as Well
+  - No, Who the Fuck are you
+  - I Study in the Library on Weekdays, so Maybe
+  - I Party Every Weekend, so Maybe we Ran into each Other There
+  questionPersonalities: 02000000030000000200000001000000

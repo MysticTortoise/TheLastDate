@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3244641bc68a34b41922ff374ce4dce5, type: 3}
   m_Name: Q7
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
-  question: 
+  question: Do you like to read?
   answers:
-  - 
-  - 
-  - 
-  - 
-  questionPersonalities: 00000000000000000000000000000000
+  - Yeah, I do all the Time
+  - When I Have the Time, but It's not my Priority
+  - I Don't Really Care for it
+  - It's a Waste of Time
+  questionPersonalities: 02000000010000000000000003000000

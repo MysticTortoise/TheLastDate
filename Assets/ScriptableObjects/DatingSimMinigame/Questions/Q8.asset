@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3244641bc68a34b41922ff374ce4dce5, type: 3}
   m_Name: Q8
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
-  question: 
+  question: What is Your Major?
   answers:
-  - 
-  - 
-  - 
-  - 
-  questionPersonalities: 00000000000000000000000000000000
+  - I am a Games Major
+  - Communications
+  - I am Majoring in English
+  - I am a Business Major
+  questionPersonalities: 02000000010000000300000000000000
