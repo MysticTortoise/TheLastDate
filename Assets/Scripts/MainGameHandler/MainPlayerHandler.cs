@@ -3,9 +3,10 @@ using UnityEngine.InputSystem;
 
 public class MainPlayerHandler : MonoBehaviour
 {
-
     private RectTransform playerViewRect;
     private Camera playerViewCamera;
+    
+    
 
     public Vector2 ProjectMouseToWorld()
     {
