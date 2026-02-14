@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +14,8 @@ public class WordGameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreTextBox;
     [SerializeField] private TextAsset words;
     private HashSet<string> dictionary;
+    [SerializeField] private TextMeshProUGUI timerTextBox;
+    [SerializeField] private float time;
     void Start()
     {
         dictionary = new();
@@ -53,5 +56,20 @@ public class WordGameManager : MonoBehaviour
         graph.OnRegen();
         wordString = "";
         scoreTextBox.text = "Score: " + score;
+    }
+
+    void Update()
+    {
+        time -= Time.deltaTime;
+        timerTextBox.text = "Time: " + time;
+        if (time <= 0)
+        {
+            EndGame();
+        }
+    }
+
+    void EndGame()
+    {
+        Debug.Log("Game Over");
     }
 }
