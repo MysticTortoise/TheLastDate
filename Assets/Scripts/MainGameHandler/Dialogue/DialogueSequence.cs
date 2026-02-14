@@ -14,8 +14,9 @@ public class DialogueOption
 public class DialogueNode
 {
     [FormerlySerializedAs("message")] public DialogueMessage Message;
-    public List<DialogueActionBase> DialogueActions = new();
-    public List<DialogueOption> Options = new();
+    [FormerlySerializedAs("DialogueActions")] public List<DialogueActionBase> DialogueActionsStart = new();
+    public List<DialogueActionBase> DialogueActionsEnd = new();
+    [FormerlySerializedAs("StartOptions")] public List<DialogueOption> Options = new();
 }
 
 [CreateAssetMenu(fileName = "NewDialogueSequence", menuName = "Dialogue/DialogueSequence")]

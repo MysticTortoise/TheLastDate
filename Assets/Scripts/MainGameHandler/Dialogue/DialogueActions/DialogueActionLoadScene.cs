@@ -7,6 +7,6 @@ public class DialogueActionLoadScene : DialogueActionBase
     public GameObject Scene;
     public override void Trigger()
     {
-        Debug.Log("LOAD SCENE");
+        MainPlayerHandler.PlayerHandler.DoSceneTransition(Scene);
     }
 }
