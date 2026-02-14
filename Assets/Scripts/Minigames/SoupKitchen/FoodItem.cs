@@ -1,7 +1,7 @@
 using UnityEngine;
 
-public class FoodItem : MonoBehaviour
+public class Food : MonoBehaviour
 {
-    // Intentionally empty for now.
-    // This just gives us a clear component type to detect.
+    public int currentGrid;
+    public bool isBeingPickedUp;
 }
