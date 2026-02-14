@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85f26a6e55c711145a8d41e619a9b3c9, type: 3}
+  m_Name: Owen Frey
+  m_EditorClassIdentifier: Assembly-CSharp::EmployeeProfile
+  personImage: {fileID: 0}
+  profileImage: {fileID: 0}
+  age: 18
+  employeeName: Owen Frey
+  position: Engineer
+  yearsExperience: 2
+  behaviorDescription: Has never been late to work a day in his life. Always does
+    his job, and is willing to work overtime when needed. Employee of the month for
+    a year straight. Every employee should strive to be like him.
+  fireScore: -10
+  maintainScore: 0
+  moneySaved: 2000
