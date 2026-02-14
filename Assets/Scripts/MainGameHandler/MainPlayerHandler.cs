@@ -14,34 +14,19 @@ public class StatBlock
 
 public class MainPlayerHandler : MonoBehaviour
 {
-    private RectTransform playerViewRect;
     private Camera playerViewCamera;
-
     public static MainPlayerHandler PlayerHandler;
-    
+    private static readonly int FadeOutTransitionAnim = Animator.StringToHash("FadeOutTransition");
+
     public StatBlock playerStats { private set; get; }
+
+    private GameObject currentScene;
+    private GameObject nextScene;
+    private Animator animator;
 
     public Vector2 ProjectMouseToWorld()
     {
-        //Debug.Log(Mouse.current.position.ReadValue());
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(
-            playerViewRect,
-            Mouse.current.position.ReadValue(),
-            null,
-            out Vector2 localMousePosition
-        );
-        var corners = new Vector3[4];
-        playerViewRect.GetWorldCorners(corners);
-        float width = (corners[2].x - corners[0].x);
-        float height = (corners[2].y - corners[0].y);
-
-
-        Vector2 cursorPosition = playerViewCamera.transform.position;
-        cursorPosition.y += (localMousePosition.y / height) * playerViewCamera.orthographicSize * 2;
-        cursorPosition.x += (localMousePosition.x / width) * playerViewCamera.orthographicSize * 2 *
-                            playerViewCamera.aspect;
-
-        return cursorPosition;
+        return playerViewCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
     }
 
     private void Interact()
@@ -59,11 +44,24 @@ public class MainPlayerHandler : MonoBehaviour
         if (context.started)
             Interact();
     }
+
+    public void DoSceneTransition(GameObject newScene)
+    {
+        nextScene = newScene;
+        animator.SetTrigger(FadeOutTransitionAnim);
+    }
+
+    public void LoadNewScene()
+    {
+        Destroy(currentScene);
+        currentScene = Instantiate(nextScene);
+        nextScene = null;
+    }
     
     void Start()
     {
-        playerViewRect = GameTag.GetFirstObjectWith("PlayerCameraImage").GetComponent<RectTransform>();
         playerViewCamera = GetComponent<Camera>();
         PlayerHandler = this;
+        animator = GetComponent<Animator>();
     }
 }

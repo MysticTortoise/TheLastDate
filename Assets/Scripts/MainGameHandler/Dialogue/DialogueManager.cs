@@ -8,19 +8,26 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    private static readonly int OpenAnim = Animator.StringToHash("Open");
+    private static readonly int OptionsAvailableAnim = Animator.StringToHash("OptionsAvailable");
     [CanBeNull] private DialogueSequence activeSequence;
     private int currentSequenceProgress;
     private bool inSequence => activeSequence != null;
+    private bool dialogueBoxOpen = false;
+    private bool typingFinished = false;
     private DialogueNode currentNode => activeSequence?.dialogueNodes[currentSequenceProgress];
+    private bool hasOptions => currentNode.Options.Count > 0;
     
     private int currentMessageProgress;
 
     private TextMeshProUGUI speakerText;
     private TextMeshProUGUI dialogueText;
 
+    private Animator animator;
+
 
     [SerializeField] [CanBeNull] private DialogueSequence TestDialogueSequence;
-
+    private DialogueButton[] buttons;
 
     private void Start()
     {
@@ -30,14 +37,21 @@ public class DialogueManager : MonoBehaviour
         speakerText.text = "";
         dialogueText.text = "";
 
+        buttons = GetComponentsInChildren<DialogueButton>();
+
         if (TestDialogueSequence != null)
         {
             SetActiveDialogueSequence(TestDialogueSequence);
         }
+
+        animator = GetComponent<Animator>();
     }
 
     public void SetActiveDialogueSequence(DialogueSequence sequence)
     {
+        if (!inSequence)
+            dialogueBoxOpen = false;
+        
         activeSequence = sequence;
         currentSequenceProgress = 0;
         ShowDialogueMessage();
@@ -51,11 +65,16 @@ public class DialogueManager : MonoBehaviour
         
         currentMessageProgress = 0;
         dialogueTimer = 0;
+        typingFinished = false;
+
+        foreach (DialogueActionBase action in currentNode.DialogueActionsStart)
+            action.Trigger();
     }
 
     private void FinishConversation()
     {
         activeSequence = null;
+        dialogueBoxOpen = false;
     }
     
     public void AdvanceDialogue(InputAction.CallbackContext context)
@@ -64,11 +83,11 @@ public class DialogueManager : MonoBehaviour
             return;
         if (!inSequence)
             return;
-
-        if (!string.IsNullOrWhiteSpace(currentNode.OnFinishedMessage))
-        {
-            BroadcastMessage(currentNode.OnFinishedMessage);
-        }
+        if (hasOptions)
+            return;
+        
+        foreach (DialogueActionBase action in currentNode.DialogueActionsEnd)
+            action.Trigger();
         
         currentSequenceProgress++;
 
@@ -85,11 +104,13 @@ public class DialogueManager : MonoBehaviour
 
     private void UpdateDisplay()
     {
-        foreach (Transform child in transform)
-        {
-            child.gameObject.SetActive(inSequence);
-        }
+        animator.SetBool(OpenAnim, inSequence);
 
+        if (!dialogueBoxOpen)
+        {
+            dialogueText.text = "";
+        }
+        
         if (!inSequence)
             return;
         
@@ -97,11 +118,47 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = currentNode.Message.Message[..currentMessageProgress];
     }
 
+    public void DialogueBoxOpened()
+    {
+        dialogueBoxOpen = true;
+    }
+
+    private void TypingFinished()
+    {
+        animator.SetBool(OptionsAvailableAnim, hasOptions);
+        typingFinished = true;
+
+        if (hasOptions)
+        {
+            foreach (DialogueButton button in buttons)
+            {
+                int buttonIndex = button.OptionIndex;
+                if (buttonIndex >= currentNode.Options.Count)
+                {
+                    button.gameObject.SetActive(false);
+                    continue;
+                }
+                
+                button.gameObject.SetActive(true);
+                button.SetText(currentNode.Options[buttonIndex].Option);
+            }
+        }
+    }
+
+    public void ChooseOption(int option)
+    {
+        if (!hasOptions || !typingFinished)
+            return;
+        DialogueSequence sequence = currentNode.Options[option].Sequence;
+        SetActiveDialogueSequence(sequence);
+        animator.SetBool(OptionsAvailableAnim, false);
+    }
+
     private float dialogueTimer;
     [SerializeField] private float dialogueWaitTime;
     private void Update()
     {
-        if (inSequence)
+        if (inSequence && dialogueBoxOpen)
         {
             // Progress dialogue message;
             dialogueTimer += Time.deltaTime;
@@ -111,6 +168,11 @@ public class DialogueManager : MonoBehaviour
             {
                 dialogueTimer -= speakTime;
                 currentMessageProgress++;
+
+                if (currentMessageProgress >= currentNode.Message.GetLength())
+                {
+                    TypingFinished();
+                }
             }
         }
         

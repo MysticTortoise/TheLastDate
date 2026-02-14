@@ -21,6 +21,6 @@ MonoBehaviour:
   behaviorDescription: Has been a stellar customer service employee. Not one person
     she has been on call with has ever asked to speak to her manager, extremely good
     at handling others.
-  fireScore: 5
+  fireScore: -5
   maintainScore: 0
   moneySaved: 1000
