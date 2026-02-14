@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EmployeeProfile
   personImage: {fileID: 0}
   profileImage: {fileID: 0}
-  age: 
-  employeeName: 
-  position: 
-  yearsExperience: 
-  behaviorDescription: 
+  age: 21
+  employeeName: Alma Tyvand
+  position: HR
+  yearsExperience: 2
+  behaviorDescription: They are a great employee, however they often call out sick
+    at the last minute, forcing others to cover for them constantly. When they are
+    around they are great at their job
   fireScore: 0
   maintainScore: 0
-  moneySaved: 0
+  moneySaved: 1000

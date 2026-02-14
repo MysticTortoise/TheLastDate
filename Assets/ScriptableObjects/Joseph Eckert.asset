@@ -14,11 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EmployeeProfile
   personImage: {fileID: 0}
   profileImage: {fileID: 0}
-  age: 
-  employeeName: 
-  position: 
-  yearsExperience: 
-  behaviorDescription: 
-  fireScore: 0
-  maintainScore: 0
-  moneySaved: 0
+  age: 17
+  employeeName: Joseph Eckert
+  position: Intern
+  yearsExperience: 0
+  behaviorDescription: Recently hired to an internship. He has recently been dealing
+    with financial harship as his mother is kinda homeless. He is doing whatever
+    he can to help make ends meet. However his performance has been lackluster and
+    as an intern he does not do much.
+  fireScore: -10
+  maintainScore: 10
+  moneySaved: 500

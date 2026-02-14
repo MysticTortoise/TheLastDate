@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EmployeeProfile
   personImage: {fileID: 0}
   profileImage: {fileID: 0}
-  age: 
-  employeeName: 
-  position: 
-  yearsExperience: 
-  behaviorDescription: 
-  fireScore: 0
+  age: 20
+  employeeName: Cassandra Jackson
+  position: Customer Service
+  yearsExperience: 1
+  behaviorDescription: Has been a stellar customer service employee. Not one person
+    she has been on call with has ever asked to speak to her manager, extremely good
+    at handling others.
+  fireScore: 5
   maintainScore: 0
-  moneySaved: 0
+  moneySaved: 1000

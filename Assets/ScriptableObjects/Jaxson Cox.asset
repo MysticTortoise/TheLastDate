@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EmployeeProfile
   personImage: {fileID: 0}
   profileImage: {fileID: 0}
-  age: 
-  employeeName: 
-  position: 
-  yearsExperience: 
-  behaviorDescription: 
-  fireScore: 0
-  maintainScore: 0
-  moneySaved: 0
+  age: 18
+  employeeName: Jaxson Cox
+  position: Marketing
+  yearsExperience: 0
+  behaviorDescription: 'Was hired yesterday. He recently got into a car crash and
+    needs this job to pay for repairs. He has very little experience but was really
+    grateful for the oppurtunity. '
+  fireScore: -5
+  maintainScore: 10
+  moneySaved: 1000

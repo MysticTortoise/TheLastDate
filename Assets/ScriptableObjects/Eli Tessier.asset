@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EmployeeProfile
   personImage: {fileID: 0}
   profileImage: {fileID: 0}
-  age: 
-  employeeName: 
-  position: 
-  yearsExperience: 
-  behaviorDescription: 
-  fireScore: 0
+  age: 45
+  employeeName: Eli Tessier
+  position: Engineer
+  yearsExperience: 8
+  behaviorDescription: He is the most experienced employee this company has. He is
+    an amazing asset at training new employees and does his job well every day. He
+    is also the most talented engineer.
+  fireScore: -10
   maintainScore: 0
-  moneySaved: 0
+  moneySaved: 4000
