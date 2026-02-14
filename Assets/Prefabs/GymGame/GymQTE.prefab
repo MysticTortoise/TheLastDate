@@ -114,6 +114,17 @@ MonoBehaviour:
   sliderTag: gymSlide
   hitIncrease: 0.1
   missDecrease: 0.07
+  popupPrefab: {fileID: 7233855532131883532, guid: 2da6608db2a7742f6b767b7c56ae9c15, type: 3}
+  popupOffset: {x: 0, y: 1, z: 0}
+  popupMessages:
+  - SWOLE!
+  - Good rep!
+  - Clean!
+  - Nice Form!
+  - Shrimpy
+  - Shrimpmaxxing
+  - JUICY
+  showPopupOnMiss: 0
   canHit: 0
 --- !u!58 &6623935879029003023
 CircleCollider2D:

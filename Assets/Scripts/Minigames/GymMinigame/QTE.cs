@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
@@ -23,6 +24,19 @@ public class QTE : MonoBehaviour
     public string sliderTag = "gymSlide";
     public float hitIncrease = 0.10f;
     public float missDecrease = 0.07f;
+
+    [Header("Popup Text")]
+    public GameObject popupPrefab; // prefab with WorldTextPopup (TMP)
+    public Vector3 popupOffset = new Vector3(0f, 1.0f, 0f);
+    public List<string> popupMessages = new List<string>()
+    {
+        "Nice!",
+        "Good rep!",
+        "Clean!",
+        "Let’s go!",
+        "Solid!"
+    };
+    public bool showPopupOnMiss = true; // if false, only on hit
 
     [Header("State (Read Only)")]
     public bool canHit = false;
@@ -70,11 +84,11 @@ public class QTE : MonoBehaviour
         // Determine if ring is within the "hit zone" (scale window around endScale)
         float scaleDiff = Mathf.Abs(currentScale - endScale);
 
-        // Once true, it stays true (your request)
+        // Once true, it stays true
         if (!canHit && scaleDiff <= hitScaleTolerance)
             canHit = true;
 
-        // Click handling
+        // Click handling (New Input System)
         if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
             if (ClickedOnQTE())
@@ -94,9 +108,7 @@ public class QTE : MonoBehaviour
             }
         }
 
-        // Auto-miss once we've passed the hit zone without hitting:
-        // When the ring has finished closing AND we didn't hit, disappear and apply missDecrease.
-        // (This ensures it doesn't hang around if canHit turned true but user didn't click.)
+        // Auto-miss when the ring has finished closing and we didn't hit
         if (elapsed >= duration && !_hit)
         {
             ResolveMiss();
@@ -118,16 +130,38 @@ public class QTE : MonoBehaviour
     {
         _hit = true;
         _resolved = true;
+
         AdjustGym(+hitIncrease);
+        SpawnPopup();
+
         Destroy(gameObject);
     }
 
     private void ResolveMiss()
     {
         _resolved = true;
-        // You said: if it doesn't (hit) and destroys then decrease
+
         AdjustGym(-missDecrease);
+
+        if (showPopupOnMiss)
+            SpawnPopup();
+
         Destroy(gameObject);
+    }
+
+    private void SpawnPopup()
+    {
+        if (popupPrefab == null) return;
+        if (popupMessages == null || popupMessages.Count == 0) return;
+
+        string msg = popupMessages[Random.Range(0, popupMessages.Count)];
+
+        GameObject go = Instantiate(popupPrefab, transform.position + popupOffset, Quaternion.identity);
+
+        // Your popup prefab should have WorldTextPopup (or similar) on it
+        var popup = go.GetComponent<WorldTextPopup>();
+        if (popup != null)
+            popup.SetText(msg);
     }
 
     private void AdjustGym(float delta)

@@ -26,6 +26,9 @@ public class QTESpawner : MonoBehaviour
 
     void Update()
     {
+        if (strengthManager != null && strengthManager.HasWon)
+        return; // stop spawning entirely
+
         if (qtePrefab == null || spawnPoints.Count == 0) return;
 
         if (Time.time >= _nextSpawnTime)
@@ -33,8 +36,7 @@ public class QTESpawner : MonoBehaviour
             SpawnOne();
             _nextSpawnTime = Time.time + GetCurrentInterval();
         }
-    }
-
+}
     float GetCurrentInterval()
     {
         int strength = (strengthManager != null) ? strengthManager.strength : 0;

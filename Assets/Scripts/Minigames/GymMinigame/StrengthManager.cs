@@ -9,6 +9,7 @@ public class StrengthManager : MonoBehaviour
 
     [Header("Strength")]
     public int strength = 0;
+    public int maxStrength = 5;
 
     [Header("Strength Indicators")]
     public GameObject strengthIndicator1;
@@ -16,6 +17,10 @@ public class StrengthManager : MonoBehaviour
     public GameObject strengthIndicator3;
     public GameObject strengthIndicator4;
     public GameObject strengthIndicator5;
+
+    [Header("Win State")]
+    public GameObject win;
+    public bool HasWon { get; private set; }
 
     void Awake()
     {
@@ -31,43 +36,57 @@ public class StrengthManager : MonoBehaviour
 
     void Start()
     {
+        HasWon = false;
+
+        if (win != null)
+            win.SetActive(false);
+
         RefreshIndicators();
     }
 
     void Update()
     {
+        if (HasWon) return;
         if (gymSlider == null) return;
 
-        // If slider reaches max, level up strength and reset slider
-        if (gymSlider.value >= gymSlider.maxValue)
+        // Use threshold to avoid float weirdness (esp if slider is 0..1)
+        if (gymSlider.value >= gymSlider.maxValue - 0.0001f)
         {
             gymSlider.value = gymSlider.minValue;
-            strength++;
+
+            strength = Mathf.Min(strength + 1, maxStrength);
 
             RefreshIndicators();
+
+            if (strength >= maxStrength)
+                TriggerWin();
         }
+    }
+
+    void TriggerWin()
+    {
+        HasWon = true;
+
+        if (win != null)
+            win.SetActive(true);
+
+        Debug.Log("WIN CONDITION REACHED (strength >= 5)");
     }
 
     void RefreshIndicators()
     {
-        if (strength > 0){
-            strengthIndicator1.SetActive(true);
-        }
+        // Turn all OFF first (important)
+        if (strengthIndicator1 != null) strengthIndicator1.SetActive(false);
+        if (strengthIndicator2 != null) strengthIndicator2.SetActive(false);
+        if (strengthIndicator3 != null) strengthIndicator3.SetActive(false);
+        if (strengthIndicator4 != null) strengthIndicator4.SetActive(false);
+        if (strengthIndicator5 != null) strengthIndicator5.SetActive(false);
 
-        if (strength > 1){
-            strengthIndicator2.SetActive(true);
-        }
-
-         if (strength > 2){
-            strengthIndicator3.SetActive(true);
-        }
-
-        if (strength > 3){
-            strengthIndicator4.SetActive(true);
-        }
-
-        if (strength > 4){
-            strengthIndicator5.SetActive(true);
-        }
+        // Turn ON based on strength
+        if (strength >= 1 && strengthIndicator1 != null) strengthIndicator1.SetActive(true);
+        if (strength >= 2 && strengthIndicator2 != null) strengthIndicator2.SetActive(true);
+        if (strength >= 3 && strengthIndicator3 != null) strengthIndicator3.SetActive(true);
+        if (strength >= 4 && strengthIndicator4 != null) strengthIndicator4.SetActive(true);
+        if (strength >= 5 && strengthIndicator5 != null) strengthIndicator5.SetActive(true);
     }
 }
