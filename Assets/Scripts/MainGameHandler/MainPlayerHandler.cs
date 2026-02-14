@@ -3,12 +3,23 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+public class StatBlock
+{
+    public float money = 0;
+    public int empathy = 0;
+    public int smarts = 0;
+    public int rizz = 0;
+    public int looks = 0;
+}
+
 public class MainPlayerHandler : MonoBehaviour
 {
     private RectTransform playerViewRect;
     private Camera playerViewCamera;
 
     public static MainPlayerHandler PlayerHandler;
+    
+    public StatBlock playerStats { private set; get; }
 
     public Vector2 ProjectMouseToWorld()
     {
