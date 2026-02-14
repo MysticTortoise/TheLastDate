@@ -13,6 +13,8 @@ public class ManageWorkMinigame : MonoBehaviour
     [SerializeField] private TextMeshProUGUI yearsExperienceTextBox;
     [SerializeField] private TextMeshProUGUI descriptionTextBox;
     public int employeeIndex;
+    private int currKeepScore;
+    private int currFireScore;
     void Start()
     {
         employeeIndex = Random.Range(0, employees.Count);
@@ -21,10 +23,15 @@ public class ManageWorkMinigame : MonoBehaviour
         positionTextBox.text = employees[employeeIndex].position;
         yearsExperienceTextBox.text = employees[employeeIndex].yearsExperience;
         descriptionTextBox.text = employees[employeeIndex].behaviorDescription;
+        currKeepScore = employees[employeeIndex].maintainScore;
+        currFireScore = employees[employeeIndex].fireScore;
     }
 
     public void OnFire()
     {
+        score += currFireScore;
+        Debug.Log("Empathy Changed :" + currFireScore);
+
         if (employees.Count > 0)
         {
         employeeIndex = Random.Range(0, employees.Count);
@@ -33,8 +40,8 @@ public class ManageWorkMinigame : MonoBehaviour
         positionTextBox.text = employees[employeeIndex].position;
         yearsExperienceTextBox.text = employees[employeeIndex].yearsExperience;
         descriptionTextBox.text = employees[employeeIndex].behaviorDescription;
-        score += employees[employeeIndex].fireScore;
-        Debug.Log("Empathy Lost" + employees[employeeIndex].fireScore);
+        currKeepScore = employees[employeeIndex].maintainScore;
+        currFireScore = employees[employeeIndex].fireScore;
         employees.RemoveAt(employeeIndex);
         }
         else {EndGame();}
@@ -42,6 +49,9 @@ public class ManageWorkMinigame : MonoBehaviour
 
     public void OnKeep()
     {
+        score += currKeepScore;
+        Debug.Log("Empathy Changed :" + currKeepScore);
+
         if (employees.Count > 0)
         {
         employeeIndex = Random.Range(0, employees.Count);
@@ -50,8 +60,8 @@ public class ManageWorkMinigame : MonoBehaviour
         positionTextBox.text = employees[employeeIndex].position;
         yearsExperienceTextBox.text = employees[employeeIndex].yearsExperience;
         descriptionTextBox.text = employees[employeeIndex].behaviorDescription;
-        score += employees[employeeIndex].maintainScore;
-        Debug.Log("Empathy Gained" + employees[employeeIndex].maintainScore);
+        currKeepScore = employees[employeeIndex].maintainScore;
+        currFireScore = employees[employeeIndex].fireScore;
         employees.RemoveAt(employeeIndex);
         }
         else {EndGame();}
