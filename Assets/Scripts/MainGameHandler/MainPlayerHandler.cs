@@ -15,10 +15,14 @@ public class StatBlock
 public class MainPlayerHandler : MonoBehaviour
 {
     private Camera playerViewCamera;
-
     public static MainPlayerHandler PlayerHandler;
-    
+    private static readonly int FadeOutTransitionAnim = Animator.StringToHash("FadeOutTransition");
+
     public StatBlock playerStats { private set; get; }
+
+    private GameObject currentScene;
+    private GameObject nextScene;
+    private Animator animator;
 
     public Vector2 ProjectMouseToWorld()
     {
@@ -40,10 +44,24 @@ public class MainPlayerHandler : MonoBehaviour
         if (context.started)
             Interact();
     }
+
+    public void DoSceneTransition(GameObject newScene)
+    {
+        nextScene = newScene;
+        animator.SetTrigger(FadeOutTransitionAnim);
+    }
+
+    public void LoadNewScene()
+    {
+        Destroy(currentScene);
+        currentScene = Instantiate(nextScene);
+        nextScene = null;
+    }
     
     void Start()
     {
         playerViewCamera = GetComponent<Camera>();
         PlayerHandler = this;
+        animator = GetComponent<Animator>();
     }
 }

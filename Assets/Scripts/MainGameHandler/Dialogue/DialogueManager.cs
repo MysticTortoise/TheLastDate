@@ -66,6 +66,9 @@ public class DialogueManager : MonoBehaviour
         currentMessageProgress = 0;
         dialogueTimer = 0;
         typingFinished = false;
+
+        foreach (DialogueActionBase action in currentNode.DialogueActionsStart)
+            action.Trigger();
     }
 
     private void FinishConversation()
@@ -82,6 +85,9 @@ public class DialogueManager : MonoBehaviour
             return;
         if (hasOptions)
             return;
+        
+        foreach (DialogueActionBase action in currentNode.DialogueActionsEnd)
+            action.Trigger();
         
         currentSequenceProgress++;
 

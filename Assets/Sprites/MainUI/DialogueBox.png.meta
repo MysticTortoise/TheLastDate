@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 0c7a70ba93ffa4a1ea643204ddb4202a
+guid: 88bb76cabbdeb83429e9edddafd8c81f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3683447386270036096
-    second: JackPrawn_ThumbsUp_0
+      213: -5261992394389525642
+    second: DialogueBox_0
+  - first:
+      213: 4833402455760112517
+    second: DialogueBox_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,13 +49,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 241, y: 167, z: 266, w: 180}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -100,23 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JackPrawn_ThumbsUp_0
+      name: DialogueBox_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
-        width: 2587
-        height: 3839
+        x: 104
+        y: 372
+        width: 111
+        height: 124
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08f88803e14c1ecc0800000000000000
-      internalID: -3683447386270036096
+      spriteID: 67bea99ebc5a9f6b0800000000000000
+      internalID: -5261992394389525642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DialogueBox_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 391
+        width: 1615
+        height: 669
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b0510dce1b31340800000000000000
+      internalID: 4833402455760112517
       vertices: []
       indices: 
       edges: []
@@ -125,8 +150,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JackPrawn_ThumbsUp_0: -3683447386270036096
+      DialogueBox_0: -5261992394389525642
+      DialogueBox_1: 4833402455760112517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

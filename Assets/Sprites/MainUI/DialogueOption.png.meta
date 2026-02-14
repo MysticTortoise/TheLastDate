@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 29340389ca8e04244b50176e60d9c786
+guid: f6daf48042eb04a459763e812316c7da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2819770393117265170
-    second: JackPrawn_Normal_0
+      213: -5762842200497515132
+    second: DialogueOption_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 187, y: 0, z: 45, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JackPrawn_Normal_0
+      name: DialogueOption_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
-        width: 2587
-        height: 3839
+        x: 431
+        y: 114
+        width: 601
+        height: 228
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 21d0be59b36d12720800000000000000
-      internalID: 2819770393117265170
+      spriteID: 48517be2d854600b0800000000000000
+      internalID: -5762842200497515132
       vertices: []
       indices: 
       edges: []
@@ -125,8 +125,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JackPrawn_Normal_0: 2819770393117265170
+      DialogueOption_0: -5762842200497515132
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
