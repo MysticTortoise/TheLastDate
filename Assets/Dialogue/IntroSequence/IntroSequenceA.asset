@@ -38,13 +38,167 @@ MonoBehaviour:
     DialogueActionsEnd: []
     Options: []
   - Message:
+      Message: "Oh my God, Jessica\u2026 she\u2019s gonna be so mad."
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: '*Picks up*'
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: (awkwardly enthusiastic) Good morning, babe!
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "It\u2019s nearly noon."
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "Oh, yeah\u2026"
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "\u2026"
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: What did I do?
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "\u2026 I knew you wouldn\u2019t remember."
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "\u2026Sorry."
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "You don\u2019t even know what you\u2019re sorry for! "
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "You swore you wouldn\u2019t leave me alone at a party where I didn\u2019t
+        know anyone, threw up on my new shoes\u2026"
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: And got too drunk to drive me home! I had to ask Chad to come get
+        us.
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Again.
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "I don\u2019t remember all of that but I\u2019m really sorry for it."
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "I know. But between this and being late to dinner with my parents\u2026 "
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "I don\u2019t know how much more I can take."
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Wait, wait, wait! I swear I can make it up to you!
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: 'You always say that. '
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "I want to believe you, but right now\u2026 it just seems like you
+        don\u2019t care at all."
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: I care! I care so much!
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "Look, we still have a dinner reservation tonight. I\u2019ll turn
+        everything around, I\u2019ll make it the best date of your life!"
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: "\u2026."
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: 'Okay. '
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Trust me, Jessica. One more time.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: I will. See you tonight.
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
       Message: See you.
       SpeakerTitle: John Guy
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: '*beep*'
+      Message: '*Hangs up*'
       SpeakerTitle: 
     DialogueActionsStart: []
     DialogueActionsEnd:
