@@ -14,7 +14,6 @@ public class InteractionManager : MonoBehaviour
     [Header("Empathy")]
     [SerializeField] private int empathy = 0; // starts at 0
     public int Empathy => empathy;
-
     public int empathyMin = -5;
     public int empathyMax = 5;
 
@@ -23,6 +22,9 @@ public class InteractionManager : MonoBehaviour
     public GameObject sadPopupPrefab;
     public Transform popupSpawnPoint;
     public Vector3 popupOffsetFromPlayer = new Vector3(0f, 1.2f, 0f);
+
+    [Header("Trash")]
+    public int trashGrid = 6; // pressing space while holding food here destroys it
 
     private int charm = 0;
 
@@ -40,6 +42,7 @@ public class InteractionManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
             HandleSpace();
 
+        // keep held food grid in sync
         if (heldFood != null)
             heldFood.currentGrid = player.currentGrid;
     }
@@ -48,7 +51,17 @@ public class InteractionManager : MonoBehaviour
     {
         int grid = player.currentGrid;
 
-        // Not holding -> spawn from basket
+        // --- TRASH RULE ---
+        // If holding food and on trash grid, destroy it instantly.
+        if (heldInstance != null && grid == trashGrid)
+        {
+            Destroy(heldInstance);
+            heldInstance = null;
+            heldFood = null;
+            return;
+        }
+
+        // NOT holding -> spawn from basket
         if (heldInstance == null)
         {
             Basket basket = FindBasketAtGrid(grid);
@@ -58,13 +71,18 @@ public class InteractionManager : MonoBehaviour
             return;
         }
 
-        // Holding -> place on shelf if empty
+        // HOLDING -> only serve if there is a customer at this grid AND a shelf exists AND shelf is empty
+        Customer customer = FindCustomerAtGrid(grid);
+        if (customer == null) return; // key change: cannot place unless customer exists
+
         Shelf shelf = FindShelfAtGrid(grid);
         if (shelf == null) return;
 
-        if (FindFoodAtGrid(grid) != null) return; // shelf occupied
+        // shelf must be empty (no food sitting there)
+        if (FindFoodAtGrid(grid) != null) return;
 
-        PlaceOnShelfAndMaybeServe(shelf, grid);
+        // Place + Serve (food is consumed either way)
+        ServeCustomerAtShelf(customer, shelf, grid);
     }
 
     void SpawnInHand(GameObject prefab, int grid)
@@ -77,32 +95,25 @@ public class InteractionManager : MonoBehaviour
         if (heldFood != null) heldFood.currentGrid = grid;
     }
 
-    void PlaceOnShelfAndMaybeServe(Shelf shelf, int grid)
+    void ServeCustomerAtShelf(Customer customer, Shelf shelf, int grid)
     {
+        // snap food to shelf visually (optional, but looks correct)
         heldInstance.transform.SetParent(null, true);
         heldInstance.transform.position = shelf.transform.position;
 
         if (heldFood != null)
             heldFood.currentGrid = grid;
 
-        Customer customer = FindCustomerAtGrid(grid);
+        // score + popup
+        bool liked = (heldFood != null && heldFood.foodID == customer.requestedFoodID);
 
-        if (customer != null && heldFood != null)
-        {
-            bool liked = (heldFood.foodID == customer.requestedFoodID);
+        AddCharm(liked ? +1 : -3);
+        SpawnPopup(liked);
 
-            AddCharm(liked ? +1 : -3);
-            SpawnPopup(liked);
+        // remove customer and consume food
+        Destroy(customer.gameObject);
+        Destroy(heldInstance);
 
-            Destroy(customer.gameObject);
-            Destroy(heldInstance);
-
-            heldInstance = null;
-            heldFood = null;
-            return;
-        }
-
-        // No customer: food stays on shelf
         heldInstance = null;
         heldFood = null;
     }
@@ -134,15 +145,13 @@ public class InteractionManager : MonoBehaviour
     public void AddCharm(int delta)
     {
         int newCharm = charm + delta;
-
-        // clamp low end
         if (newCharm < 0) newCharm = 0;
 
-        // if we hit or exceed max, we "level up" empathy and reset charm
+        // charm max -> empathy +1 (clamped), charm resets to 0
         if (newCharm >= charmMax)
         {
             empathy = Mathf.Clamp(empathy + 1, empathyMin, empathyMax);
-            SetCharm(0); // resets when maxed
+            SetCharm(0);
             return;
         }
 
