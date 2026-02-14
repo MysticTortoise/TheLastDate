@@ -19,7 +19,8 @@ MonoBehaviour:
   position: Manager
   yearsExperience: 15
   behaviorDescription: Has recieved numerous H.R. violations for misconduct in the
-    workplace. Has often been caught trying to steal the work of suboordinates.
+    workplace. Has often been caught trying to steal the work of suboordinates. Has
+    attended multiple sensitivity trainings and has not shown significant improvement.
   fireScore: 10
   maintainScore: -5
   moneySaved: 5000

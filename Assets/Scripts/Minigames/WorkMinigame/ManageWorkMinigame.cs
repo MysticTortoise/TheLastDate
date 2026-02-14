@@ -25,6 +25,7 @@ public class ManageWorkMinigame : MonoBehaviour
         descriptionTextBox.text = employees[employeeIndex].behaviorDescription;
         currKeepScore = employees[employeeIndex].maintainScore;
         currFireScore = employees[employeeIndex].fireScore;
+        employees.RemoveAt(employeeIndex);
     }
 
     public void OnFire()
