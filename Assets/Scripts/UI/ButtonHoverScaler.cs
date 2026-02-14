@@ -31,7 +31,7 @@ public class ButtonHoverScaler : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
         currentHovered = this;
 
-        foreach (ButtonHoverScaler button in FindObjectsOfType<ButtonHoverScaler>())
+        foreach (ButtonHoverScaler button in FindObjectsByType<ButtonHoverScaler>(FindObjectsSortMode.None))
         {
             if (button == this)
                 button.targetScale = button.originalScale + Vector3.one * hoverAmount;
@@ -42,7 +42,7 @@ public class ButtonHoverScaler : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        foreach (ButtonHoverScaler button in FindObjectsOfType<ButtonHoverScaler>())
+        foreach (ButtonHoverScaler button in FindObjectsByType<ButtonHoverScaler>(FindObjectsSortMode.None))
         {
             button.targetScale = button.originalScale;
         }
