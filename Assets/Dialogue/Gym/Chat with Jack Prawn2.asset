@@ -20,14 +20,15 @@ MonoBehaviour:
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: Huh?
+      Message: ' Huh?'
       SpeakerTitle: John Guy
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: It's a reference. Much like my entire presence in this game.
-      SpeakerTitle: John Guy
+      Message: ' It''s a reference. Much like my entire presence in this game.'
+      SpeakerTitle: Jack Prawn
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: ce7cb4705a7ebbc43b24b228644c3c2a, type: 2}
     Options: []

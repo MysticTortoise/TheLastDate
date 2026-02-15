@@ -16,14 +16,16 @@ MonoBehaviour:
   - Message:
       Message: Glad to see ya! Ready to train?
       SpeakerTitle: Jack Prawn
-    DialogueActionsStart: []
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: 
-      SpeakerTitle: John Guy
     DialogueActionsStart:
-    - {fileID: 11400000, guid: 9cebf87895afee6449a5c7610046a910, type: 2}
-    - {fileID: 11400000, guid: e4ccac965aac3224ca0ddf88fe65c98f, type: 2}
+    - {fileID: 11400000, guid: 1033de3211dc0d042aca0c9f25151834, type: 2}
     DialogueActionsEnd: []
-    Options: []
+    Options:
+    - Option: Work Out
+      Sequence: {fileID: 11400000, guid: ab1ef7cdb6cc40d408a2d4413beb38b0, type: 2}
+      Requirements: []
+    - Option: Chat
+      Sequence: {fileID: 11400000, guid: cf7e7b7126045c445af0c76af3bb92c9, type: 2}
+      Requirements: []
+    - Option: Leave
+      Sequence: {fileID: 11400000, guid: 4a800dbe37b9a8a44b0dc56ad6f672d7, type: 2}
+      Requirements: []

@@ -24,6 +24,8 @@ public class MainPlayerHandler : MonoBehaviour
     private GameObject nextScene;
     private Animator animator;
 
+    public static GameObject ToLoadScene;
+
     public Vector2 ProjectMouseToWorld()
     {
         return playerViewCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
@@ -64,7 +66,8 @@ public class MainPlayerHandler : MonoBehaviour
 
     public void LoadNewScene()
     {
-        Destroy(currentScene);
+        if(currentScene)
+            Destroy(currentScene);
         currentScene = Instantiate(nextScene);
         nextScene = null;
     }
@@ -74,5 +77,11 @@ public class MainPlayerHandler : MonoBehaviour
         playerViewCamera = GetComponent<Camera>();
         PlayerHandler = this;
         animator = GetComponent<Animator>();
+
+        if (ToLoadScene != null)
+        {
+            nextScene = ToLoadScene;
+            LoadNewScene();
+        }
     }
 }
