@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec6df221ffb4ad48a31106b3e90604d, type: 3}
+  m_Name: Chad chats
+  m_EditorClassIdentifier: Assembly-CSharp::DialoguePickRandomSequence
+  PossibleSequences:
+  - {fileID: 11400000, guid: 5f3ce39cbf563ab4da928ebad2c1d713, type: 2}
+  - {fileID: 11400000, guid: f972644d9e3a9bb4b896a6cb46c72345, type: 2}
+  - {fileID: 11400000, guid: c33356af60be9314d968c584047da6f3, type: 2}
