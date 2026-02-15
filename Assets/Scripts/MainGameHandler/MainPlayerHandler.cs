@@ -18,7 +18,10 @@ public class MainPlayerHandler : MonoBehaviour
     public static MainPlayerHandler PlayerHandler;
     private static readonly int FadeOutTransitionAnim = Animator.StringToHash("FadeOutTransition");
 
-    public StatBlock playerStats { private set; get; } = new();
+    public StatBlock playerStats { private set; get; } = new StatBlock
+    {
+        money = 200,
+    };
 
     private GameObject currentScene;
     private GameObject nextScene;
@@ -38,12 +41,13 @@ public class MainPlayerHandler : MonoBehaviour
                      .Where(button => button.hoverCollider.OverlapPoint(mousePos)))
         {
             button.Click();
+            return;
         }
     }
 
     public bool CanInteract()
     {
-        if (DialogueManager.dialogueManager.isDialogueUp)
+        if (DialogueManager.dialogueManager.blockInput)
             return false;
 
         if (nextScene != null)
