@@ -62,21 +62,23 @@ public class InteractionManager : MonoBehaviour
     private GameObject heldInstance;
     private Food heldFood;
 
-    void Awake()
-    {
-        if (playerGlobal == null)
-            playerGlobal = PlayerGlobalHandler.GlobalHandler != null
-                ? PlayerGlobalHandler.GlobalHandler
-                : FindObjectOfType<PlayerGlobalHandler>();
+void Awake()
+{
+    if (playerGlobal == null)
+        playerGlobal = PlayerGlobalHandler.GlobalHandler;
 
-        // Ensure stats exists (since you can’t edit other scripts)
-        if (playerGlobal != null && playerGlobal.stats == null)
-            playerGlobal.stats = new StatBlock();
-    }
+    if (playerGlobal == null)
+        playerGlobal = FindAnyObjectByType<PlayerGlobalHandler>(); // ✅ new API (fast)
+
+    // Ensure stats exists (since you can’t edit other scripts)
+    if (playerGlobal != null && playerGlobal.stats == null)
+        playerGlobal.stats = new StatBlock();
+}
+
 
     void Start()
     {
-        SetCharm(0);
+        SetCharm(2);
         empathy = Mathf.Clamp(empathy, empathyMin, empathyMax);
 
         RefreshEmpathyIndicators();
