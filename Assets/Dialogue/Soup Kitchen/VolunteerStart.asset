@@ -16,7 +16,7 @@ MonoBehaviour:
   - Message:
       Message: 
       SpeakerTitle: 
-    DialogueActionsStart: []
-    DialogueActionsEnd:
+    DialogueActionsStart:
     - {fileID: 11400000, guid: 9600df650f97c4a488e13586b7745efc, type: 2}
+    DialogueActionsEnd: []
     Options: []

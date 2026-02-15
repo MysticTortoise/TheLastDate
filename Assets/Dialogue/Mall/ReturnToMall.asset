@@ -18,6 +18,6 @@ MonoBehaviour:
       SpeakerTitle: 
     DialogueActionsStart:
     - {fileID: 11400000, guid: 1e7c34d96a556c442acc4a767e1170ed, type: 2}
-    DialogueActionsEnd:
     - {fileID: 11400000, guid: 0e801bfbd972f7f4497a52dbd0c5caae, type: 2}
+    DialogueActionsEnd: []
     Options: []
