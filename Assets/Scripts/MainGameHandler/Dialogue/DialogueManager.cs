@@ -24,7 +24,7 @@ public class DialogueManager : MonoBehaviour
     private bool dialogueBoxOpen = false;
     private bool typingFinished = false;
     private DialogueNode currentNode => activeSequence?.dialogueNodes[currentSequenceProgress];
-    private bool hasOptions => currentNode.Options.Count > 0;
+    private bool hasOptions => !inLiveMessage && currentNode.Options.Count > 0;
     
     private int currentMessageProgress;
 
@@ -43,6 +43,20 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager dialogueManager;
 
     public bool isDialogueUp => inSequence || dialogueBoxOpen;
+
+    [CanBeNull] private string liveMessage = null;
+    private string liveSpeaker;
+    public bool inLiveMessage => liveMessage != null;
+
+    private string GetMessage()
+    {
+        if (inLiveMessage)
+            return liveMessage;
+        if (inSequence)
+            return currentNode.Message.Message;
+        
+        return "";
+    }
 
     private void Start()
     {
@@ -152,23 +166,23 @@ public class DialogueManager : MonoBehaviour
 
     private void UpdateDisplay()
     {
-        animator.SetBool(OpenAnim, inSequence);
+        animator.SetBool(OpenAnim, inSequence || inLiveMessage);
 
         if (!dialogueBoxOpen)
         {
             dialogueText.text = "";
         }
         
-        if (!inSequence)
+        if (!inSequence && !inLiveMessage)
             return;
         
-        speakerText.text = currentNode.Message.SpeakerTitle;
-        dialogueText.text = currentNode.Message.Message[..currentMessageProgress];
+        speakerText.text = inLiveMessage? liveSpeaker : currentNode.Message.SpeakerTitle;
+        dialogueText.text = GetMessage()[..currentMessageProgress];
     }
 
     public void DialogueBoxOpened()
     {
-        if(inSequence)
+        if(inSequence || inLiveMessage)
             dialogueBoxOpen = true;
     }
 
@@ -208,18 +222,18 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private float dialogueWaitTime;
     private void Update()
     {
-        if (inSequence && dialogueBoxOpen)
+        if ((inSequence || inLiveMessage) && dialogueBoxOpen)
         {
             // Progress dialogue message;
             dialogueTimer += Time.deltaTime;
             float speakTime = dialogueWaitTime;
             
-            while (dialogueTimer > speakTime && currentMessageProgress < currentNode.Message.GetLength())
+            while (dialogueTimer > speakTime && currentMessageProgress < GetMessage().Length)
             {
                 dialogueTimer -= speakTime;
                 currentMessageProgress++;
 
-                if (currentMessageProgress >= currentNode.Message.GetLength())
+                if (currentMessageProgress >= GetMessage().Length)
                 {
                     TypingFinished();
                 }
@@ -227,5 +241,16 @@ public class DialogueManager : MonoBehaviour
         }
         
         UpdateDisplay();
+    }
+
+    public void SetLiveMessage([CanBeNull] string message, string speaker = "")
+    {
+        if (liveMessage != message)
+        {
+            currentMessageProgress = 0;
+            dialogueTimer = 0;
+        }
+        liveMessage = message;
+        liveSpeaker = speaker;
     }
 }
