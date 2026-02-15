@@ -10,13 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
-  m_Name: Gym Minigame Sequence
+  m_Name: EnterMall
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
       Message: 
       SpeakerTitle: 
-    DialogueActionsStart:
-    - {fileID: 11400000, guid: 2d8e2872a3faee44b98d9dad13daf377, type: 2}
+    DialogueActionsStart: []
     DialogueActionsEnd: []
-    Options: []
+    Options:
+    - Option: Enter General Store
+      Sequence: {fileID: 11400000, guid: 531ddad10eb54e94184c409fd42c5fed, type: 2}
+      Requirements: []
+    - Option: Enter Florist
+      Sequence: {fileID: 11400000, guid: 8d50eb0464bd88a4e9584fa2fe4af102, type: 2}
+      Requirements: []
+    - Option: Enter Clothing Store
+      Sequence: {fileID: 11400000, guid: 6c3d7d051d4d4ae4db35a68c0ebf9970, type: 2}
+      Requirements: []

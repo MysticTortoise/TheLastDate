@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
-      Message: Good luck.
-      SpeakerTitle: Annoying Teen
+      Message: 
+      SpeakerTitle: 
     DialogueActionsStart: []
     DialogueActionsEnd:
-    - {fileID: 11400000, guid: c54580465dd451e4bbf9c5f846fd5c58, type: 2}
+    - {fileID: 11400000, guid: e9ab2617b0e654b49b5f73d737bd5724, type: 2}
     Options: []

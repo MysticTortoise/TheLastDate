@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StatUIImageBar : MonoBehaviour
-{
+{ 
     public enum StatType { Empathy, Smarts, Rizz, Looks }
 
     [Header("References")]
@@ -28,18 +28,20 @@ public class StatUIImageBar : MonoBehaviour
 
     private int _lastIndex = int.MinValue;
 
-    private void Awake()
-    {
-        if (playerGlobal == null)
-            playerGlobal = PlayerGlobalHandler.GlobalHandler != null
-                ? PlayerGlobalHandler.GlobalHandler
-                : FindObjectOfType<PlayerGlobalHandler>();
+private void Awake()
+{
+    if (playerGlobal == null)
+        playerGlobal = PlayerGlobalHandler.GlobalHandler;
 
-        images.RemoveAll(i => i == null);
+    if (playerGlobal == null)
+        playerGlobal = FindAnyObjectByType<PlayerGlobalHandler>();
 
-        EnsureStatsExist();
-        ForceRefresh();
-    }
+    images.RemoveAll(i => i == null);
+
+    EnsureStatsExist();
+    ForceRefresh();
+}
+
 
     private void OnEnable()
     {
