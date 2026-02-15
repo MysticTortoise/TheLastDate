@@ -12,6 +12,7 @@ public class DatingSimManager : MonoBehaviour
     [SerializeField] private List<DatingSimQuestion> questions;
     [SerializeField] private List<Button> answerButtons;
     [SerializeField] private TextMeshProUGUI questionTextBox;
+    [SerializeField] private TextMeshProUGUI scoreTextBox;
     private StatBlock statChanges;
     private DatingSimMan guy;
     private DatingSimQuestion currentQuestion;
@@ -43,6 +44,7 @@ public class DatingSimManager : MonoBehaviour
     {
         if (currentQuestion.questionPersonalities[answerIndex] == guy.type) {score++;}
         else {score--;}
+        scoreTextBox.text = "Score: " + score;
         questions.Remove(currentQuestion);
         Debug.Log(score);
 
