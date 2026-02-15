@@ -10,19 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
-  m_Name: Chad chat3
+  m_Name: Enter Library
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
-      Message: You'll love this guy I've been seeing. He's jacked and has a strong
-        sense of justice.
-      SpeakerTitle: Chad
+      Message: Welcome...
+      SpeakerTitle: Annoying Teen
     DialogueActionsStart: []
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: He does smell a bit of fish though.
-      SpeakerTitle: Chad
-    DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 49e5c2c639ea0654abd387fea6690766, type: 2}
     Options: []

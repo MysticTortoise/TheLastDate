@@ -12,4 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
   m_Name: Chad chat1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
-  dialogueNodes: []
+  dialogueNodes:
+  - Message:
+      Message: Sorry if I sound out of breath. I just got done with a long workout.
+      SpeakerTitle: Chad
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Oh I don't want to interrupt anything, Chad.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Relax bro! Breathless or not, I'm always here for you.
+      SpeakerTitle: Chad
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []

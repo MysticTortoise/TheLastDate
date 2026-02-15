@@ -93,30 +93,44 @@ public class ManageWorkMinigame : MonoBehaviour
         if (score <= -30)
         {
             statsChanged.empathy = -3;
+            scoreTextBox.fontSize = 0.4f;
+            scoreTextBox.text = "You Lost 3 Empathy and Made $" + moneySaved;
         }
         else if (score <= -20)
         {
             statsChanged.empathy = -2;
+            scoreTextBox.fontSize = 0.4f;
+            scoreTextBox.text = "You Lost 2 Empathy and Made $" + moneySaved;
         }
         else if (score < -10)
         {
-            statsChanged.empathy = -1;  
+            statsChanged.empathy = -1;
+            scoreTextBox.fontSize = 0.4f;
+            scoreTextBox.text = "You Lost 1 Empathy and Made $" + moneySaved;  
         }
         else if (score <= 0)
         {
             statsChanged.empathy = 0;
+            scoreTextBox.fontSize = 0.4f;
+            scoreTextBox.text = "You Gained no Empathy and Made $" + moneySaved;
         }
         else if (score <= 10)
         {
             statsChanged.empathy = 1;
+            scoreTextBox.fontSize = 0.4f;
+            scoreTextBox.text = "You Gained 1 Empathy and Made $" + moneySaved;
         }
         else if (score <= 20)
         {
             statsChanged.empathy = 2;
+            scoreTextBox.fontSize = 0.4f;
+            scoreTextBox.text = "You Gained 2 Empathy and Made $" + moneySaved;
         }
         else if (score <= 30)
         {
             statsChanged.empathy = 3;
+            scoreTextBox.fontSize = 0.4f;
+            scoreTextBox.text = "You Gained 3 Empathy and Made $" + moneySaved;
         }
         statsChanged.money = moneySaved;
         PlayerGlobalHandler.GlobalHandler.AddStats(statsChanged);

@@ -12,4 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
   m_Name: Call Chad
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
-  dialogueNodes: []
+  dialogueNodes:
+  - Message:
+      Message: Hey buddy, talk to me.
+      SpeakerTitle: Chad
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Hi Chad.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 61cbb4760e282b94eac0780c81c2c1e1, type: 2}
+    Options:
+    - Option: I need a Chad chat.
+      Sequence: {fileID: 11400000, guid: 9f82fcfa023dcc84caac20d2dbdcad21, type: 2}
+      Requirements: []
+    - Option: How do you get a girl to love you?
+      Sequence: {fileID: 11400000, guid: afd4ee382e6d78040b870fc395abd9c9, type: 2}
+      Requirements: []

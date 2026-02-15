@@ -12,4 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
   m_Name: How do you get a girl to love you
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
-  dialogueNodes: []
+  dialogueNodes:
+  - Message:
+      Message: Focusing on yourself is a great way to be more attractive to others.
+        Try building up your personal skills.
+      SpeakerTitle: Chad
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: People want someone well-rounded, with several good qualities.
+      SpeakerTitle: Chad
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Girls also like to feel heard. Listen to her likes and dislikes, and
+        put in effort to show that you listened.
+      SpeakerTitle: Chad
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: 'You''ve got this, John Guy. '
+      SpeakerTitle: Chad
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options:
+    - Option: 
+      Sequence: {fileID: 11400000, guid: 9c8b577cdc380ac48a0f9513720edefa, type: 2}
+      Requirements: []
