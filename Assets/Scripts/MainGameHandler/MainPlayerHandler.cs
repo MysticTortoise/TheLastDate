@@ -18,6 +18,8 @@ public class MainPlayerHandler : MonoBehaviour
     public static MainPlayerHandler PlayerHandler;
     private static readonly int FadeOutTransitionAnim = Animator.StringToHash("FadeOutTransition");
 
+    [SerializeField] private GameObject DefaultScene;
+
     public StatBlock playerStats { private set; get; } = new StatBlock
     {
         money = 200,
@@ -82,10 +84,7 @@ public class MainPlayerHandler : MonoBehaviour
         PlayerHandler = this;
         animator = GetComponent<Animator>();
 
-        if (ToLoadScene != null)
-        {
-            nextScene = ToLoadScene;
-            LoadNewScene();
-        }
+        nextScene = ToLoadScene != null ? ToLoadScene : DefaultScene;
+        LoadNewScene();
     }
 }
