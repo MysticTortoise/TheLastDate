@@ -20,35 +20,42 @@ public class StrengthManager : MonoBehaviour
     public GameObject looksIndicator4;
     public GameObject looksIndicator5;
 
+    [Header("Looks Popup")]
+    public GameObject looksTextPopupPrefab;     // same prefab system you used for empathy
+    public Transform looksPopupSpawnPoint;      // optional spawn point
+    public Vector3 looksPopupOffset = new Vector3(0f, 1.6f, 0f); // fallback if no spawn point
+
     [Header("Win State")]
     public GameObject win;
     public bool HasWon { get; private set; }
 
-    void Awake()
+void Awake()
+{
+    // Find slider
+    if (gymSlider == null)
     {
-        // Find slider
-        if (gymSlider == null)
-        {
-            var go = GameObject.FindGameObjectWithTag(sliderTag);
-            if (go != null) gymSlider = go.GetComponent<Slider>();
-        }
-
-        if (gymSlider == null)
-            Debug.LogWarning($"LooksManager: No Slider found with tag '{sliderTag}' (or missing Slider component).");
-
-        // Find global handler
-        if (playerGlobal == null)
-            playerGlobal = PlayerGlobalHandler.GlobalHandler != null
-                ? PlayerGlobalHandler.GlobalHandler
-                : FindObjectOfType<PlayerGlobalHandler>();
-
-        if (playerGlobal == null)
-            Debug.LogWarning("LooksManager: No PlayerGlobalHandler found in scene.");
-
-        // Ensure stats exists (since you can't change other scripts)
-        if (playerGlobal != null && playerGlobal.stats == null)
-            playerGlobal.stats = new StatBlock();
+        var go = GameObject.FindGameObjectWithTag(sliderTag);
+        if (go != null) gymSlider = go.GetComponent<Slider>();
     }
+
+    if (gymSlider == null)
+        Debug.LogWarning($"StrengthManager: No Slider found with tag '{sliderTag}' (or missing Slider component).");
+
+    // Find global handler
+    if (playerGlobal == null)
+        playerGlobal = PlayerGlobalHandler.GlobalHandler;
+
+    if (playerGlobal == null)
+        playerGlobal = FindAnyObjectByType<PlayerGlobalHandler>(); // ✅ replaces FindObjectOfType
+
+    if (playerGlobal == null)
+        Debug.LogWarning("StrengthManager: No PlayerGlobalHandler found in scene.");
+
+    // Ensure stats exists (since you can't change other scripts)
+    if (playerGlobal != null && playerGlobal.stats == null)
+        playerGlobal.stats = new StatBlock();
+}
+
 
     void Start()
     {
@@ -71,13 +78,41 @@ public class StrengthManager : MonoBehaviour
         {
             gymSlider.value = gymSlider.minValue;
 
+            int before = playerGlobal.stats.looks;
+
             // Increment GLOBAL looks
             playerGlobal.stats.looks = Mathf.Min(playerGlobal.stats.looks + 1, maxLooks);
+
+            int after = playerGlobal.stats.looks;
+
+            // Popup only if it actually increased (not clamped at max)
+            if (after > before)
+                SpawnLooksPopup(+1);
 
             RefreshIndicators();
 
             if (playerGlobal.stats.looks >= maxLooks)
                 TriggerWin();
+        }
+    }
+
+    void SpawnLooksPopup(int delta)
+    {
+        if (looksTextPopupPrefab == null) return;
+
+        Vector3 pos = (looksPopupSpawnPoint != null)
+            ? looksPopupSpawnPoint.position
+            : transform.position + looksPopupOffset;
+
+        pos.z = 0f; // good default for 2D
+
+        GameObject go = Instantiate(looksTextPopupPrefab, pos, Quaternion.identity);
+
+        TextPopupSetTMP setter = go.GetComponent<TextPopupSetTMP>();
+        if (setter != null)
+        {
+            string sign = delta > 0 ? "+" : "";
+            setter.SetText($"{sign}{delta} Looks");
         }
     }
 
