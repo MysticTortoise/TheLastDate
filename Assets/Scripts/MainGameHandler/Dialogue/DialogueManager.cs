@@ -1,10 +1,17 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+
+public class DialoguePerson
+{
+    public float xPosition;
+    public Sprite texture;
+}
 
 public class DialogueManager : MonoBehaviour
 {
@@ -29,6 +36,11 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] [CanBeNull] private DialogueSequence TestDialogueSequence;
     private DialogueButton[] buttons;
 
+    private Dictionary<int, DialoguePersonInstance> dialoguePeople;
+    private GameObject dialoguePersonTemplate;
+
+    public static DialogueManager dialogueManager;
+
     private void Start()
     {
         speakerText = transform.Find("DialogueBoxHeader").gameObject.GetComponentInChildren<TextMeshProUGUI>(true);
@@ -45,6 +57,27 @@ public class DialogueManager : MonoBehaviour
         }
 
         animator = GetComponent<Animator>();
+        dialogueManager = this;
+
+        dialoguePersonTemplate = transform.parent.Find("DialoguePeople").GetChild(0).gameObject;
+    }
+
+    public void SetDialoguePersonData(int id, DialoguePerson data)
+    {
+        if (data.texture == null)
+        {
+            dialoguePeople.Remove(id);
+            return;
+        }
+
+        if (!dialoguePeople.ContainsKey(id))
+        {
+            dialoguePeople[id] = Instantiate(dialoguePersonTemplate).GetComponent<DialoguePersonInstance>();
+        }
+
+        var person = dialoguePeople[id];
+        person.targetXPosition = data.xPosition;
+        person.GetComponent<Image>().sprite = data.texture;
     }
 
     public void SetActiveDialogueSequence(DialogueSequence sequence)
