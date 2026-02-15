@@ -15,7 +15,7 @@ MonoBehaviour:
   personImage: {fileID: 0}
   profileImage: {fileID: 0}
   age: 20
-  employeeName: Cassandra Jackson
+  employeeName: Cassandra Manning
   position: Customer Service
   yearsExperience: 1
   behaviorDescription: Has been a stellar customer service employee. Not one person
