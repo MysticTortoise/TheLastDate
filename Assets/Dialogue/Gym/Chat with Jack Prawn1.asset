@@ -41,5 +41,6 @@ MonoBehaviour:
       Message: I was trying to think of a fish pun but I guess I'm too stupid.
       SpeakerTitle: John Guy
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: ce7cb4705a7ebbc43b24b228644c3c2a, type: 2}
     Options: []

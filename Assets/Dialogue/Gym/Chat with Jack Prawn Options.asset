@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec6df221ffb4ad48a31106b3e90604d, type: 3}
   m_Name: Chat with Jack Prawn Options
   m_EditorClassIdentifier: Assembly-CSharp::DialoguePickRandomSequence
-  PossibleSequences: []
+  PossibleSequences:
+  - {fileID: 11400000, guid: 71ab307ba581e03419089043fc76bbef, type: 2}
+  - {fileID: 11400000, guid: 2b9b2e44e8cdfe242811c2c6f21ee963, type: 2}
+  - {fileID: 11400000, guid: 7b54ac128f39a114c966b2773449e9e2, type: 2}
+  - {fileID: 11400000, guid: 645719b22834f6a4488e053d32af416d, type: 2}

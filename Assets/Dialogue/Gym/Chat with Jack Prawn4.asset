@@ -17,5 +17,6 @@ MonoBehaviour:
       Message: This shrimp is feelin juicy. Let's get training!
       SpeakerTitle: Jack Prawn
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: ce7cb4705a7ebbc43b24b228644c3c2a, type: 2}
     Options: []

@@ -107,6 +107,11 @@ public class DialogueManager : MonoBehaviour
 
         foreach (DialogueActionBase action in currentNode.DialogueActionsStart)
             action.Trigger();
+
+        if (string.IsNullOrWhiteSpace(currentNode.Message.Message))
+        {
+            FinishConversation();
+        }
     }
 
     private void FinishConversation()
@@ -123,9 +128,14 @@ public class DialogueManager : MonoBehaviour
             return;
         if (hasOptions)
             return;
+
+        var oldSeq = activeSequence;
         
         foreach (DialogueActionBase action in currentNode.DialogueActionsEnd)
             action.Trigger();
+
+        if (oldSeq != activeSequence)
+            return;
         
         currentSequenceProgress++;
 

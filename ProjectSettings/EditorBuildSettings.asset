@@ -6,8 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: bbf5c03d6ec6b46c9b2f7bac07edbf1c
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/MainGameScene.unity
+    guid: 895bae473e79aa242beed45c11d0ab21
+  - enabled: 1
+    path: Assets/Scenes/Minigames/DatingSimMinigame.unity
+    guid: 9d9ca24fcc79bcd4ead1d717a96a9e41
+  - enabled: 1
+    path: Assets/Scenes/Minigames/GymMinigame.unity
+    guid: 382f75309659742b89bc74037e9136c0
+  - enabled: 1
+    path: Assets/Scenes/Minigames/LibraryMinigame.unity
+    guid: 265cb230f79dceb4bb5638ae5425dca0
+  - enabled: 1
+    path: Assets/Scenes/Minigames/SoupKitchen.unity
+    guid: f320b93dffc244e7e9f6dfa34280939d
+  - enabled: 1
+    path: Assets/Scenes/Minigames/WorkMinigame.unity
+    guid: 2443ce03a4d7f9c4e8ce3890646cbc70
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

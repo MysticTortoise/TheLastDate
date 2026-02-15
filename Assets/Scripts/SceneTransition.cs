@@ -13,6 +13,8 @@ public class SceneTransition : MonoBehaviour
 
     private bool isLoading = false;
 
+    [SerializeField] private GameObject StartScene;
+
     public void LoadScene(string sceneName)
     {
         if (isLoading) return;
@@ -24,13 +26,16 @@ public class SceneTransition : MonoBehaviour
     {
         isLoading = true;
 
-        if (sceneTrans && transitionAnimator != null)
+        if (sceneTrans && transitionAnimator)
         {
             transitionAnimator.SetTrigger("end");
             yield return new WaitForSeconds(transitionDelay);
         }
-
-        SceneManager.LoadScene(sceneName);
+        
+        if(StartScene)
+            PlayerGlobalHandler.LoadIntoMainGame(StartScene);
+        else
+            SceneManager.LoadScene(sceneName);
     }
 
     public void QuitGame()
