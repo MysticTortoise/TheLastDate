@@ -8,6 +8,7 @@ public class ItemDefinition : ScriptableObject
     public string Description;
     public string ShopDescription;
     public float Cost;
+    public Sprite Image;
 
 
     public string GetShopText()

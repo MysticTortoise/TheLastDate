@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,7 @@ public class PlayerGlobalHandler : MonoBehaviour
 {
     public StatBlock stats = new();
     private TimerHandler timerHandler;
+    public List<ItemDefinition> heldItems;
 
     private bool hasStarted;
 
@@ -16,6 +18,7 @@ public class PlayerGlobalHandler : MonoBehaviour
         if (GlobalHandler != null)
         {
             Destroy(gameObject);
+            return;
         }
         GlobalHandler = this;
         timerHandler = GetComponentInChildren<TimerHandler>(true);

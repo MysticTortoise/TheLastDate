@@ -84,6 +84,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (data.texture == null)
         {
+            if (!dialoguePeople.ContainsKey(id))
+                return;
             dialoguePeople[id].Disappear();
             dialoguePeople.Remove(id);
             return;
@@ -102,7 +104,7 @@ public class DialogueManager : MonoBehaviour
 
     public void SetActiveDialogueSequence(DialogueSequence sequence)
     {
-        if (!inSequence)
+        if (!inSequence && !inLiveMessage)
             dialogueBoxOpen = false;
         
         activeSequence = sequence;
@@ -132,7 +134,8 @@ public class DialogueManager : MonoBehaviour
     private void FinishConversation()
     {
         activeSequence = null;
-        dialogueBoxOpen = false;
+        if(!inLiveMessage)
+            dialogueBoxOpen = false;
     }
     
     public void AdvanceDialogue(InputAction.CallbackContext context)
