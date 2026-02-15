@@ -179,6 +179,7 @@ public class DialogueManager : MonoBehaviour
                 }
                 
                 button.gameObject.SetActive(true);
+                button.GetComponent<Button>().interactable = currentNode.Options[buttonIndex].RequirementsMet();
                 button.SetText(currentNode.Options[buttonIndex].Option);
             }
         }

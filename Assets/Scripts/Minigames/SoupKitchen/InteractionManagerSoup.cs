@@ -23,6 +23,13 @@ public class InteractionManager : MonoBehaviour
     public Transform popupSpawnPoint;
     public Vector3 popupOffsetFromPlayer = new Vector3(0f, 1.2f, 0f);
 
+    [Header("Indicator")]
+    public GameObject One;
+    public GameObject Two;
+    public GameObject Three;
+    public GameObject Four;
+    public GameObject Five;
+
     [Header("Trash")]
     public int trashGrid = 6; // pressing space while holding food here destroys it
 
@@ -41,6 +48,26 @@ public class InteractionManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
             HandleSpace();
+
+        if (empathy >= 1){
+            One.SetActive(true);
+        }
+
+        if (empathy >= 2){
+            Two.SetActive(true);
+        }
+
+        if (empathy >= 3){
+            Three.SetActive(true);
+        }
+
+        if (empathy >= 4){
+            Four.SetActive(true);
+        }
+
+        if (empathy >= 5){
+            Five.SetActive(true);
+        }
 
         // keep held food grid in sync
         if (heldFood != null)
