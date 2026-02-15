@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8593ddfce93644b40bbb4a939c38cd04
+guid: 000c27890f1944813a58795df89ef991
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3683447386270036096
-    second: JackPrawn_ThumbsUp_0
+      213: 1586271782171382335
+    second: Chad_Normal2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JackPrawn_ThumbsUp_0
+      name: Chad_Normal2_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 236
         y: 0
-        width: 2587
-        height: 3839
+        width: 2350
+        height: 3829
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08f88803e14c1ecc0800000000000000
-      internalID: -3683447386270036096
+      spriteID: f321d8d08c1930610800000000000000
+      internalID: 1586271782171382335
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JackPrawn_ThumbsUp_0: -3683447386270036096
+      Chad_Normal2_0: 1586271782171382335
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

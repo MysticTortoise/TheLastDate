@@ -1,10 +1,18 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+
+[System.Serializable]
+public class DialoguePersonData
+{
+    public float xPosition;
+    public Sprite texture;
+}
 
 public class DialogueManager : MonoBehaviour
 {
@@ -29,10 +37,15 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] [CanBeNull] private DialogueSequence TestDialogueSequence;
     private DialogueButton[] buttons;
 
+    private Dictionary<int, DialoguePersonInstance> dialoguePeople = new();
+    private GameObject dialoguePersonTemplate;
+
+    public static DialogueManager dialogueManager;
+
     private void Start()
     {
-        speakerText = transform.Find("DialogueBoxHeader").gameObject.GetComponentInChildren<TextMeshProUGUI>(true);
-        dialogueText = transform.Find("DialogueBox").gameObject.GetComponentInChildren<TextMeshProUGUI>(true);
+        dialogueText = transform.Find("DialogueBox").Find("Text").GetComponent<TextMeshProUGUI>();
+        speakerText = transform.Find("DialogueBox").Find("DialogueBoxHeader").gameObject.GetComponentInChildren<TextMeshProUGUI>(true);
 
         speakerText.text = "";
         dialogueText.text = "";
@@ -45,6 +58,29 @@ public class DialogueManager : MonoBehaviour
         }
 
         animator = GetComponent<Animator>();
+        dialogueManager = this;
+
+        dialoguePersonTemplate = transform.parent.Find("DialoguePeople").GetChild(0).gameObject;
+    }
+
+    public void SetDialoguePersonData(int id, DialoguePersonData data)
+    {
+        if (data.texture == null)
+        {
+            dialoguePeople[id].Disappear();
+            dialoguePeople.Remove(id);
+            return;
+        }
+
+        if (!dialoguePeople.ContainsKey(id))
+        {
+            dialoguePeople[id] = Instantiate(dialoguePersonTemplate, dialoguePersonTemplate.transform.parent).GetComponent<DialoguePersonInstance>();
+        }
+
+        var person = dialoguePeople[id];
+        person.gameObject.SetActive(true);
+        person.targetXPosition = data.xPosition;
+        person.GetComponent<Image>().sprite = data.texture;
     }
 
     public void SetActiveDialogueSequence(DialogueSequence sequence)
