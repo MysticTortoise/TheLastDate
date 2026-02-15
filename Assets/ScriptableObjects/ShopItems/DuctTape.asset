@@ -16,3 +16,4 @@ MonoBehaviour:
   Description: It's Duct Tape.
   ShopDescription: Whatever.
   Cost: 20
+  Image: {fileID: 21300000, guid: 80a842ad887a7c049886eabf7b9f7df3, type: 3}

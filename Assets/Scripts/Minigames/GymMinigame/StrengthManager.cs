@@ -7,9 +7,6 @@ public class StrengthManager : MonoBehaviour
     public string sliderTag = "gymSlide";
     public Slider gymSlider;
 
-    [Header("Global Stats")]
-    public PlayerGlobalHandler playerGlobal;
-
     [Header("Looks")]
     public int maxLooks = 5;
 
@@ -40,20 +37,6 @@ void Awake()
 
     if (gymSlider == null)
         Debug.LogWarning($"StrengthManager: No Slider found with tag '{sliderTag}' (or missing Slider component).");
-
-    // Find global handler
-    if (playerGlobal == null)
-        playerGlobal = PlayerGlobalHandler.GlobalHandler;
-
-    if (playerGlobal == null)
-        playerGlobal = FindAnyObjectByType<PlayerGlobalHandler>(); // ✅ replaces FindObjectOfType
-
-    if (playerGlobal == null)
-        Debug.LogWarning("StrengthManager: No PlayerGlobalHandler found in scene.");
-
-    // Ensure stats exists (since you can't change other scripts)
-    if (playerGlobal != null && playerGlobal.stats == null)
-        playerGlobal.stats = new StatBlock();
 }
 
 
@@ -71,19 +54,19 @@ void Awake()
     {
         if (HasWon) return;
         if (gymSlider == null) return;
-        if (playerGlobal == null || playerGlobal.stats == null) return;
+        if (PlayerGlobalHandler.GlobalHandler == null || PlayerGlobalHandler.GlobalHandler.stats == null) return;
 
         // Use threshold to avoid float weirdness (esp if slider is 0..1)
         if (gymSlider.value >= gymSlider.maxValue - 0.0001f)
         {
             gymSlider.value = gymSlider.minValue;
 
-            int before = playerGlobal.stats.looks;
+            int before = PlayerGlobalHandler.GlobalHandler.stats.looks;
 
             // Increment GLOBAL looks
-            playerGlobal.stats.looks = Mathf.Min(playerGlobal.stats.looks + 1, maxLooks);
+            PlayerGlobalHandler.GlobalHandler.stats.looks = Mathf.Min(PlayerGlobalHandler.GlobalHandler.stats.looks + 1, maxLooks);
 
-            int after = playerGlobal.stats.looks;
+            int after = PlayerGlobalHandler.GlobalHandler.stats.looks;
 
             // Popup only if it actually increased (not clamped at max)
             if (after > before)
@@ -91,7 +74,7 @@ void Awake()
 
             RefreshIndicators();
 
-            if (playerGlobal.stats.looks >= maxLooks)
+            if (PlayerGlobalHandler.GlobalHandler.stats.looks >= maxLooks)
                 TriggerWin();
         }
     }
@@ -128,9 +111,9 @@ void Awake()
 
     void RefreshIndicators()
     {
-        if (playerGlobal == null || playerGlobal.stats == null) return;
+        if (PlayerGlobalHandler.GlobalHandler == null || PlayerGlobalHandler.GlobalHandler.stats == null) return;
 
-        int looks = playerGlobal.stats.looks;
+        int looks = PlayerGlobalHandler.GlobalHandler.stats.looks;
 
         // Turn all OFF first
         if (looksIndicator1 != null) looksIndicator1.SetActive(false);
@@ -151,17 +134,17 @@ void Awake()
     {
         get
         {
-            if (playerGlobal == null || playerGlobal.stats == null)
+            if (PlayerGlobalHandler.GlobalHandler == null || PlayerGlobalHandler.GlobalHandler.stats == null)
                 return 0;
 
-            return playerGlobal.stats.looks;
+            return PlayerGlobalHandler.GlobalHandler.stats.looks;
         }
         set
         {
-            if (playerGlobal == null || playerGlobal.stats == null)
+            if (PlayerGlobalHandler.GlobalHandler == null || PlayerGlobalHandler.GlobalHandler.stats == null)
                 return;
 
-            playerGlobal.stats.looks = Mathf.Clamp(value, 0, maxLooks);
+            PlayerGlobalHandler.GlobalHandler.stats.looks = Mathf.Clamp(value, 0, maxLooks);
         }
     }
 }

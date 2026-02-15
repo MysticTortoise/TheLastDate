@@ -11,6 +11,9 @@ public class EnvironmentButton : MonoBehaviour
     
     protected bool IsHovered()
     {
+        if (!MainPlayerHandler.PlayerHandler.CanInteract())
+            return false;
+        
         return hoverCollider.OverlapPoint(MainPlayerHandler.PlayerHandler.ProjectMouseToWorld());
     }
 

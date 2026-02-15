@@ -9,6 +9,12 @@ public class ShopItem : EnvironmentButton
     private const string ShopkeepName = "Annoyed Teen";
     private bool wasHovering;
 
+    protected new void Start()
+    {
+        base.Start();
+        GetComponent<SpriteRenderer>().sprite = ItemDef.Image;
+    }
+
     private void Update()
     {
         bool currHovered = IsHovered();
@@ -29,6 +35,7 @@ public class ShopItem : EnvironmentButton
             {
                 money = -ItemDef.Cost
             });
+            PlayerGlobalHandler.GlobalHandler.heldItems.Add(ItemDef);
             Destroy(gameObject);
         }
         else
