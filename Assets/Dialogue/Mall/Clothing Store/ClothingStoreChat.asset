@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
-  m_Name: FloristChat
+  m_Name: ClothingStoreChat
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
       Message: 
       SpeakerTitle: 
-    DialogueActionsStart: []
-    DialogueActionsEnd:
-    - {fileID: 11400000, guid: 446098c1e0d0c6947b6a4dd6f4073e39, type: 2}
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 5783abcdcce839b43af7d3f68573c734, type: 2}
+    DialogueActionsEnd: []
     Options: []

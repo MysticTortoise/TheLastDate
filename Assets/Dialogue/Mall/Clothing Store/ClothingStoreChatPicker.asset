@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ec6df221ffb4ad48a31106b3e90604d, type: 3}
-  m_Name: ReturnToFlorist
+  m_Name: ClothingStoreChatPicker
   m_EditorClassIdentifier: Assembly-CSharp::DialoguePickRandomSequence
   PossibleSequences:
-  - {fileID: 11400000, guid: b19730927972b244b90b27eeb8511bb0, type: 2}
+  - {fileID: 11400000, guid: 42dc7e087339e504495e42f152c3cdad, type: 2}
+  - {fileID: 11400000, guid: 6212000a30a685e4da9eda8ac5069562, type: 2}
+  - {fileID: 11400000, guid: a3faced74ebcb0347abc2850a3c91cea, type: 2}

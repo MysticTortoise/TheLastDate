@@ -12,4 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
   m_Name: FloristChat2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
-  dialogueNodes: []
+  dialogueNodes:
+  - Message:
+      Message: Hope I'm not... *bud*-ing in!
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: This is a store. Come in whenever.
+      SpeakerTitle: Annoying Teen
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: No. *Bud*. Get it? Like a flower bud?
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: ' ....'
+      SpeakerTitle: Annoying Teen
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: I think you need to leave.
+      SpeakerTitle: Annoying Teen
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Understandable, have a good day.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 4a2724ce76feb3042af62bfb51a51b00, type: 2}
+    Options: []

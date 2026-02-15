@@ -10,43 +10,37 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
-  m_Name: FloristChat3
+  m_Name: GeneralStoreChat1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
-      Message: I'm buying a gift for my girlfriend.
-      SpeakerTitle: John Guy
-    DialogueActionsStart: []
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: Girls can be pretty particular about their flowers.
+      Message: Don't expect me to be chatty, I'm on the clock.
       SpeakerTitle: Annoying Teen
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: Do you have a favorite?
-      SpeakerTitle: John Guy
-    DialogueActionsStart: []
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: I'm allergic to pollen.
+      Message: Not like I would be chatty otherwise.
       SpeakerTitle: Annoying Teen
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: Oh... doesn't that make working in a flower shop hard?
+      Message: Aw, not even with me?
       SpeakerTitle: John Guy
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: Not like I'm going to enjoy working regardless.
+      Message: ....
       SpeakerTitle: Annoying Teen
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Sorry I don't know why I said that.
+      SpeakerTitle: John Guy
     DialogueActionsStart: []
     DialogueActionsEnd:
-    - {fileID: 11400000, guid: 4a2724ce76feb3042af62bfb51a51b00, type: 2}
+    - {fileID: 11400000, guid: fd7419bc6e34e3648acd24063649e7c0, type: 2}
     Options: []
