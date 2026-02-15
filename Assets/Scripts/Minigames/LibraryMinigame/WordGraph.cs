@@ -32,7 +32,7 @@ public class WordGraph : MonoBehaviour
         {
             foreach(Button otherButton in wordButtons)
             {
-                if ((Math.Abs(button.transform.position.y - otherButton.transform.position.y) <= 64) && (Math.Abs(button.transform.position.x - otherButton.transform.position.x) <= 75) && (otherButton != button))
+                if ((Math.Abs(button.transform.position.y - otherButton.transform.position.y) <= 65) && (Math.Abs(button.transform.position.x - otherButton.transform.position.x) <= 114) && (otherButton != button))
                 {
                     adgacencyGraph[button.name].AddLast(otherButton);
                 }
