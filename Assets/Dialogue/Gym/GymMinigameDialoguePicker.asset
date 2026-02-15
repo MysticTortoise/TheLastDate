@@ -33,5 +33,13 @@ MonoBehaviour:
       GreaterThan: 0
       Item: {fileID: 0}
     Sequence: {fileID: 11400000, guid: 865a47a5ad753104681c2b1382b9b0f8, type: 2}
-  - Requirements: []
+  - Requirements:
+    - stat: 4
+      number: 3
+      GreaterThan: 1
+      Item: {fileID: 0}
+    - stat: 4
+      number: 5
+      GreaterThan: 0
+      Item: {fileID: 0}
     Sequence: {fileID: 11400000, guid: 0fe6a9d71257e334fa8464b9bd2e812d, type: 2}

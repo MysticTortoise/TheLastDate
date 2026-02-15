@@ -32,7 +32,7 @@ MonoBehaviour:
       number: 2
       GreaterThan: 0
       Item: {fileID: 0}
-    Sequence: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 46a00016ae9acaa4b965615b0643ee57, type: 2}
   - Requirements:
     - stat: 2
       number: 3
@@ -42,4 +42,4 @@ MonoBehaviour:
       number: 5
       GreaterThan: 0
       Item: {fileID: 0}
-    Sequence: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 99f0490b955118845a46d331ddb7b1cf, type: 2}
