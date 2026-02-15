@@ -7,16 +7,18 @@ public class StrengthManager : MonoBehaviour
     public string sliderTag = "gymSlide";
     public Slider gymSlider;
 
-    [Header("Strength")]
-    public int strength = 0;
-    public int maxStrength = 5;
+    [Header("Global Stats")]
+    public PlayerGlobalHandler playerGlobal;
 
-    [Header("Strength Indicators")]
-    public GameObject strengthIndicator1;
-    public GameObject strengthIndicator2;
-    public GameObject strengthIndicator3;
-    public GameObject strengthIndicator4;
-    public GameObject strengthIndicator5;
+    [Header("Looks")]
+    public int maxLooks = 5;
+
+    [Header("Looks Indicators")]
+    public GameObject looksIndicator1;
+    public GameObject looksIndicator2;
+    public GameObject looksIndicator3;
+    public GameObject looksIndicator4;
+    public GameObject looksIndicator5;
 
     [Header("Win State")]
     public GameObject win;
@@ -24,6 +26,7 @@ public class StrengthManager : MonoBehaviour
 
     void Awake()
     {
+        // Find slider
         if (gymSlider == null)
         {
             var go = GameObject.FindGameObjectWithTag(sliderTag);
@@ -31,7 +34,20 @@ public class StrengthManager : MonoBehaviour
         }
 
         if (gymSlider == null)
-            Debug.LogWarning($"StrengthManager: No Slider found with tag '{sliderTag}' (or missing Slider component).");
+            Debug.LogWarning($"LooksManager: No Slider found with tag '{sliderTag}' (or missing Slider component).");
+
+        // Find global handler
+        if (playerGlobal == null)
+            playerGlobal = PlayerGlobalHandler.GlobalHandler != null
+                ? PlayerGlobalHandler.GlobalHandler
+                : FindObjectOfType<PlayerGlobalHandler>();
+
+        if (playerGlobal == null)
+            Debug.LogWarning("LooksManager: No PlayerGlobalHandler found in scene.");
+
+        // Ensure stats exists (since you can't change other scripts)
+        if (playerGlobal != null && playerGlobal.stats == null)
+            playerGlobal.stats = new StatBlock();
     }
 
     void Start()
@@ -48,17 +64,19 @@ public class StrengthManager : MonoBehaviour
     {
         if (HasWon) return;
         if (gymSlider == null) return;
+        if (playerGlobal == null || playerGlobal.stats == null) return;
 
         // Use threshold to avoid float weirdness (esp if slider is 0..1)
         if (gymSlider.value >= gymSlider.maxValue - 0.0001f)
         {
             gymSlider.value = gymSlider.minValue;
 
-            strength = Mathf.Min(strength + 1, maxStrength);
+            // Increment GLOBAL looks
+            playerGlobal.stats.looks = Mathf.Min(playerGlobal.stats.looks + 1, maxLooks);
 
             RefreshIndicators();
 
-            if (strength >= maxStrength)
+            if (playerGlobal.stats.looks >= maxLooks)
                 TriggerWin();
         }
     }
@@ -70,23 +88,45 @@ public class StrengthManager : MonoBehaviour
         if (win != null)
             win.SetActive(true);
 
-        Debug.Log("WIN CONDITION REACHED (strength >= 5)");
+        Debug.Log("WIN CONDITION REACHED (looks >= 5)");
     }
 
     void RefreshIndicators()
     {
-        // Turn all OFF first (important)
-        if (strengthIndicator1 != null) strengthIndicator1.SetActive(false);
-        if (strengthIndicator2 != null) strengthIndicator2.SetActive(false);
-        if (strengthIndicator3 != null) strengthIndicator3.SetActive(false);
-        if (strengthIndicator4 != null) strengthIndicator4.SetActive(false);
-        if (strengthIndicator5 != null) strengthIndicator5.SetActive(false);
+        if (playerGlobal == null || playerGlobal.stats == null) return;
 
-        // Turn ON based on strength
-        if (strength >= 1 && strengthIndicator1 != null) strengthIndicator1.SetActive(true);
-        if (strength >= 2 && strengthIndicator2 != null) strengthIndicator2.SetActive(true);
-        if (strength >= 3 && strengthIndicator3 != null) strengthIndicator3.SetActive(true);
-        if (strength >= 4 && strengthIndicator4 != null) strengthIndicator4.SetActive(true);
-        if (strength >= 5 && strengthIndicator5 != null) strengthIndicator5.SetActive(true);
+        int looks = playerGlobal.stats.looks;
+
+        // Turn all OFF first
+        if (looksIndicator1 != null) looksIndicator1.SetActive(false);
+        if (looksIndicator2 != null) looksIndicator2.SetActive(false);
+        if (looksIndicator3 != null) looksIndicator3.SetActive(false);
+        if (looksIndicator4 != null) looksIndicator4.SetActive(false);
+        if (looksIndicator5 != null) looksIndicator5.SetActive(false);
+
+        // Turn ON based on looks
+        if (looks >= 1 && looksIndicator1 != null) looksIndicator1.SetActive(true);
+        if (looks >= 2 && looksIndicator2 != null) looksIndicator2.SetActive(true);
+        if (looks >= 3 && looksIndicator3 != null) looksIndicator3.SetActive(true);
+        if (looks >= 4 && looksIndicator4 != null) looksIndicator4.SetActive(true);
+        if (looks >= 5 && looksIndicator5 != null) looksIndicator5.SetActive(true);
+    }
+
+    public int strength
+    {
+        get
+        {
+            if (playerGlobal == null || playerGlobal.stats == null)
+                return 0;
+
+            return playerGlobal.stats.looks;
+        }
+        set
+        {
+            if (playerGlobal == null || playerGlobal.stats == null)
+                return;
+
+            playerGlobal.stats.looks = Mathf.Clamp(value, 0, maxLooks);
+        }
     }
 }
