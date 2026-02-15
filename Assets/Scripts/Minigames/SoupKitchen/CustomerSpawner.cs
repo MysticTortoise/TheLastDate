@@ -63,7 +63,14 @@ public class CustomerSpawner : MonoBehaviour
             GameObject prefab = customerPrefabs[Random.Range(0, customerPrefabs.Length)];
 
             Vector3 pos = new Vector3(gridXs[grid], ySpawn, zSpawn);
-            Instantiate(prefab, pos, Quaternion.identity);
+            GameObject go = Instantiate(prefab, pos, Quaternion.identity);
+
+Customer c = go.GetComponent<Customer>();
+if (c != null)
+{
+    c.Init(manager);   // pass reference so timeout can reduce charm
+}
+
 
             return;
         }

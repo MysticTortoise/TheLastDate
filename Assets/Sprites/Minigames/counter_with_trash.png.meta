@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 490bad5bdbdda0d42a1dea1f7868e79c
+guid: bc14a1de7c9054e1a854c91894f6bf33
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2388196388957180202
-    second: AnnoyingTeen_Chef1_0
+      213: -8156325060584154087
+    second: counter_with_trash_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AnnoyingTeen_Chef1_0
+      name: counter_with_trash_0
       rect:
         serializedVersion: 2
-        x: 569
+        x: 0
         y: 0
-        width: 1346
-        height: 3769
+        width: 1904
+        height: 470
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6de2656990c6bded0800000000000000
-      internalID: -2388196388957180202
+      spriteID: 91cd34b4299eece80800000000000000
+      internalID: -8156325060584154087
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AnnoyingTeen_Chef1_0: -2388196388957180202
+      counter_with_trash_0: -8156325060584154087
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

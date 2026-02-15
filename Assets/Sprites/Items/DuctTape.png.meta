@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: 80a842ad887a7c049886eabf7b9f7df3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6532798783290678088
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_0
+  - first:
+      213: -91268648564310362
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_1
+  - first:
+      213: -2101735697963763082
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_2
+  - first:
+      213: 2185485486009193131
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_3
+  - first:
+      213: -4542409749918909233
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_4
+  - first:
+      213: -1162138355861649940
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_5
+  - first:
+      213: 4214202095808157694
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_6
+  - first:
+      213: -3325693535612906088
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_7
+  - first:
+      213: -4823112187185242554
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_8
+  - first:
+      213: -5361810212738148639
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_9
+  - first:
+      213: 970589467154542965
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_10
+  - first:
+      213: -7073788239977665614
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_11
+  - first:
+      213: -8369190569772422613
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_12
+  - first:
+      213: 1836760478170438471
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_13
+  - first:
+      213: 7248004061190692571
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_14
+  - first:
+      213: 6697922180021699472
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_15
+  - first:
+      213: -9004468791711637419
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_16
+  - first:
+      213: -8653346579744511183
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_17
+  - first:
+      213: -3491766910838396274
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_18
+  - first:
+      213: -630479360713827179
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_19
+  - first:
+      213: -3515314575169452129
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_20
+  - first:
+      213: 6818739103281670358
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_21
+  - first:
+      213: 6888875204727673035
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_22
+  - first:
+      213: -5618989149399819459
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_23
+  - first:
+      213: -6347905887597087402
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_24
+  - first:
+      213: -6816651002861832333
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_25
+  - first:
+      213: 3483901855420444252
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_26
+  - first:
+      213: -4057804491288028632
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_27
+  - first:
+      213: 5218524892157629787
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_28
+  - first:
+      213: -7091911278307351722
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_29
+  - first:
+      213: 5565546230730403070
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_30
+  - first:
+      213: 229020760597041132
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_31
+  - first:
+      213: -1874145614855312325
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_32
+  - first:
+      213: -3316155040038658384
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_33
+  - first:
+      213: -4215173799018197904
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_34
+  - first:
+      213: 7843934608749293982
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_35
+  - first:
+      213: 4565429409627308588
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_36
+  - first:
+      213: -2887248798629084452
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_37
+  - first:
+      213: -9106856830296245767
+    second: pngtree-blue-duct-tape-roll-png-image_15713347_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b152391e929aa50800000000000000
+      internalID: 6532798783290678088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aeb13fc5afbbbef0800000000000000
+      internalID: -91268648564310362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_2
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 2390
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67abc17a48225d2e0800000000000000
+      internalID: -2101735697963763082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_3
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba299576877645e10800000000000000
+      internalID: 2185485486009193131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_4
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fccffcf266e16f0c0800000000000000
+      internalID: -4542409749918909233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_5
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2390
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce5820792514fdfe0800000000000000
+      internalID: -1162138355861649940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_6
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef71a547a7adb7a30800000000000000
+      internalID: 4214202095808157694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_7
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 895daf18953c8d1d0800000000000000
+      internalID: -3325693535612906088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_8
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 2390
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e57fa050dd01db0800000000000000
+      internalID: -4823112187185242554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_9
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 2246
+        width: 248
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e65ea405060795b0800000000000000
+      internalID: -5361810212738148639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_10
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 2365
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5717b7c5af9387d00800000000000000
+      internalID: 970589467154542965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_11
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 2390
+        width: 35
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbabc3031bd4dd90800000000000000
+      internalID: -7073788239977665614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_12
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 2397
+        width: 90
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a6a27c489aadb80800000000000000
+      internalID: -8369190569772422613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_13
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 2308
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74b53de5ceb7d7910800000000000000
+      internalID: 1836760478170438471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_14
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2345
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde1cd5ca45169460800000000000000
+      internalID: 7248004061190692571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_15
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 2308
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09347615cbcc3fc50800000000000000
+      internalID: 6697922180021699472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_16
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 2345
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550efe67753b90380800000000000000
+      internalID: -9004468791711637419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_17
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 2308
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13bacf3122329e780800000000000000
+      internalID: -8653346579744511183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_18
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 2345
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8aa309ae70ca8fc0800000000000000
+      internalID: -3491766910838396274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_19
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 2308
+        width: 52
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59cdf62ac561047f0800000000000000
+      internalID: -630479360713827179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_20
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 2345
+        width: 23
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f978541d408173fc0800000000000000
+      internalID: -3515314575169452129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_21
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 2247
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d86b23561701ae50800000000000000
+      internalID: 6818739103281670358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_22
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 2278
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc01ac7ff733a9f50800000000000000
+      internalID: 6888875204727673035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_23
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 2247
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3bdf39a3275502b0800000000000000
+      internalID: -5618989149399819459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_24
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 2278
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6553a265a35b7e7a0800000000000000
+      internalID: -6347905887597087402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_25
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 2247
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3773c9077046661a0800000000000000
+      internalID: -6816651002861832333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_26
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 2278
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ee8ac674e495030800000000000000
+      internalID: 3483901855420444252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_27
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 2247
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82adac87058cfa7c0800000000000000
+      internalID: -4057804491288028632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_28
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 2278
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55d6909dbceb6840800000000000000
+      internalID: 5218524892157629787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_29
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 111
+        width: 2494
+        height: 2126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65367e55448749d90800000000000000
+      internalID: -7091911278307351722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_30
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc23bf2fcacc3d40800000000000000
+      internalID: 5565546230730403070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_31
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef83991b25ad2300800000000000000
+      internalID: 229020760597041132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_32
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3c61313e72bdf5e0800000000000000
+      internalID: -1874145614855312325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_33
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bedf529f86aaf1d0800000000000000
+      internalID: -3316155040038658384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_34
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c8cf243c1b085c0800000000000000
+      internalID: -4215173799018197904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_35
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91f4ebb7f04bdc60800000000000000
+      internalID: 7843934608749293982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_36
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 0
+        width: 96
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2205fffbd9ab5f30800000000000000
+      internalID: 4565429409627308588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_37
+      rect:
+        serializedVersion: 2
+        x: 2288
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd24a83d38e6ee7d0800000000000000
+      internalID: -2887248798629084452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pngtree-blue-duct-tape-roll-png-image_15713347_38
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 0
+        width: 90
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f93ad986f1fd9180800000000000000
+      internalID: -9106856830296245767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pngtree-blue-duct-tape-roll-png-image_15713347_0: 6532798783290678088
+      pngtree-blue-duct-tape-roll-png-image_15713347_1: -91268648564310362
+      pngtree-blue-duct-tape-roll-png-image_15713347_10: 970589467154542965
+      pngtree-blue-duct-tape-roll-png-image_15713347_11: -7073788239977665614
+      pngtree-blue-duct-tape-roll-png-image_15713347_12: -8369190569772422613
+      pngtree-blue-duct-tape-roll-png-image_15713347_13: 1836760478170438471
+      pngtree-blue-duct-tape-roll-png-image_15713347_14: 7248004061190692571
+      pngtree-blue-duct-tape-roll-png-image_15713347_15: 6697922180021699472
+      pngtree-blue-duct-tape-roll-png-image_15713347_16: -9004468791711637419
+      pngtree-blue-duct-tape-roll-png-image_15713347_17: -8653346579744511183
+      pngtree-blue-duct-tape-roll-png-image_15713347_18: -3491766910838396274
+      pngtree-blue-duct-tape-roll-png-image_15713347_19: -630479360713827179
+      pngtree-blue-duct-tape-roll-png-image_15713347_2: -2101735697963763082
+      pngtree-blue-duct-tape-roll-png-image_15713347_20: -3515314575169452129
+      pngtree-blue-duct-tape-roll-png-image_15713347_21: 6818739103281670358
+      pngtree-blue-duct-tape-roll-png-image_15713347_22: 6888875204727673035
+      pngtree-blue-duct-tape-roll-png-image_15713347_23: -5618989149399819459
+      pngtree-blue-duct-tape-roll-png-image_15713347_24: -6347905887597087402
+      pngtree-blue-duct-tape-roll-png-image_15713347_25: -6816651002861832333
+      pngtree-blue-duct-tape-roll-png-image_15713347_26: 3483901855420444252
+      pngtree-blue-duct-tape-roll-png-image_15713347_27: -4057804491288028632
+      pngtree-blue-duct-tape-roll-png-image_15713347_28: 5218524892157629787
+      pngtree-blue-duct-tape-roll-png-image_15713347_29: -7091911278307351722
+      pngtree-blue-duct-tape-roll-png-image_15713347_3: 2185485486009193131
+      pngtree-blue-duct-tape-roll-png-image_15713347_30: 5565546230730403070
+      pngtree-blue-duct-tape-roll-png-image_15713347_31: 229020760597041132
+      pngtree-blue-duct-tape-roll-png-image_15713347_32: -1874145614855312325
+      pngtree-blue-duct-tape-roll-png-image_15713347_33: -3316155040038658384
+      pngtree-blue-duct-tape-roll-png-image_15713347_34: -4215173799018197904
+      pngtree-blue-duct-tape-roll-png-image_15713347_35: 7843934608749293982
+      pngtree-blue-duct-tape-roll-png-image_15713347_36: 4565429409627308588
+      pngtree-blue-duct-tape-roll-png-image_15713347_37: -2887248798629084452
+      pngtree-blue-duct-tape-roll-png-image_15713347_38: -9106856830296245767
+      pngtree-blue-duct-tape-roll-png-image_15713347_4: -4542409749918909233
+      pngtree-blue-duct-tape-roll-png-image_15713347_5: -1162138355861649940
+      pngtree-blue-duct-tape-roll-png-image_15713347_6: 4214202095808157694
+      pngtree-blue-duct-tape-roll-png-image_15713347_7: -3325693535612906088
+      pngtree-blue-duct-tape-roll-png-image_15713347_8: -4823112187185242554
+      pngtree-blue-duct-tape-roll-png-image_15713347_9: -5361810212738148639
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
