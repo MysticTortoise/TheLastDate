@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
+  m_Name: Chat with Jack Prawn1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogueNodes:
+  - Message:
+      Message: Hey, Jack. How are you?
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Good to see you, chum! I'm doing swimmingly!
+      SpeakerTitle: Jack Prawn
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Cool.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: ...
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: I was trying to think of a fish pun but I guess I'm too stupid.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
