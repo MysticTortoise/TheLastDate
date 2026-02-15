@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialoguePickRandomSequence
   PossibleSequences:
   - {fileID: 11400000, guid: 1e4d25822cc95a340abcbd4b27ea2f5f, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 519aaa950f7b2d74ab156a17a600dd93, type: 2}
+  - {fileID: 11400000, guid: 68b404e76481b8e4396a6d1aea3f8ad7, type: 2}

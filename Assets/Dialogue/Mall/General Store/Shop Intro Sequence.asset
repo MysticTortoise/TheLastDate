@@ -23,7 +23,7 @@ MonoBehaviour:
       Sequence: {fileID: 11400000, guid: abd2693d50191434792c1fcdacdf22af, type: 2}
       Requirements: []
     - Option: Chat
-      Sequence: {fileID: 0}
+      Sequence: {fileID: 11400000, guid: eea936d74d2fa9742865268f051fecd5, type: 2}
       Requirements: []
     - Option: Leave
       Sequence: {fileID: 11400000, guid: 4a800dbe37b9a8a44b0dc56ad6f672d7, type: 2}

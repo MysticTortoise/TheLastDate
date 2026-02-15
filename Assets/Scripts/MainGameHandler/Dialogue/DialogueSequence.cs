@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -21,8 +22,13 @@ public class DialogueRequirement
     public float number;
     public bool GreaterThan;
 
+    [CanBeNull] public ItemDefinition Item;
+
     public bool IsMet()
     {
+        if (Item)
+            return PlayerGlobalHandler.GlobalHandler.heldItems.Contains(Item);
+        
         float num = stat switch
         {
             PlayerStat.Money => MainPlayerHandler.PlayerHandler.playerStats.money,

@@ -8,7 +8,7 @@ public class PlayerGlobalHandler : MonoBehaviour
 {
     public StatBlock stats = new();
     private TimerHandler timerHandler;
-    public List<ItemDefinition> heldItems;
+    [NonSerialized] public List<ItemDefinition> heldItems;
 
     private bool hasStarted;
 
