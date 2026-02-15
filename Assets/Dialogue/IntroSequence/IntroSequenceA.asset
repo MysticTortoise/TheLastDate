@@ -34,7 +34,8 @@ MonoBehaviour:
   - Message:
       Message: "Who\u2019s even calling me this early..?"
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -203,4 +204,5 @@ MonoBehaviour:
     DialogueActionsStart: []
     DialogueActionsEnd:
     - {fileID: 11400000, guid: 5deee1d8b533d5c42a8e535c07183a23, type: 2}
+    - {fileID: 11400000, guid: 1e7c34d96a556c442acc4a767e1170ed, type: 2}
     Options: []

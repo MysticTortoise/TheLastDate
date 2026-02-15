@@ -167,12 +167,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -391,11 +391,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 141013330}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 246}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 713.313, y: 255.89}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1732983542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,15 +443,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 52
-  m_fontSizeBase: 52
+  m_fontSize: 72
+  m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -562,6 +562,10 @@ PrefabInstance:
       propertyPath: OptionIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1328682510663005867, guid: 89648702b4ffd2f469580be00411368b, type: 3}
+      propertyPath: m_Name
+      value: Text
+      objectReference: {fileID: 0}
     - target: {fileID: 1392004896901675950, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -610,9 +614,13 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2183080244632034106, guid: 89648702b4ffd2f469580be00411368b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1002
+      objectReference: {fileID: 0}
     - target: {fileID: 2378935696608810482, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2501673431587137009, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: m_margin.w
@@ -661,22 +669,6 @@ PrefabInstance:
     - target: {fileID: 8623726043671873228, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: m_Name
       value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 8718441314791916529, guid: 89648702b4ffd2f469580be00411368b, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8718441314791916529, guid: 89648702b4ffd2f469580be00411368b, type: 3}
-      propertyPath: m_ReferenceResolution.x
-      value: 1920
-      objectReference: {fileID: 0}
-    - target: {fileID: 8718441314791916529, guid: 89648702b4ffd2f469580be00411368b, type: 3}
-      propertyPath: m_ReferenceResolution.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 8943811691124824032, guid: 89648702b4ffd2f469580be00411368b, type: 3}
-      propertyPath: m_RenderMode
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9034791159989077432, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: m_IsActive
