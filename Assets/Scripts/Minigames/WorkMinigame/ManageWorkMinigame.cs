@@ -31,7 +31,7 @@ public class ManageWorkMinigame : MonoBehaviour
         nameTextBox.text = employees[employeeIndex].employeeName;
         ageTextBox.text = employees[employeeIndex].age;
         positionTextBox.text = employees[employeeIndex].position;
-        yearsExperienceTextBox.text = employees[employeeIndex].yearsExperience;
+        yearsExperienceTextBox.text = employees[employeeIndex].yearsExperience + " Years Experience";
         descriptionTextBox.text = employees[employeeIndex].behaviorDescription;
         currKeepScore = employees[employeeIndex].maintainScore;
         currFireScore = employees[employeeIndex].fireScore;
@@ -64,7 +64,7 @@ public class ManageWorkMinigame : MonoBehaviour
         nameTextBox.text = employees[employeeIndex].employeeName;
         ageTextBox.text = employees[employeeIndex].age;
         positionTextBox.text = employees[employeeIndex].position;
-        yearsExperienceTextBox.text = "Years Experience: " + employees[employeeIndex].yearsExperience;
+        yearsExperienceTextBox.text = employees[employeeIndex].yearsExperience + " Years Experience";
         descriptionTextBox.text = employees[employeeIndex].behaviorDescription;
         currKeepScore = employees[employeeIndex].maintainScore;
         currFireScore = employees[employeeIndex].fireScore;
