@@ -16,11 +16,9 @@ public class DatingSimManager : MonoBehaviour
     private DatingSimMan guy;
     private DatingSimQuestion currentQuestion;
     private int score;
-    private PlayerGlobalHandler globalHandler;
 
     void Start()
     {
-        globalHandler = FindAnyObjectByType<PlayerGlobalHandler>();
         statChanges = new();
         guyPanel.SetActive(true);
         questionPanel.SetActive(false);
@@ -63,31 +61,35 @@ public class DatingSimManager : MonoBehaviour
 
     private void EndGame()
     {
-        switch (score)
+        if (score <= -2)
         {
-        case (<= -2):
             statChanges.rizz = -3;
-            break;
-        case (<= 0):
-            statChanges.rizz = -2;
-            break;
-        case (<=2):
-            statChanges.rizz = -1;
-            break;
-        case (<=4):
-            statChanges.rizz = 0;
-            break;
-        case(<=6):
-            statChanges.rizz = 1;
-            break;
-        case (<= 8):
-            statChanges.rizz = 2;
-            break;
-        case (<= 10):
-            statChanges.rizz = 3;
-            break;
         }
-        globalHandler.AddStats(statChanges);
+        else if (score <= 0)
+        {
+            statChanges.rizz = -2;
+        }
+        else if (score < 2)
+        {
+            statChanges.rizz = -1;  
+        }
+        else if (score <= 4)
+        {
+            statChanges.rizz = 0;
+        }
+        else if (score <= 6)
+        {
+            statChanges.rizz = 1;
+        }
+        else if (score <= 8)
+        {
+            statChanges.rizz = 2;
+        }
+        else if (score <= 10)
+        {
+            statChanges.rizz = 3;
+        }
+        PlayerGlobalHandler.GlobalHandler.AddStats(statChanges);
         Debug.Log("Game Done");
     }
 }

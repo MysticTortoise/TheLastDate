@@ -2,7 +2,8 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.Collections;
 using Unity.VisualScripting;
-using UnityEngine; 
+using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 public class ManageWorkMinigame : MonoBehaviour
 {
     [SerializeField] private List<EmployeeProfile> employees;
@@ -19,12 +20,12 @@ public class ManageWorkMinigame : MonoBehaviour
     private int currFireScore;
     private int currMoneyValue;
     private StatBlock statsChanged;
-    private PlayerGlobalHandler globalHandler;
     private Animator animator;
+    public bool canClick;
     void Start()
     {
+        canClick = true;
         statsChanged = new();
-        globalHandler = FindAnyObjectByType<PlayerGlobalHandler>();
         moneySaved = 0;
         animator = GetComponent<Animator>();
         employeeIndex = Random.Range(0, employees.Count);
@@ -41,19 +42,27 @@ public class ManageWorkMinigame : MonoBehaviour
 
     public void OnFire()
     {
-        score += currFireScore;
-        moneySaved += currMoneyValue;
-        Debug.Log("Empathy Changed :" + currFireScore);
-        scoreTextBox.text = "Score: " + score;
-        animator.enabled = true;
+        if (canClick)
+        {
+            canClick =false;
+            score += currFireScore;
+            moneySaved += currMoneyValue;
+            Debug.Log("Empathy Changed :" + currFireScore);
+            scoreTextBox.text = "Score: " + score;
+            animator.enabled = true;
+        }
     }
 
     public void OnKeep()
     {
-        score += currKeepScore;
-        Debug.Log("Empathy Changed :" + currKeepScore);
-        scoreTextBox.text = "Score: " + score;
-        animator.enabled = true;
+        if (canClick)
+        {
+            canClick = false;
+            score += currKeepScore;
+            Debug.Log("Empathy Changed :" + currKeepScore);
+            scoreTextBox.text = "Score: " + score;
+            animator.enabled = true;
+        }
     }
 
     public void ResetInfo()
@@ -76,36 +85,41 @@ public class ManageWorkMinigame : MonoBehaviour
     public void DisableAnimator()
     {
         animator.enabled = false;
+        canClick = true;
     }
 
     private void EndGame()
     {
-        switch(score)
+        if (score <= -30)
         {
-            case (<= -30):
-                statsChanged.empathy = -3;
-                break;
-            case (<= -20):
-                statsChanged.empathy = -2;
-                break;
-            case (<= -10):
-                statsChanged.empathy = -1;
-                break;
-            case (<= 0):
-                statsChanged.empathy = 0;
-                break;
-            case (<= 10):
-                statsChanged.empathy = 1;
-                break;
-            case (<= 20):
-                statsChanged.empathy = 2;
-                break;
-            case (<= 30):
-                statsChanged.empathy = 3;
-                break;
+            statsChanged.empathy = -3;
+        }
+        else if (score <= -20)
+        {
+            statsChanged.empathy = -2;
+        }
+        else if (score < -10)
+        {
+            statsChanged.empathy = -1;  
+        }
+        else if (score <= 0)
+        {
+            statsChanged.empathy = 0;
+        }
+        else if (score <= 10)
+        {
+            statsChanged.empathy = 1;
+        }
+        else if (score <= 20)
+        {
+            statsChanged.empathy = 2;
+        }
+        else if (score <= 30)
+        {
+            statsChanged.empathy = 3;
         }
         statsChanged.money = moneySaved;
-        globalHandler.AddStats(statsChanged);
+        PlayerGlobalHandler.GlobalHandler.AddStats(statsChanged);
         Debug.Log("Minigame Is Over");
     }
 }
