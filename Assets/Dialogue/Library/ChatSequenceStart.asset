@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
-  m_Name: Enter Library
+  m_Name: ChatSequenceStart
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
-      Message: Welcome...
-      SpeakerTitle: Annoying Teen
-    DialogueActionsStart: []
-    DialogueActionsEnd:
-    - {fileID: 11400000, guid: 49e5c2c639ea0654abd387fea6690766, type: 2}
+      Message: 
+      SpeakerTitle: 
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 2796d664f3c5952419dd478de3a430b0, type: 2}
+    DialogueActionsEnd: []
     Options: []
