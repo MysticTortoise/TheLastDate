@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Data.Common;
 using TMPro;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,12 +12,16 @@ public class DatingSimManager : MonoBehaviour
     [SerializeField] private List<DatingSimQuestion> questions;
     [SerializeField] private List<Button> answerButtons;
     [SerializeField] private TextMeshProUGUI questionTextBox;
+    private StatBlock statChanges;
     private DatingSimMan guy;
     private DatingSimQuestion currentQuestion;
     private int score;
+    private PlayerGlobalHandler globalHandler;
 
     void Start()
     {
+        globalHandler = FindAnyObjectByType<PlayerGlobalHandler>();
+        statChanges = new();
         guyPanel.SetActive(true);
         questionPanel.SetActive(false);
     }
@@ -57,6 +63,31 @@ public class DatingSimManager : MonoBehaviour
 
     private void EndGame()
     {
+        switch (score)
+        {
+        case (<= -2):
+            statChanges.rizz = -3;
+            break;
+        case (<= 0):
+            statChanges.rizz = -2;
+            break;
+        case (<=2):
+            statChanges.rizz = -1;
+            break;
+        case (<=4):
+            statChanges.rizz = 0;
+            break;
+        case(<=6):
+            statChanges.rizz = 1;
+            break;
+        case (<= 8):
+            statChanges.rizz = 2;
+            break;
+        case (<= 10):
+            statChanges.rizz = 3;
+            break;
+        }
+        globalHandler.AddStats(statChanges);
         Debug.Log("Game Done");
     }
 }
