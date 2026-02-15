@@ -31,5 +31,14 @@ public class PlayerGlobalHandler : MonoBehaviour
         transform.Find("TimerUI").gameObject.SetActive(true);
     }
 
+    public void AddStats(StatBlock statsAdded)
+    {
+        stats.money += statsAdded.money;
+        stats.empathy += statsAdded.empathy;
+        stats.smarts += statsAdded.smarts;
+        stats.rizz += statsAdded.rizz;
+        stats.looks += statsAdded.looks;
+    }
+
     public static PlayerGlobalHandler GlobalHandler;
 }
