@@ -16,8 +16,11 @@ public class WordGameManager : MonoBehaviour
     private HashSet<string> dictionary;
     [SerializeField] private TextMeshProUGUI timerTextBox;
     [SerializeField] private float time;
+    private StatBlock statChanges;
+    private PlayerGlobalHandler globalHandler;
     void Start()
     {
+        statChanges = new();
         dictionary = new();
         string[] lines = words.text.Split("\n");
         foreach(string line in lines)
@@ -28,6 +31,7 @@ public class WordGameManager : MonoBehaviour
         wordString = "";
         score = 0;
         graph = GetComponentInChildren<WordGraph>();
+        globalHandler = FindAnyObjectByType<PlayerGlobalHandler>();
         
     }
 
@@ -70,6 +74,28 @@ public class WordGameManager : MonoBehaviour
 
     void EndGame()
     {
+        switch(score)
+        {
+            case 0 :
+                statChanges.smarts = -2;
+                break;
+            case < 10 :
+                statChanges.smarts = -1;
+                break;
+            case <= 20 :
+                statChanges.smarts = 0;
+                break;
+            case <= 30 :
+                statChanges.smarts = 1;
+                break;
+            case <= 40 :
+                statChanges.smarts = 2;
+                break;
+            case <= 50 :
+                statChanges.smarts = 3;
+                break;
+        }
+        globalHandler.AddStats(statChanges);
         Debug.Log("Game Over");
     }
 }
