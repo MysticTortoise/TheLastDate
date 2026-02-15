@@ -9,12 +9,12 @@ public class EnvironmentButton : MonoBehaviour
 
     public static readonly HashSet<EnvironmentButton> buttonList = new();
     
-    private bool IsHovered()
+    protected bool IsHovered()
     {
         return hoverCollider.OverlapPoint(MainPlayerHandler.PlayerHandler.ProjectMouseToWorld());
     }
 
-    private void Start()
+    protected void Start()
     {
         hoverCollider = GetComponent<Collider2D>();
     }

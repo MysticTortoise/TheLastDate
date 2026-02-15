@@ -43,6 +43,7 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager dialogueManager;
 
     public bool isDialogueUp => inSequence || dialogueBoxOpen;
+    public bool blockInput => isDialogueUp && !inLiveMessage;
 
     [CanBeNull] private string liveMessage = null;
     private string liveSpeaker;

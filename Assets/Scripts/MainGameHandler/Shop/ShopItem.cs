@@ -2,23 +2,38 @@
 using System;
 using UnityEngine;
 
-public class ShopItem : MonoBehaviour
+public class ShopItem : EnvironmentButton
 {
-    private Collider2D hitbox;
-
     public ItemDefinition ItemDef;
 
-    private void Start()
-    {
-        hitbox = GetComponent<Collider2D>();
-    }
+    private const string ShopkeepName = "Annoyed Teen";
+    private bool wasHovering;
 
     private void Update()
     {
-        Vector2 mousePos = MainPlayerHandler.PlayerHandler.ProjectMouseToWorld();
-        if (hitbox.OverlapPoint(mousePos))
+        bool currHovered = IsHovered();
+        if (currHovered && !wasHovering)
         {
-            DialogueManager.dialogueManager.SetLiveMessage(ItemDef.GetShopText(), "Annoyed Teen");
+            DialogueManager.dialogueManager.SetLiveMessage(ItemDef.GetShopText(), ShopkeepName);
+        }
+        wasHovering = currHovered;
+    }
+
+    
+    public override void Click()
+    {
+        if (PlayerGlobalHandler.GlobalHandler.stats.money >= ItemDef.Cost)
+        {
+            DialogueManager.dialogueManager.SetLiveMessage("Thanks for purchasing. I guess.", ShopkeepName);
+            PlayerGlobalHandler.GlobalHandler.AddStats(new StatBlock
+            {
+                money = -ItemDef.Cost
+            });
+            Destroy(gameObject);
+        }
+        else
+        {
+            DialogueManager.dialogueManager.SetLiveMessage("Broke ass.", ShopkeepName);
         }
     }
 }
