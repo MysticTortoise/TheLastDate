@@ -1,6 +1,7 @@
 ﻿
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerGlobalHandler : MonoBehaviour
 {
@@ -29,6 +30,12 @@ public class PlayerGlobalHandler : MonoBehaviour
         
         hasStarted = true;
         transform.Find("TimerUI").gameObject.SetActive(true);
+    }
+    
+    public static void LoadIntoMainGame(GameObject scene)
+    {
+        MainPlayerHandler.ToLoadScene = scene;
+        SceneManager.LoadScene("MainGameScene");
     }
 
     public void AddStats(StatBlock statsAdded)
