@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ec6df221ffb4ad48a31106b3e90604d, type: 3}
+  m_Name: KitchenChatSequencer
+  m_EditorClassIdentifier: Assembly-CSharp::DialoguePickRandomSequence
+  PossibleSequences:
+  - {fileID: 11400000, guid: 86076216137401d489ba09ea0a1fd022, type: 2}
+  - {fileID: 11400000, guid: 68d5c602e03244b459c53ebb7fe833fb, type: 2}
+  - {fileID: 11400000, guid: 69f906f3d33d80844967960b061c4563, type: 2}
