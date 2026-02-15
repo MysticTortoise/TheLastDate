@@ -7,17 +7,41 @@ public class InteractionManager : MonoBehaviour
     public PlayerGrid player;
     public Transform holdPoint;
 
+    [Header("Global Stats")]
+    public PlayerGlobalHandler playerGlobal;
+
     [Header("Charm UI")]
     public Slider charmSlider;
     public int charmMax = 10;
 
-    [Header("Empathy")]
-    [SerializeField] private int empathy = 0; // starts at 0
-    public int Empathy => empathy;
+    [Header("Empathy (Global)")]
     public int empathyMin = -5;
     public int empathyMax = 5;
 
-    [Header("Popups")]
+    // IMPORTANT: keep Empathy working for other scripts
+    public int Empathy => empathy;
+
+    // IMPORTANT: keep "empathy" accessible even if other scripts reference it
+    public int empathy
+    {
+        get
+        {
+            if (playerGlobal == null || playerGlobal.stats == null) return 0;
+            return playerGlobal.stats.empathy;
+        }
+        private set
+        {
+            if (playerGlobal == null || playerGlobal.stats == null) return;
+            playerGlobal.stats.empathy = Mathf.Clamp(value, empathyMin, empathyMax);
+        }
+    }
+
+    [Header("Empathy Text Popup")]
+    public GameObject empathyTextPopupPrefab;   // prefab that contains a TMP text + a script to set it
+    public Transform empathyTextSpawnPoint;     // optional (leave null to spawn above player)
+    public Vector3 empathyTextOffset = new Vector3(0f, 1.6f, 0f);
+
+    [Header("Popups (Happy/Sad)")]
     public GameObject happyPopupPrefab;
     public GameObject sadPopupPrefab;
     public Transform popupSpawnPoint;
@@ -31,17 +55,31 @@ public class InteractionManager : MonoBehaviour
     public GameObject Five;
 
     [Header("Trash")]
-    public int trashGrid = 6; // pressing space while holding food here destroys it
+    public int trashGrid = 6;
 
     private int charm = 0;
 
     private GameObject heldInstance;
     private Food heldFood;
 
+    void Awake()
+    {
+        if (playerGlobal == null)
+            playerGlobal = PlayerGlobalHandler.GlobalHandler != null
+                ? PlayerGlobalHandler.GlobalHandler
+                : FindObjectOfType<PlayerGlobalHandler>();
+
+        // Ensure stats exists (since you can’t edit other scripts)
+        if (playerGlobal != null && playerGlobal.stats == null)
+            playerGlobal.stats = new StatBlock();
+    }
+
     void Start()
     {
         SetCharm(0);
         empathy = Mathf.Clamp(empathy, empathyMin, empathyMax);
+
+        RefreshEmpathyIndicators();
     }
 
     void Update()
@@ -49,27 +87,7 @@ public class InteractionManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
             HandleSpace();
 
-        if (empathy >= 1){
-            One.SetActive(true);
-        }
-
-        if (empathy >= 2){
-            Two.SetActive(true);
-        }
-
-        if (empathy >= 3){
-            Three.SetActive(true);
-        }
-
-        if (empathy >= 4){
-            Four.SetActive(true);
-        }
-
-        if (empathy >= 5){
-            Five.SetActive(true);
-        }
-
-        // keep held food grid in sync
+        // If holding food, keep its grid synced
         if (heldFood != null)
             heldFood.currentGrid = player.currentGrid;
     }
@@ -78,8 +96,7 @@ public class InteractionManager : MonoBehaviour
     {
         int grid = player.currentGrid;
 
-        // --- TRASH RULE ---
-        // If holding food and on trash grid, destroy it instantly.
+        // TRASH: destroy held food instantly
         if (heldInstance != null && grid == trashGrid)
         {
             Destroy(heldInstance);
@@ -98,17 +115,15 @@ public class InteractionManager : MonoBehaviour
             return;
         }
 
-        // HOLDING -> only serve if there is a customer at this grid AND a shelf exists AND shelf is empty
+        // HOLDING -> only serve if customer exists, shelf exists, shelf empty
         Customer customer = FindCustomerAtGrid(grid);
-        if (customer == null) return; // key change: cannot place unless customer exists
+        if (customer == null) return;
 
         Shelf shelf = FindShelfAtGrid(grid);
         if (shelf == null) return;
 
-        // shelf must be empty (no food sitting there)
         if (FindFoodAtGrid(grid) != null) return;
 
-        // Place + Serve (food is consumed either way)
         ServeCustomerAtShelf(customer, shelf, grid);
     }
 
@@ -124,40 +139,42 @@ public class InteractionManager : MonoBehaviour
 
     void ServeCustomerAtShelf(Customer customer, Shelf shelf, int grid)
     {
-        // snap food to shelf visually (optional, but looks correct)
+        // Snap food to shelf for visuals
         heldInstance.transform.SetParent(null, true);
         heldInstance.transform.position = shelf.transform.position;
 
         if (heldFood != null)
             heldFood.currentGrid = grid;
 
-        // score + popup
         bool liked = (heldFood != null && heldFood.foodID == customer.requestedFoodID);
 
-        AddCharm(liked ? +1 : -3);
-        SpawnPopup(liked);
+        if (liked)
+        {
+            AddCharm(+1);
+            SpawnHappySadPopup(true);
+        }
+        else
+        {
+            HandleNegativeOutcome(); // includes -3 charm, and empathy -1 if charm was empty
+            SpawnHappySadPopup(false);
+        }
 
-        // remove customer and consume food
-        Destroy(customer.gameObject);
+        customer.MarkServed();
+        customer.ServeAndLeave();
+
         Destroy(heldInstance);
-
         heldInstance = null;
         heldFood = null;
     }
 
-    void SpawnPopup(bool happy)
+    // Called by Customer when countdown ends
+    public void OnCustomerTimedOut(Customer customer)
     {
-        GameObject prefab = happy ? happyPopupPrefab : sadPopupPrefab;
-        if (prefab == null) return;
-
-        Vector3 pos = (popupSpawnPoint != null)
-            ? popupSpawnPoint.position
-            : player.transform.position + popupOffsetFromPlayer;
-
-        Instantiate(prefab, pos, Quaternion.identity);
+        HandleNegativeOutcome();
+        SpawnHappySadPopup(false);
     }
 
-    // -------- Charm + Empathy rules --------
+    // ---------- Charm + Empathy rules ----------
 
     void SetCharm(int value)
     {
@@ -174,15 +191,85 @@ public class InteractionManager : MonoBehaviour
         int newCharm = charm + delta;
         if (newCharm < 0) newCharm = 0;
 
-        // charm max -> empathy +1 (clamped), charm resets to 0
+        // If we hit max: empathy +1, charm resets to 0
         if (newCharm >= charmMax)
         {
-            empathy = Mathf.Clamp(empathy + 1, empathyMin, empathyMax);
+            ChangeEmpathy(+1);  // IMPORTANT: also spawns +1 text popup
             SetCharm(0);
             return;
         }
 
         SetCharm(newCharm);
+    }
+
+    // If charm is empty (0) and a negative happens, empathy -1
+    void HandleNegativeOutcome()
+    {
+        if (charm <= 0)
+            ChangeEmpathy(-1);
+
+        AddCharm(-3); // charm clamps at 0
+    }
+
+    void ChangeEmpathy(int delta)
+    {
+        int before = empathy;
+        empathy = empathy + delta; // uses property setter (clamps)
+
+        int actualDelta = empathy - before;
+        if (actualDelta == 0) return; // clamped, no visible change
+
+        SpawnEmpathyText(actualDelta);
+        RefreshEmpathyIndicators();
+    }
+
+    void SpawnEmpathyText(int delta)
+    {
+        if (empathyTextPopupPrefab == null) return;
+
+        Vector3 pos =
+            (empathyTextSpawnPoint != null)
+                ? empathyTextSpawnPoint.position
+                : player.transform.position + empathyTextOffset;
+
+        GameObject go = Instantiate(empathyTextPopupPrefab, pos, Quaternion.identity);
+
+        // EXPECTS: your prefab has this script attached.
+        // If your script name differs, change this type to your script class name.
+        TextPopupSetTMP setter = go.GetComponent<TextPopupSetTMP>();
+        if (setter != null)
+        {
+            string sign = delta > 0 ? "+" : "";
+            setter.SetText($"{sign}{delta} Empathy");
+        }
+    }
+
+    void RefreshEmpathyIndicators()
+    {
+        if (One != null) One.SetActive(false);
+        if (Two != null) Two.SetActive(false);
+        if (Three != null) Three.SetActive(false);
+        if (Four != null) Four.SetActive(false);
+        if (Five != null) Five.SetActive(false);
+
+        int e = empathy;
+        if (e >= 1 && One != null) One.SetActive(true);
+        if (e >= 2 && Two != null) Two.SetActive(true);
+        if (e >= 3 && Three != null) Three.SetActive(true);
+        if (e >= 4 && Four != null) Four.SetActive(true);
+        if (e >= 5 && Five != null) Five.SetActive(true);
+    }
+
+    void SpawnHappySadPopup(bool happy)
+    {
+        GameObject prefab = happy ? happyPopupPrefab : sadPopupPrefab;
+        if (prefab == null) return;
+
+        Vector3 pos = (popupSpawnPoint != null)
+            ? popupSpawnPoint.position
+            : player.transform.position + popupOffsetFromPlayer;
+
+        Instantiate(prefab, pos, Quaternion.identity);
     }
 
     // -------- Find helpers --------
