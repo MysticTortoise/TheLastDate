@@ -17,23 +17,29 @@ MonoBehaviour:
     - stat: 2
       number: -5
       GreaterThan: 1
+      Item: {fileID: 0}
     - stat: 2
       number: -1
       GreaterThan: 0
+      Item: {fileID: 0}
     Sequence: {fileID: 11400000, guid: 67ece9546a432344dba756f02b055b5c, type: 2}
   - Requirements:
     - stat: 2
       number: 0
       GreaterThan: 1
+      Item: {fileID: 0}
     - stat: 2
       number: 2
       GreaterThan: 0
+      Item: {fileID: 0}
     Sequence: {fileID: 0}
   - Requirements:
     - stat: 2
       number: 3
       GreaterThan: 1
-    - stat: 0
+      Item: {fileID: 0}
+    - stat: 2
       number: 5
       GreaterThan: 0
+      Item: {fileID: 0}
     Sequence: {fileID: 0}
