@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerGlobalHandler : MonoBehaviour
 {
-    public StatBlock stats;
+    public StatBlock stats = new();
     private TimerHandler timerHandler;
 
     private bool hasStarted;
