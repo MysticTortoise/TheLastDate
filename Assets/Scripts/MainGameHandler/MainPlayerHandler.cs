@@ -39,9 +39,20 @@ public class MainPlayerHandler : MonoBehaviour
         }
     }
 
+    public bool CanInteract()
+    {
+        if (DialogueManager.dialogueManager.isDialogueUp)
+            return false;
+
+        if (nextScene != null)
+            return false;
+        
+        return true;
+    }
+
     public void InteractInput(InputAction.CallbackContext context)
     {
-        if (context.started)
+        if (context.started && CanInteract())
             Interact();
     }
 

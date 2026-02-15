@@ -42,6 +42,8 @@ public class DialogueManager : MonoBehaviour
 
     public static DialogueManager dialogueManager;
 
+    public bool isDialogueUp => inSequence || dialogueBoxOpen;
+
     private void Start()
     {
         dialogueText = transform.Find("DialogueBox").Find("Text").GetComponent<TextMeshProUGUI>();
@@ -156,7 +158,8 @@ public class DialogueManager : MonoBehaviour
 
     public void DialogueBoxOpened()
     {
-        dialogueBoxOpen = true;
+        if(inSequence)
+            dialogueBoxOpen = true;
     }
 
     private void TypingFinished()

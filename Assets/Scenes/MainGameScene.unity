@@ -558,6 +558,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -3
       objectReference: {fileID: 0}
+    - target: {fileID: 693485520293571039, guid: 89648702b4ffd2f469580be00411368b, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1087095679431719997, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: OptionIndex
       value: 2
@@ -630,6 +634,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -1.3400879
       objectReference: {fileID: 0}
+    - target: {fileID: 3512121368153867029, guid: 89648702b4ffd2f469580be00411368b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 36
+      objectReference: {fileID: 0}
     - target: {fileID: 3918504920507001269, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1218
@@ -682,9 +690,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 326
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8497735421532701036, guid: 89648702b4ffd2f469580be00411368b, type: 3}
     m_RemovedGameObjects:
     - {fileID: 634112691636533486, guid: 89648702b4ffd2f469580be00411368b, type: 3}
+    - {fileID: 5129657296903918084, guid: 89648702b4ffd2f469580be00411368b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89648702b4ffd2f469580be00411368b, type: 3}
