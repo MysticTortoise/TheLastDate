@@ -12,4 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
   m_Name: Enter Gym
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
-  dialogueNodes: []
+  dialogueNodes:
+  - Message:
+      Message: Glad to see ya! Ready to train?
+      SpeakerTitle: Jack Prawn
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: 
+      SpeakerTitle: John Guy
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 9cebf87895afee6449a5c7610046a910, type: 2}
+    - {fileID: 11400000, guid: e4ccac965aac3224ca0ddf88fe65c98f, type: 2}
+    DialogueActionsEnd: []
+    Options: []
