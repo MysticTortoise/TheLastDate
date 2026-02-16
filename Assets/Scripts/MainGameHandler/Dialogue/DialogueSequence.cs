@@ -30,6 +30,8 @@ public class DialogueRequirement
         if (Item)
             return PlayerGlobalHandler.GlobalHandler.heldItems.Contains(Item);
         
+        
+        
         float num = stat switch
         {
             PlayerStat.Money => PlayerGlobalHandler.GlobalHandler.stats.money,

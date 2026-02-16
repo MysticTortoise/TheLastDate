@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ad2de5ca254af4bccaec03014d5c97, type: 3}
   m_Name: GiveFakeItem3
   m_EditorClassIdentifier: Assembly-CSharp::DIalogueActionGiveItem
-  Item: {fileID: 0}
+  Item: {fileID: 11400000, guid: 92e5775114269be47a22be07181248fe, type: 2}
