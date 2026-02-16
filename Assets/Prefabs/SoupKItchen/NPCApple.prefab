@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 163861342763808928}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.62, y: 14.29, z: 0}
+  m_LocalPosition: {x: 7.1, y: 17.8, z: 0}
   m_LocalScale: {x: 2.7225459, y: 2.8789415, z: 7.0132556}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -315,12 +315,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -4
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6804457536632506735, guid: 4db8e37fd684e4561a1a14aa4bcf95c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 18d098a1005b70840a2cc938fb8a1ff4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 2}
+  m_Size: {x: 4, y: 7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -337,6 +337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb836d01b2674bfebafc996868f4aa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Customer
+  PossibleSprites:
+  - {fileID: 21300000, guid: 18d098a1005b70840a2cc938fb8a1ff4, type: 3}
+  - {fileID: 21300000, guid: cd8c66b41a10fcf40aad96111400c199, type: 3}
+  - {fileID: 21300000, guid: 985b72f591a075c49ab2b97318d864c1, type: 3}
+  - {fileID: 21300000, guid: 5aba5f274169f9d408ff1f76e6b2f90f, type: 3}
   currentGrid: 2
   requestedFoodID: 1
   bubble: {fileID: 163861342763808928}
