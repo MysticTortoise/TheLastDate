@@ -734,7 +734,7 @@ PrefabInstance:
     - target: {fileID: 6263399851217640449, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: DefaultScene
       value: 
-      objectReference: {fileID: 8602646350378076995, guid: 14e1bf3e8520bc9438c3e6f58edbbf82, type: 3}
+      objectReference: {fileID: 8602646350378076995, guid: a291aad34a25d87498f6a095a67e9955, type: 3}
     - target: {fileID: 6467673026416543633, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: m_SizeDelta.x
       value: 508.25
