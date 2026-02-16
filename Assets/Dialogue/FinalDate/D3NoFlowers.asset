@@ -27,7 +27,7 @@ MonoBehaviour:
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: But you had nothing for her.
+      Message: (But you had nothing for her.)
       SpeakerTitle: 
     DialogueActionsStart: []
     DialogueActionsEnd:
