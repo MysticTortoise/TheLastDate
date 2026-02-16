@@ -32,6 +32,7 @@ public class PlayerGlobalHandler : MonoBehaviour
         timerHandler = GetComponentInChildren<TimerHandler>(true);
         DontDestroyOnLoad(gameObject);
         transform.SetParent(null);
+        gameObject.AddComponent<MusicHandler>();
     }
 
     public void LetTheGamesBegin()
