@@ -4,6 +4,8 @@ using TMPro;
 [RequireComponent(typeof(SpriteRenderer))]
 public class Customer : MonoBehaviour
 {
+    [SerializeField] private Sprite[] PossibleSprites;
+    
     [Header("Grid")]
     public int currentGrid;
 
@@ -39,6 +41,7 @@ public class Customer : MonoBehaviour
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
+        sr.sprite = PossibleSprites[Random.Range(0, PossibleSprites.Length)];
     }
 
     /// <summary>
