@@ -23,9 +23,9 @@ MonoBehaviour:
     - Option: Volunteer
       Sequence: {fileID: 11400000, guid: b31412d18d4abe341ad495c7582df75a, type: 2}
       Requirements: []
-    - Option: Kitchen Chat
+    - Option: Chat
       Sequence: {fileID: 11400000, guid: 106dafead359ed54785ce4f1f8a75b27, type: 2}
       Requirements: []
-    - Option: Leave Kitchen
+    - Option: Leave
       Sequence: {fileID: 11400000, guid: 6b8ad76dcf231c54692241f79214a4ce, type: 2}
       Requirements: []

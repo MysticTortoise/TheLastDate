@@ -17,4 +17,4 @@ MonoBehaviour:
   ShopDescription: This author's a total dunce. He actually believes building a time
     machine is possible...
   Cost: 20
-  Image: {fileID: -516747231411115888, guid: 947e5bbe971ec49c1936aa9a93e6ed0e, type: 3}
+  Image: {fileID: 21300000, guid: 8387d4d5ab29d2545af733b13c1d7b2c, type: 3}
