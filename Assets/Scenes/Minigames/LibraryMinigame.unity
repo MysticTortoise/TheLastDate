@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 17562213}
   - component: {fileID: 17562212}
   - component: {fileID: 17562211}
+  - component: {fileID: 17562214}
   m_Layer: 5
   m_Name: Letter (1)
   m_TagString: Untagged
@@ -147,7 +148,7 @@ RectTransform:
   m_GameObject: {fileID: 17562209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1528644316}
@@ -252,6 +253,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17562209}
   m_CullTransparentMesh: 1
+--- !u!114 &17562214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17562209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &33898856
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,8 +327,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -448,8 +464,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -585,8 +601,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Back
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -921,6 +937,7 @@ GameObject:
   - component: {fileID: 170039612}
   - component: {fileID: 170039611}
   - component: {fileID: 170039614}
+  - component: {fileID: 170039615}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -1055,6 +1072,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoBackToGameScript
   ReturnArea: {fileID: 8602646350378076995, guid: 49fab7e056fb253468fdef551b73787c, type: 3}
+--- !u!114 &170039615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170039609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &267161629
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,6 +1099,7 @@ GameObject:
   - component: {fileID: 267161633}
   - component: {fileID: 267161632}
   - component: {fileID: 267161631}
+  - component: {fileID: 267161634}
   m_Layer: 5
   m_Name: Letter (19)
   m_TagString: Untagged
@@ -1083,7 +1116,7 @@ RectTransform:
   m_GameObject: {fileID: 267161629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1987359783}
@@ -1188,6 +1221,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 267161629}
   m_CullTransparentMesh: 1
+--- !u!114 &267161634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267161629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &323897486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,8 +1295,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1381,6 +1429,7 @@ GameObject:
   - component: {fileID: 404237153}
   - component: {fileID: 404237152}
   - component: {fileID: 404237151}
+  - component: {fileID: 404237154}
   m_Layer: 5
   m_Name: Letter (15)
   m_TagString: Untagged
@@ -1397,7 +1446,7 @@ RectTransform:
   m_GameObject: {fileID: 404237149}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 731339025}
@@ -1502,6 +1551,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404237149}
   m_CullTransparentMesh: 1
+--- !u!114 &404237154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404237149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &404858884
 GameObject:
   m_ObjectHideFlags: 0
@@ -1561,8 +1625,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1651,6 +1715,7 @@ GameObject:
   - component: {fileID: 546927870}
   - component: {fileID: 546927869}
   - component: {fileID: 546927868}
+  - component: {fileID: 546927871}
   m_Layer: 5
   m_Name: Letter (3)
   m_TagString: Untagged
@@ -1667,7 +1732,7 @@ RectTransform:
   m_GameObject: {fileID: 546927866}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1260284413}
@@ -1772,6 +1837,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546927866}
   m_CullTransparentMesh: 1
+--- !u!114 &546927871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546927866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &632203304
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,8 +1911,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1968,8 +2048,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Submit Word
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2253,8 +2333,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2343,6 +2423,7 @@ GameObject:
   - component: {fileID: 792577643}
   - component: {fileID: 792577642}
   - component: {fileID: 792577641}
+  - component: {fileID: 792577644}
   m_Layer: 5
   m_Name: Letter (7)
   m_TagString: Untagged
@@ -2359,7 +2440,7 @@ RectTransform:
   m_GameObject: {fileID: 792577639}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1025340218}
@@ -2464,6 +2545,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792577639}
   m_CullTransparentMesh: 1
+--- !u!114 &792577644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792577639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &802011465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,6 +2572,7 @@ GameObject:
   - component: {fileID: 802011469}
   - component: {fileID: 802011468}
   - component: {fileID: 802011467}
+  - component: {fileID: 802011470}
   m_Layer: 5
   m_Name: Regen
   m_TagString: Untagged
@@ -2597,6 +2694,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802011465}
   m_CullTransparentMesh: 1
+--- !u!114 &802011470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802011465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &834538662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,6 +2721,7 @@ GameObject:
   - component: {fileID: 834538666}
   - component: {fileID: 834538665}
   - component: {fileID: 834538664}
+  - component: {fileID: 834538667}
   m_Layer: 5
   m_Name: Letter (11)
   m_TagString: Untagged
@@ -2625,7 +2738,7 @@ RectTransform:
   m_GameObject: {fileID: 834538662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 632203305}
@@ -2730,6 +2843,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834538662}
   m_CullTransparentMesh: 1
+--- !u!114 &834538667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834538662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &847746082
 GameObject:
   m_ObjectHideFlags: 0
@@ -2742,6 +2870,7 @@ GameObject:
   - component: {fileID: 847746086}
   - component: {fileID: 847746085}
   - component: {fileID: 847746084}
+  - component: {fileID: 847746087}
   m_Layer: 5
   m_Name: Letter (4)
   m_TagString: Untagged
@@ -2758,7 +2887,7 @@ RectTransform:
   m_GameObject: {fileID: 847746082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 404858885}
@@ -2863,6 +2992,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847746082}
   m_CullTransparentMesh: 1
+--- !u!114 &847746087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847746082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &871646038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,14 +3034,14 @@ RectTransform:
   m_GameObject: {fileID: 871646038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1414, y: 1.1414, z: 1.1414}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 99760429}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: 330}
+  m_AnchoredPosition: {x: -493, y: 342.08008}
   m_SizeDelta: {x: 756.416, y: 156.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871646040
@@ -2922,8 +3066,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5d3061a74a9d4a84887cf17877f0964d, type: 2}
+  m_sharedMaterial: {fileID: -4743172452646666953, guid: 5d3061a74a9d4a84887cf17877f0964d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3012,6 +3156,7 @@ GameObject:
   - component: {fileID: 889815044}
   - component: {fileID: 889815043}
   - component: {fileID: 889815042}
+  - component: {fileID: 889815045}
   m_Layer: 5
   m_Name: Letter (18)
   m_TagString: Untagged
@@ -3028,7 +3173,7 @@ RectTransform:
   m_GameObject: {fileID: 889815040}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1433930094}
@@ -3133,6 +3278,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889815040}
   m_CullTransparentMesh: 1
+--- !u!114 &889815045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889815040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &963999981
 GameObject:
   m_ObjectHideFlags: 0
@@ -3145,6 +3305,7 @@ GameObject:
   - component: {fileID: 963999985}
   - component: {fileID: 963999984}
   - component: {fileID: 963999983}
+  - component: {fileID: 963999986}
   m_Layer: 5
   m_Name: Letter (5)
   m_TagString: Untagged
@@ -3161,7 +3322,7 @@ RectTransform:
   m_GameObject: {fileID: 963999981}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1744002689}
@@ -3266,6 +3427,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963999981}
   m_CullTransparentMesh: 1
+--- !u!114 &963999986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963999981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &1012115192
 GameObject:
   m_ObjectHideFlags: 0
@@ -3325,8 +3501,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3462,8 +3638,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3563,6 +3739,7 @@ GameObject:
   - component: {fileID: 1134536374}
   - component: {fileID: 1134536373}
   - component: {fileID: 1134536372}
+  - component: {fileID: 1134536375}
   m_Layer: 5
   m_Name: Letter (13)
   m_TagString: Untagged
@@ -3579,7 +3756,7 @@ RectTransform:
   m_GameObject: {fileID: 1134536370}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 33898857}
@@ -3684,6 +3861,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134536370}
   m_CullTransparentMesh: 1
+--- !u!114 &1134536375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134536370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &1193087783
 GameObject:
   m_ObjectHideFlags: 0
@@ -3696,6 +3888,7 @@ GameObject:
   - component: {fileID: 1193087787}
   - component: {fileID: 1193087786}
   - component: {fileID: 1193087785}
+  - component: {fileID: 1193087788}
   m_Layer: 5
   m_Name: Letter (20)
   m_TagString: Untagged
@@ -3712,7 +3905,7 @@ RectTransform:
   m_GameObject: {fileID: 1193087783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1395804945}
@@ -3817,6 +4010,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193087783}
   m_CullTransparentMesh: 1
+--- !u!114 &1193087788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193087783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &1219156129
 GameObject:
   m_ObjectHideFlags: 0
@@ -4013,8 +4221,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4150,8 +4358,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4287,8 +4495,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Regenerate Borad
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4377,6 +4585,7 @@ GameObject:
   - component: {fileID: 1284788859}
   - component: {fileID: 1284788858}
   - component: {fileID: 1284788857}
+  - component: {fileID: 1284788860}
   m_Layer: 5
   m_Name: Letter (12)
   m_TagString: Untagged
@@ -4393,7 +4602,7 @@ RectTransform:
   m_GameObject: {fileID: 1284788855}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 37876790}
@@ -4498,6 +4707,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284788855}
   m_CullTransparentMesh: 1
+--- !u!114 &1284788860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284788855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!114 &1286396195 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4864708923094151613, guid: 0bd73095983d14f18bdbc6c00ec73f06, type: 3}
@@ -4611,6 +4835,7 @@ GameObject:
   - component: {fileID: 1379556595}
   - component: {fileID: 1379556594}
   - component: {fileID: 1379556593}
+  - component: {fileID: 1379556596}
   m_Layer: 5
   m_Name: Letter (14)
   m_TagString: Untagged
@@ -4627,7 +4852,7 @@ RectTransform:
   m_GameObject: {fileID: 1379556591}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1012115193}
@@ -4732,6 +4957,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379556591}
   m_CullTransparentMesh: 1
+--- !u!114 &1379556596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379556591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &1395804944
 GameObject:
   m_ObjectHideFlags: 0
@@ -4791,8 +5031,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4939,8 +5179,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5029,6 +5269,7 @@ GameObject:
   - component: {fileID: 1447679244}
   - component: {fileID: 1447679243}
   - component: {fileID: 1447679242}
+  - component: {fileID: 1447679245}
   m_Layer: 5
   m_Name: Letter (6)
   m_TagString: Untagged
@@ -5045,7 +5286,7 @@ RectTransform:
   m_GameObject: {fileID: 1447679240}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 323897487}
@@ -5150,6 +5391,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447679240}
   m_CullTransparentMesh: 1
+--- !u!114 &1447679245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447679240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &1528644315
 GameObject:
   m_ObjectHideFlags: 0
@@ -5209,8 +5465,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5299,6 +5555,7 @@ GameObject:
   - component: {fileID: 1544000212}
   - component: {fileID: 1544000211}
   - component: {fileID: 1544000210}
+  - component: {fileID: 1544000213}
   m_Layer: 5
   m_Name: Letter (16)
   m_TagString: Untagged
@@ -5315,7 +5572,7 @@ RectTransform:
   m_GameObject: {fileID: 1544000208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1940661162}
@@ -5420,6 +5677,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544000208}
   m_CullTransparentMesh: 1
+--- !u!114 &1544000213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544000208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!114 &1595652188 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4566075587805963389, guid: 0bd73095983d14f18bdbc6c00ec73f06, type: 3}
@@ -5443,6 +5715,7 @@ GameObject:
   - component: {fileID: 1626097971}
   - component: {fileID: 1626097970}
   - component: {fileID: 1626097969}
+  - component: {fileID: 1626097972}
   m_Layer: 5
   m_Name: Submit
   m_TagString: Untagged
@@ -5564,6 +5837,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626097967}
   m_CullTransparentMesh: 1
+--- !u!114 &1626097972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626097967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &1644648911
 GameObject:
   m_ObjectHideFlags: 0
@@ -5576,6 +5864,7 @@ GameObject:
   - component: {fileID: 1644648915}
   - component: {fileID: 1644648914}
   - component: {fileID: 1644648913}
+  - component: {fileID: 1644648916}
   m_Layer: 5
   m_Name: Letter (2)
   m_TagString: Untagged
@@ -5592,7 +5881,7 @@ RectTransform:
   m_GameObject: {fileID: 1644648911}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1658498144}
@@ -5697,6 +5986,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1644648911}
   m_CullTransparentMesh: 1
+--- !u!114 &1644648916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644648911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &1658498143
 GameObject:
   m_ObjectHideFlags: 0
@@ -5756,8 +6060,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5904,8 +6208,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6041,8 +6345,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6159,8 +6463,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Change In Intelligence: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5d3061a74a9d4a84887cf17877f0964d, type: 2}
+  m_sharedMaterial: {fileID: -4743172452646666953, guid: 5d3061a74a9d4a84887cf17877f0964d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6246,14 +6550,14 @@ RectTransform:
   m_GameObject: {fileID: 1798403074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1414, y: 1.1414, z: 1.1414}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 99760429}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -500, y: 403.92}
+  m_AnchoredPosition: {x: -493, y: 416}
   m_SizeDelta: {x: 756.416, y: 156.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1940661161
@@ -6315,8 +6619,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6405,6 +6709,7 @@ GameObject:
   - component: {fileID: 1949683498}
   - component: {fileID: 1949683497}
   - component: {fileID: 1949683496}
+  - component: {fileID: 1949683499}
   m_Layer: 5
   m_Name: Letter (10)
   m_TagString: Untagged
@@ -6421,7 +6726,7 @@ RectTransform:
   m_GameObject: {fileID: 1949683494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1243699943}
@@ -6526,6 +6831,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949683494}
   m_CullTransparentMesh: 1
+--- !u!114 &1949683499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949683494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1 &1987359782
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,8 +6905,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
-  m_sharedMaterial: {fileID: -8074232469031880883, guid: 3427c745e37d0014abc67ad0bc118481, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
+  m_sharedMaterial: {fileID: 5829039110360346093, guid: e88e2cf23932245adaadfa8b68665378, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6675,6 +6995,7 @@ GameObject:
   - component: {fileID: 2117469627}
   - component: {fileID: 2117469626}
   - component: {fileID: 2117469625}
+  - component: {fileID: 2117469628}
   m_Layer: 5
   m_Name: Letter (17)
   m_TagString: Untagged
@@ -6691,7 +7012,7 @@ RectTransform:
   m_GameObject: {fileID: 2117469623}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.243125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1731126270}
@@ -6796,6 +7117,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117469623}
   m_CullTransparentMesh: 1
+--- !u!114 &2117469628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117469623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 578939a1d9eeb4668bae338d42b3079a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ButtonHoverScaler
+  hoverAmount: 0.2
+  shrinkAmount: 0
+  scaleSpeed: 15
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
