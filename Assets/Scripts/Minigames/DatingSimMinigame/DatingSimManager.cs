@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.Common;
 using TMPro;
@@ -9,6 +10,7 @@ public class DatingSimManager : MonoBehaviour
 {
     [SerializeField] private GameObject guyPanel;
     [SerializeField] private GameObject questionPanel;
+    [SerializeField] private GameObject winPanel;
     [SerializeField] private List<DatingSimQuestion> questions;
     [SerializeField] private List<Button> answerButtons;
     [SerializeField] private TextMeshProUGUI questionTextBox;
@@ -17,6 +19,8 @@ public class DatingSimManager : MonoBehaviour
     private DatingSimMan guy;
     private DatingSimQuestion currentQuestion;
     private int score;
+
+    [SerializeField] private GameObject GoBackScene;
 
     void Start()
     {
@@ -30,6 +34,9 @@ public class DatingSimManager : MonoBehaviour
         guy = man;
         guyPanel.SetActive(false);
         questionPanel.SetActive(true);
+        winPanel.SetActive(false);
+
+        questionPanel.transform.Find("GuyImage").GetComponent<Image>().sprite = man.image;
         
         int questionIndex = Random.Range(0, questions.Count);
         currentQuestion = questions[questionIndex];
@@ -61,37 +68,32 @@ public class DatingSimManager : MonoBehaviour
         else EndGame();
     }
 
+    private IEnumerator EndGameCoroutine()
+    {
+        yield return new WaitForSeconds(5);
+
+        PlayerGlobalHandler.LoadIntoMainGame(GoBackScene);
+        yield return null;
+    }
+
     private void EndGame()
     {
-        if (score <= -2)
+        guyPanel.SetActive(false);
+        winPanel.SetActive(true);
+
+        winPanel.transform.Find("ScoreText").GetComponent<TextMeshProUGUI>().text = "Final Score:" + score;
+
+        if (score > 0)
         {
-            statChanges.rizz = -3;
+            winPanel.transform.Find("GuyImage").GetComponent<Image>().sprite = guy.blushImage;
         }
-        else if (score <= 0)
+        else
         {
-            statChanges.rizz = -2;
+            winPanel.transform.Find("GuyImage").GetComponent<Image>().sprite = guy.image;
         }
-        else if (score < 2)
-        {
-            statChanges.rizz = -1;  
-        }
-        else if (score <= 4)
-        {
-            statChanges.rizz = 0;
-        }
-        else if (score <= 6)
-        {
-            statChanges.rizz = 1;
-        }
-        else if (score <= 8)
-        {
-            statChanges.rizz = 2;
-        }
-        else if (score <= 10)
-        {
-            statChanges.rizz = 3;
-        }
+        
+        statChanges.rizz = (score / 2);
         PlayerGlobalHandler.GlobalHandler.AddStats(statChanges);
-        Debug.Log("Game Done");
+        StartCoroutine(EndGameCoroutine());
     }
 }

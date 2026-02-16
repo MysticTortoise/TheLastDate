@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: John C.
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimMan
   manName: John C.
-  image: {fileID: 0}
+  image: {fileID: -6154143609381284700, guid: 699fcad832380ba429ccf2c926f6a41b, type: 3}
+  blushImage: {fileID: -8002703991045317803, guid: 699fcad832380ba429ccf2c926f6a41b, type: 3}
   type: 1
