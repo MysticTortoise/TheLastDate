@@ -14,19 +14,21 @@ public class ManageWorkMinigame : MonoBehaviour
     [SerializeField] private TextMeshProUGUI yearsExperienceTextBox;
     [SerializeField] private TextMeshProUGUI descriptionTextBox;
     [SerializeField] private TextMeshProUGUI scoreTextBox;
-    private int moneySaved;
+    [SerializeField] private TextMeshProUGUI moneyTextBox;
+    private int empathyScore;
     private int employeeIndex;
     private int currKeepScore;
     private int currFireScore;
     private int currMoneyValue;
+    private int totalMoneyValue;
     private StatBlock statsChanged;
     private Animator animator;
-    public bool canClick;
+    private GoBackToGameScript backButton;
+    private bool canClick;
     void Start()
     {
         canClick = true;
         statsChanged = new();
-        moneySaved = 0;
         animator = GetComponent<Animator>();
         employeeIndex = Random.Range(0, employees.Count);
         nameTextBox.text = employees[employeeIndex].employeeName;
@@ -37,6 +39,8 @@ public class ManageWorkMinigame : MonoBehaviour
         currKeepScore = employees[employeeIndex].maintainScore;
         currFireScore = employees[employeeIndex].fireScore;
         currMoneyValue = employees[employeeIndex].moneySaved;
+        totalMoneyValue = 0;
+        backButton = FindAnyObjectByType<GoBackToGameScript>();
         employees.RemoveAt(employeeIndex);
     }
 
@@ -46,9 +50,29 @@ public class ManageWorkMinigame : MonoBehaviour
         {
             canClick =false;
             score += currFireScore;
-            moneySaved += currMoneyValue;
+            if (score >= 10)
+            {
+                score -= 10;
+                statsChanged.empathy = 1;
+                PlayerGlobalHandler.GlobalHandler.AddStats(statsChanged);
+                statsChanged = new();
+                empathyScore++;
+            }
+            if (score < 0)
+            {
+                score += 10;
+                statsChanged.empathy = -1;
+                PlayerGlobalHandler.GlobalHandler.AddStats(statsChanged);
+                statsChanged = new();
+                empathyScore--;
+            }
+            totalMoneyValue += currMoneyValue;
+            statsChanged.money = currMoneyValue;
+            PlayerGlobalHandler.GlobalHandler.AddStats(statsChanged);
+            statsChanged = new();
             Debug.Log("Empathy Changed :" + currFireScore);
-            scoreTextBox.text = "Score: " + score;
+            scoreTextBox.text = "Change in Empathy: " + empathyScore;
+            moneyTextBox.text = "Money Saved: $" + totalMoneyValue;
             animator.enabled = true;
         }
     }
@@ -59,8 +83,24 @@ public class ManageWorkMinigame : MonoBehaviour
         {
             canClick = false;
             score += currKeepScore;
-            Debug.Log("Empathy Changed :" + currKeepScore);
-            scoreTextBox.text = "Score: " + score;
+            if (score >= 10)
+            {
+                score -= 10;
+                statsChanged.empathy = 1;
+                PlayerGlobalHandler.GlobalHandler.AddStats(statsChanged);
+                statsChanged = new();
+                empathyScore++;
+            }
+            if (score < 0)
+            {
+                score += 10;
+                statsChanged.empathy = -1;
+                PlayerGlobalHandler.GlobalHandler.AddStats(statsChanged);
+                statsChanged = new();
+                empathyScore--;
+            }
+            scoreTextBox.text = "Change in Empathy: " + empathyScore;
+            moneyTextBox.text = "Money Saved: $" + totalMoneyValue;
             animator.enabled = true;
         }
     }
@@ -79,61 +119,15 @@ public class ManageWorkMinigame : MonoBehaviour
         currFireScore = employees[employeeIndex].fireScore;
         employees.RemoveAt(employeeIndex);
         }
-        else {EndGame();}
+        else
+        {
+            backButton.GoBack();
+        }
     }
 
     public void DisableAnimator()
     {
         animator.enabled = false;
         canClick = true;
-    }
-
-    private void EndGame()
-    {
-        if (score <= -30)
-        {
-            statsChanged.empathy = -3;
-            scoreTextBox.fontSize = 0.4f;
-            scoreTextBox.text = "You Lost 3 Empathy and Made $" + moneySaved;
-        }
-        else if (score <= -20)
-        {
-            statsChanged.empathy = -2;
-            scoreTextBox.fontSize = 0.4f;
-            scoreTextBox.text = "You Lost 2 Empathy and Made $" + moneySaved;
-        }
-        else if (score < -10)
-        {
-            statsChanged.empathy = -1;
-            scoreTextBox.fontSize = 0.4f;
-            scoreTextBox.text = "You Lost 1 Empathy and Made $" + moneySaved;  
-        }
-        else if (score <= 0)
-        {
-            statsChanged.empathy = 0;
-            scoreTextBox.fontSize = 0.4f;
-            scoreTextBox.text = "You Gained no Empathy and Made $" + moneySaved;
-        }
-        else if (score <= 10)
-        {
-            statsChanged.empathy = 1;
-            scoreTextBox.fontSize = 0.4f;
-            scoreTextBox.text = "You Gained 1 Empathy and Made $" + moneySaved;
-        }
-        else if (score <= 20)
-        {
-            statsChanged.empathy = 2;
-            scoreTextBox.fontSize = 0.4f;
-            scoreTextBox.text = "You Gained 2 Empathy and Made $" + moneySaved;
-        }
-        else if (score <= 30)
-        {
-            statsChanged.empathy = 3;
-            scoreTextBox.fontSize = 0.4f;
-            scoreTextBox.text = "You Gained 3 Empathy and Made $" + moneySaved;
-        }
-        statsChanged.money = moneySaved;
-        PlayerGlobalHandler.GlobalHandler.AddStats(statsChanged);
-        Debug.Log("Minigame Is Over");
     }
 }
