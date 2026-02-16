@@ -30,6 +30,6 @@ MonoBehaviour:
       number: 5
       GreaterThan: 1
       Item: {fileID: 11400000, guid: 5cf45f2472f2a6541aab0a8264ff2480, type: 2}
-    Sequence: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 7b380c045c2551740b07338a4070fb1b, type: 2}
   - Requirements: []
     Sequence: {fileID: 11400000, guid: 97415853e2f60a9449c2c3b47566dc9b, type: 2}
