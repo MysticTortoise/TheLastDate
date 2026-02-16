@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b195a37b6eb401b82560d46e4cfa031, type: 3}
-  m_Name: SetEndImageWedding
+  m_Name: SetEndImageBreakup
   m_EditorClassIdentifier: Assembly-CSharp::SetEndImageSpriteAction
-  Image: {fileID: -6851140800327969705, guid: f9c92d3bfafa6054c851cc177261a0c7, type: 3}
+  Image: {fileID: -3643010688435174377, guid: 73ee29ae12c425f49959a4d5aab790e2, type: 3}

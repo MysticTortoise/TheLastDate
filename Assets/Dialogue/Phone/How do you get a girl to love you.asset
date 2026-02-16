@@ -36,7 +36,8 @@ MonoBehaviour:
   - Message:
       Message: 'You''ve got this, John Guy. '
       SpeakerTitle: Chad
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 1e7c34d96a556c442acc4a767e1170ed, type: 2}
     DialogueActionsEnd: []
     Options:
     - Option: Thanks

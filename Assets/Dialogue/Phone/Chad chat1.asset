@@ -29,5 +29,6 @@ MonoBehaviour:
       Message: Relax bro! Breathless or not, I'm always here for you.
       SpeakerTitle: Chad
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 1e7c34d96a556c442acc4a767e1170ed, type: 2}
     Options: []

@@ -24,5 +24,6 @@ MonoBehaviour:
       Message: He does smell a bit of fish though.
       SpeakerTitle: Chad
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 1e7c34d96a556c442acc4a767e1170ed, type: 2}
     Options: []
