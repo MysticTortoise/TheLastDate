@@ -58,9 +58,12 @@ public class DialogueOption
     public string Option;
     public DialogueSequence Sequence;
     public List<DialogueRequirement> Requirements;
+    public bool AnyMet = false;
 
     public bool RequirementsMet()
     {
+        if (AnyMet)
+            return Requirements.Any(re => re.IsMet());
         return Requirements.All(re => re.IsMet());
     }
 }
