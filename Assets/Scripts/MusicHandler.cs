@@ -13,6 +13,10 @@ public class MusicHandler : MonoBehaviour
         instance = this;
         transform.parent = null;
         DontDestroyOnLoad(this.gameObject);
+
+        var source = gameObject.AddComponent<AudioSource>();
+        source.loop = true;
+        source.playOnAwake = false;
     }
 
     public static void SetMusic(AudioClip clip)
