@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: Hey buddy, talk to me.
       SpeakerTitle: Chad
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 131a34c18ed0f5041a06b241d214ad33, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -29,6 +30,8 @@ MonoBehaviour:
     - Option: I need a Chad chat.
       Sequence: {fileID: 11400000, guid: 9f82fcfa023dcc84caac20d2dbdcad21, type: 2}
       Requirements: []
+      AnyMet: 0
     - Option: How do you get a girl to love you?
       Sequence: {fileID: 11400000, guid: afd4ee382e6d78040b870fc395abd9c9, type: 2}
       Requirements: []
+      AnyMet: 1
