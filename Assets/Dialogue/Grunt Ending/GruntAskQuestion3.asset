@@ -37,7 +37,7 @@ MonoBehaviour:
       SpeakerTitle: Grunt
     DialogueActionsStart:
     - {fileID: 11400000, guid: 997258c100ec4c2478f0089661bc1515, type: 2}
-    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
+    - {fileID: 11400000, guid: db0d145a91c763942977d0417689b9a2, type: 2}
     DialogueActionsEnd: []
     Options:
     - Option: Ask Another Question
