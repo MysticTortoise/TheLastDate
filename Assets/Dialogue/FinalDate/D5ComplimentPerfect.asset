@@ -35,12 +35,6 @@ MonoBehaviour:
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: Marry me, woman!
-      SpeakerTitle: John Guy
-    DialogueActionsStart: []
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
       Message: Too far. But you're cute.
       SpeakerTitle: Jessica
     DialogueActionsStart: []

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
+  m_Name: InteractTrash
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogueNodes:
+  - Message:
+      Message: I've been working on this thing for a while. Dont have all the parts
+        I need yet though.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: I still need a power source, some tools, and a little more scientific
+        knowledge to finish it.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Maybe if I study a book it'll help.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []

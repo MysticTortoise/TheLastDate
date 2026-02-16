@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c2129c14f24fcbb99369ba59fa86c4, type: 3}
+  m_Name: TrashPicker
+  m_EditorClassIdentifier: Assembly-CSharp::DialoguePickSequence
+  PossibleRequirements:
+  - Requirements:
+    - stat: 2
+      number: 5
+      GreaterThan: 1
+      Item: {fileID: 0}
+    - stat: 2
+      number: 5
+      GreaterThan: 1
+      Item: {fileID: 11400000, guid: d9ce722e9e1b1b64fbae3c3b063f0e89, type: 2}
+    - stat: 2
+      number: 5
+      GreaterThan: 1
+      Item: {fileID: 11400000, guid: 5d43c597683888d4ca8ca8b35aa2cd2b, type: 2}
+    - stat: 2
+      number: 5
+      GreaterThan: 1
+      Item: {fileID: 11400000, guid: 5cf45f2472f2a6541aab0a8264ff2480, type: 2}
+    Sequence: {fileID: 0}
+  - Requirements: []
+    Sequence: {fileID: 11400000, guid: 97415853e2f60a9449c2c3b47566dc9b, type: 2}

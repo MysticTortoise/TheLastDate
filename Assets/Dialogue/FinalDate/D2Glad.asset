@@ -43,7 +43,7 @@ MonoBehaviour:
         number: 0
         GreaterThan: 0
         Item: {fileID: 11400000, guid: 0f0c7a0567d6e224a843680f342639e3, type: 2}
-      AnyMet: 0
+      AnyMet: 1
     - Option: No Flowers
       Sequence: {fileID: 11400000, guid: 33f8dd854e6739f498e0bef4692fec9b, type: 2}
       Requirements: []

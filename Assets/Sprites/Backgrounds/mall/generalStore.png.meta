@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9857f657b4d1a614e8cfc3055b9730e0
+guid: 1f445b249e392e04e8802d12a2144b08
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8612452796899518273
-    second: Incel_Normal_0
+      213: 7288057790589113856
+    second: generalStore_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Incel_Normal_0
+      name: generalStore_0
       rect:
         serializedVersion: 2
-        x: 234
+        x: 0
         y: 0
-        width: 2337
-        height: 3422
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fb81cfbdfcb6a7880800000000000000
-      internalID: -8612452796899518273
+      spriteID: 006159e52f1642560800000000000000
+      internalID: 7288057790589113856
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Incel_Normal_0: -8612452796899518273
+      generalStore_0: 7288057790589113856
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
