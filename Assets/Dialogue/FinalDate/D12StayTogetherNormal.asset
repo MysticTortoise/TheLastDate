@@ -31,11 +31,6 @@ MonoBehaviour:
       SpeakerTitle: John Guy
     DialogueActionsStart:
     - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: That's everything I wanted to hear!
-      SpeakerTitle: John Guy
-    DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 9a8f51fa8226d4845a6582e0dddc9435, type: 2}
     Options: []
