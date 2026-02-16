@@ -8,12 +8,12 @@ public class PlayerGlobalHandler : MonoBehaviour
 {
     public StatBlock stats = new StatBlock
     {
-        empathy = 0,
+        empathy = -5,
         charm = 0,
-        looks = 0,
-        money = 0,
-        rizz = 0,
-         smarts = 5,
+        looks = -5,
+        money = -5,
+        rizz = -5,
+         smarts = -5,
     };
     private TimerHandler timerHandler;
     [NonSerialized] public List<ItemDefinition> heldItems = new();
