@@ -18,13 +18,15 @@ MonoBehaviour:
       SpeakerTitle: John Guy
     DialogueActionsStart:
     - {fileID: 11400000, guid: 923d12441148ea745a20e43f8c222236, type: 2}
+    - {fileID: 11400000, guid: 5c89e55df9ec3514abddb8afb954e9f4, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Thank you for apologizing, John Guy.
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
     Options:
     - Option: Complain about the service
       Sequence: {fileID: 11400000, guid: a21eacc9042b9f845911b0741380afed, type: 2}

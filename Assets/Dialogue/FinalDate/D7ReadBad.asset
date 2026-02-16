@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: Nope.
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 1b03020f035e5d044a49096e92fdeef1, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -35,7 +36,8 @@ MonoBehaviour:
       Message: Oh...
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
     Options:
     - Option: Almost Over
       Sequence: {fileID: 11400000, guid: 771d890e9ae4bc542957f96f6229ac3a, type: 2}

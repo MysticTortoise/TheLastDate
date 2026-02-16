@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: What am I supposed to use this for?
       SpeakerTitle: Jessica
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 5c89e55df9ec3514abddb8afb954e9f4, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -35,7 +36,8 @@ MonoBehaviour:
       Message: Um. Thanks?
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
     Options:
     - Option: Walk Outside
       Sequence: {fileID: 11400000, guid: c9acf5548f9fd1646904ee559f6376b8, type: 2}

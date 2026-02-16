@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: Tonight was okay, but...
       SpeakerTitle: Jessica
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 7b7ca8bb4f57cb940acefe020d3bc544, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:

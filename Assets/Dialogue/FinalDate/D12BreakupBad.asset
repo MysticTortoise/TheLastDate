@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: Tonight was horrible.
       SpeakerTitle: Jessica
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 1b03020f035e5d044a49096e92fdeef1, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:

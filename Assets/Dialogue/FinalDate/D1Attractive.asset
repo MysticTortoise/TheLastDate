@@ -18,13 +18,15 @@ MonoBehaviour:
       SpeakerTitle: Jessica
     DialogueActionsStart:
     - {fileID: 11400000, guid: 59eb05573a0c4134c9a723c3f8623f22, type: 2}
+    - {fileID: 11400000, guid: 7b7ca8bb4f57cb940acefe020d3bc544, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Thank you!
       SpeakerTitle: John Guy
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
     Options:
     - Option: '"I''m so glad you came!"'
       Sequence: {fileID: 11400000, guid: b83b0f9fcccd03746b882b560a2dadb3, type: 2}

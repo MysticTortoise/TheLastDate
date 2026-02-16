@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: You really impressed me tonight.
       SpeakerTitle: Jessica
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 0577b439fae384f4081a103de5ff4cf8, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:

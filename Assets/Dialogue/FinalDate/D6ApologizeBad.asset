@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: Sorry.
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 1b03020f035e5d044a49096e92fdeef1, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -41,7 +42,8 @@ MonoBehaviour:
       Message: Whatever.
       SpeakerTitle: John Guy
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
     Options:
     - Option: Complain about the service
       Sequence: {fileID: 11400000, guid: a21eacc9042b9f845911b0741380afed, type: 2}

@@ -19,13 +19,15 @@ MonoBehaviour:
       SpeakerTitle: John Guy
     DialogueActionsStart:
     - {fileID: 11400000, guid: 59eb05573a0c4134c9a723c3f8623f22, type: 2}
+    - {fileID: 11400000, guid: 7b7ca8bb4f57cb940acefe020d3bc544, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Aw, that's so sweet!
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
     Options:
     - Option: Apologize for past behavior
       Sequence: {fileID: 11400000, guid: 39ac69012b0e6bd40b266fc7178bd9cf, type: 2}

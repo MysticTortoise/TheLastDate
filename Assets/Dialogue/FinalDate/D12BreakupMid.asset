@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: I know you're trying, but... I can't do this anymore.
       SpeakerTitle: Jessica
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 5c89e55df9ec3514abddb8afb954e9f4, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:

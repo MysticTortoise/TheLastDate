@@ -19,6 +19,7 @@ MonoBehaviour:
       SpeakerTitle: John Guy
     DialogueActionsStart:
     - {fileID: 11400000, guid: d0b317311b3fc9c4ba0d4e5bf9796464, type: 2}
+    - {fileID: 11400000, guid: 0577b439fae384f4081a103de5ff4cf8, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -50,7 +51,8 @@ MonoBehaviour:
       Message: Thank you for considering my feelings.
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
     Options:
     - Option: Complain about the service
       Sequence: {fileID: 11400000, guid: a21eacc9042b9f845911b0741380afed, type: 2}

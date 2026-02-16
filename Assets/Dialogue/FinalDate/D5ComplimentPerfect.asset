@@ -19,6 +19,7 @@ MonoBehaviour:
       SpeakerTitle: John Guy
     DialogueActionsStart:
     - {fileID: 11400000, guid: d0b317311b3fc9c4ba0d4e5bf9796464, type: 2}
+    - {fileID: 11400000, guid: 0577b439fae384f4081a103de5ff4cf8, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -43,7 +44,8 @@ MonoBehaviour:
       Message: Too far. But you're cute.
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
     Options:
     - Option: Apologize for past behavior
       Sequence: {fileID: 11400000, guid: 39ac69012b0e6bd40b266fc7178bd9cf, type: 2}

@@ -18,6 +18,7 @@ MonoBehaviour:
       SpeakerTitle: Jessica
     DialogueActionsStart:
     - {fileID: 11400000, guid: 923d12441148ea745a20e43f8c222236, type: 2}
+    - {fileID: 11400000, guid: 5c89e55df9ec3514abddb8afb954e9f4, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -43,7 +44,8 @@ MonoBehaviour:
       Message: Thank you for thinking of me, at least.
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
     Options:
     - Option: Attempt to compliment her
       Sequence: {fileID: 11400000, guid: 0c33e889aaf09d042811e0c4d0ae7784, type: 2}
