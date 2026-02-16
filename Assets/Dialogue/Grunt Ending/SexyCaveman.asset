@@ -71,7 +71,7 @@ MonoBehaviour:
   - Message:
       Message: '*hungry grunt*'
       SpeakerTitle: Grunt
-    DialogueActionsStart:
-    - {fileID: 11400000, guid: b18253401acad7e4c9a3f8d4098060d4, type: 2}
-    DialogueActionsEnd: []
+    DialogueActionsStart: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: 5cc16e30321c12a4f8e84cbacedcf26a, type: 2}
     Options: []
