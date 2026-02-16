@@ -49,7 +49,7 @@ MonoBehaviour:
         GreaterThan: 0
         Item: {fileID: 0}
       - stat: 5
-        number: 14
+        number: 13
         GreaterThan: 1
         Item: {fileID: 0}
       AnyMet: 0

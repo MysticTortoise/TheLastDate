@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b869dfdfe7ac457fbd6e03a2e5a1b1c9, type: 3}
-  m_Name: SpawnGrunt
+  m_Name: SpawnGruntBlush
   m_EditorClassIdentifier: Assembly-CSharp::DialogueActionSetSpeaker
   PersonID: 0
   PersonData:
     xPosition: 0
-    texture: {fileID: -7735413407792904475, guid: 0d2ccb48601a9cb44901461dca551546, type: 3}
+    texture: {fileID: 0}
