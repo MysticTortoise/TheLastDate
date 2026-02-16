@@ -35,7 +35,7 @@ MonoBehaviour:
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: That's everything I've wanted to do hear....
+      Message: That's everything I've wanted to hear....
       SpeakerTitle: John Guy
     DialogueActionsStart:
     - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}

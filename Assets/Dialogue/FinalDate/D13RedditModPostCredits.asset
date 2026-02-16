@@ -115,5 +115,6 @@ MonoBehaviour:
       SpeakerTitle: John Guy
     DialogueActionsStart: []
     DialogueActionsEnd:
+    - {fileID: 11400000, guid: 1615fc38ecf5d094494f742a0e54cf3c, type: 2}
     - {fileID: 11400000, guid: 9a8f51fa8226d4845a6582e0dddc9435, type: 2}
     Options: []
