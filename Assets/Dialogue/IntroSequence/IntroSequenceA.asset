@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: "Ugh, my head\u2026"
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 1dea557a98f5e5845a5f1ee2c2361949, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
