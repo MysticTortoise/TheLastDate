@@ -16,4 +16,4 @@ MonoBehaviour:
   Description: Complete garbage. Why did you buy these.
   ShopDescription: Just... why?
   Cost: 20
-  Image: {fileID: -516747231411115888, guid: 947e5bbe971ec49c1936aa9a93e6ed0e, type: 3}
+  Image: {fileID: 21300000, guid: 533615e4cdcb38d41b7cbc9f83b979f6, type: 3}

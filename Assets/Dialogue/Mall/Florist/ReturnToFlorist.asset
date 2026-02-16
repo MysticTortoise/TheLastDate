@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ReturnToFlorist
   m_EditorClassIdentifier: Assembly-CSharp::DialoguePickRandomSequence
   PossibleSequences:
-  - {fileID: 11400000, guid: b19730927972b244b90b27eeb8511bb0, type: 2}
+  - {fileID: 11400000, guid: 528658db5e7bde24789f7fc065cbdb3a, type: 2}
