@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d86f868087ae4890ac625ec686c6fcbe, type: 3}
+  m_Name: ScienceBook
+  m_EditorClassIdentifier: Assembly-CSharp::ItemDefinition
+  Name: Time Travel Book
+  Description: A book on Time Travel. It says something about Quantum Mechanics?
+  ShopDescription: This author's a total dunce. He actually believes building a time
+    machine is possible...
+  Cost: 20
+  Image: {fileID: -516747231411115888, guid: 947e5bbe971ec49c1936aa9a93e6ed0e, type: 3}

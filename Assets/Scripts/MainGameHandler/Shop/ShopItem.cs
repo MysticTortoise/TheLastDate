@@ -15,8 +15,9 @@ public class ShopItem : EnvironmentButton
         GetComponent<SpriteRenderer>().sprite = ItemDef.Image;
     }
 
-    private void Update()
+    private new void Update()
     {
+        base.Update();
         bool currHovered = IsHovered();
         if (currHovered && !wasHovering)
         {

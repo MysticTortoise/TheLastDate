@@ -17,7 +17,7 @@ public class PlayerGlobalHandler : MonoBehaviour
     {
         if (GlobalHandler != null)
         {
-            Destroy(gameObject);
+            Destroy(this);
             return;
         }
         GlobalHandler = this;

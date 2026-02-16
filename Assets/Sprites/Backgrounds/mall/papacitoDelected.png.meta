@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b1497c168c6681e458b0530282123a10
+guid: e0a9cc1f592ced74ca39983902227aba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2619591857597635248
-    second: Gym_0
+      213: -7827002418502443095
+    second: papacitoDelected_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gym_0
+      name: papacitoDelected_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1363
+        y: 244
+        width: 553
+        height: 349
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0badc905ae8aa5420800000000000000
-      internalID: 2619591857597635248
+      spriteID: 9afd90505c6e06390800000000000000
+      internalID: -7827002418502443095
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gym_0: 2619591857597635248
+      papacitoDelected_0: -7827002418502443095
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
