@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b1497c168c6681e458b0530282123a10
+guid: 2c8e91db7d4e1b04c866ce0eb21da452
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2619591857597635248
-    second: Gym_0
+      213: -4030025443759797852
+    second: bedroomDoorHighlight_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gym_0
+      name: bedroomDoorHighlight_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 1727
+        y: 30
+        width: 193
+        height: 610
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0badc905ae8aa5420800000000000000
-      internalID: 2619591857597635248
+      spriteID: 4a949ecf5397218c0800000000000000
+      internalID: -4030025443759797852
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Gym_0: 2619591857597635248
+      bedroomDoorHighlight_0: -4030025443759797852
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
