@@ -49,7 +49,7 @@ public class InventoryUI : MonoBehaviour
         if (gh == null)
         {
             // Optional fallback: try find one (safe if your GlobalHandler persists)
-            gh = FindObjectOfType<PlayerGlobalHandler>();
+            gh = FindAnyObjectByType<PlayerGlobalHandler>();
             if (gh != null) PlayerGlobalHandler.GlobalHandler = gh;
         }
 
