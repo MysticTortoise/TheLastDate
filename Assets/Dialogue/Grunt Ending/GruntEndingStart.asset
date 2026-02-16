@@ -23,7 +23,8 @@ MonoBehaviour:
       Message: I can't believe it! I might have just created the first working time
         machine!
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -49,13 +50,22 @@ MonoBehaviour:
   - Message:
       Message: Oh my god.. are you... a caveman?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: ...
-      SpeakerTitle: You are, aren't you? Oh my God!
-    DialogueActionsStart: []
+      SpeakerTitle: ???
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 997258c100ec4c2478f0089661bc1515, type: 2}
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: You are, aren't you? Oh my God!
+      SpeakerTitle: John Guy
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options:
     - Option: Ask The Caveman a Question

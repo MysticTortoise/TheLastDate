@@ -16,19 +16,22 @@ MonoBehaviour:
   - Message:
       Message: What is your name?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: '*grunts*'
       SpeakerTitle: Grunt
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 997258c100ec4c2478f0089661bc1515, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Grunt? That's a good name!
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:

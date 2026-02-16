@@ -16,13 +16,8 @@ MonoBehaviour:
   - Message:
       Message: Do you work out? You look like you take care of yourself...
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: (He blushes)
-      SpeakerTitle: 
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
