@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: Grunt, You're so big and strong...
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -36,7 +37,7 @@ MonoBehaviour:
       Message: And you're passionate... and thoughtful...
       SpeakerTitle: John Guy
     DialogueActionsStart:
-    - {fileID: 11400000, guid: 997258c100ec4c2478f0089661bc1515, type: 2}
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -50,7 +51,7 @@ MonoBehaviour:
       Message: It's kind of hot.
       SpeakerTitle: John Guy
     DialogueActionsStart:
-    - {fileID: 11400000, guid: b18253401acad7e4c9a3f8d4098060d4, type: 2}
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -64,7 +65,7 @@ MonoBehaviour:
       Message: Kiss me, Grunt!
       SpeakerTitle: John Guy
     DialogueActionsStart:
-    - {fileID: 11400000, guid: b18253401acad7e4c9a3f8d4098060d4, type: 2}
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:

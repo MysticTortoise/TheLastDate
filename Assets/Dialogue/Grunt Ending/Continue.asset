@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: '*Grunts interestedly*'
       SpeakerTitle: Grunt
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 997258c100ec4c2478f0089661bc1515, type: 2}
     DialogueActionsEnd: []
     Options:
     - Option: '"Are All Cavemen This Sexy"'

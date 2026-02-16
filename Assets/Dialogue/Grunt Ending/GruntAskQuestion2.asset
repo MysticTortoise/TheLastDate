@@ -16,13 +16,15 @@ MonoBehaviour:
   - Message:
       Message: Why did you enter the time machine?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: '*grunts*'
       SpeakerTitle: Grunt
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 997258c100ec4c2478f0089661bc1515, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -40,13 +42,15 @@ MonoBehaviour:
   - Message:
       Message: That's awful!
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: '*determined grunts*'
       SpeakerTitle: Grunt
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 997258c100ec4c2478f0089661bc1515, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -65,7 +69,8 @@ MonoBehaviour:
   - Message:
       Message: After all of that, you're still fighting for a better future?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
