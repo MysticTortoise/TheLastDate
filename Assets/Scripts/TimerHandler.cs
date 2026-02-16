@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class TimerHandler : MonoBehaviour
 {
     private static readonly int RedFlashAnim = Animator.StringToHash("RedFlash");
-    private const float StartingTimeMinutes = 0.1f;
+    private const int StartingTimeMinutes = 10;
     
     public float timeLeft { private set; get; } = StartingTimeMinutes * 60;
     private int lastMinute = (int)StartingTimeMinutes;
