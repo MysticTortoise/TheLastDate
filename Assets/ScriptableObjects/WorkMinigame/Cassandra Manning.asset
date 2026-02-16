@@ -23,4 +23,4 @@ MonoBehaviour:
     at handling others.
   fireScore: -5
   maintainScore: 0
-  moneySaved: 1000
+  moneySaved: 20
