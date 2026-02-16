@@ -17,8 +17,7 @@ MonoBehaviour:
       Message: Hey there!
       SpeakerTitle: Jack Prawn
     DialogueActionsStart:
-    - {fileID: 11400000, guid: b44614705eacd2d4e87eb31e2499d89f, type: 2}
-    - {fileID: 11400000, guid: b44614705eacd2d4e87eb31e2499d89f, type: 2}
+    - {fileID: 11400000, guid: 1a16a5179a1defe45b223f93998387dc, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
