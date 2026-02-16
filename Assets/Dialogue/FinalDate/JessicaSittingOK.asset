@@ -16,3 +16,4 @@ MonoBehaviour:
   PersonData:
     xPosition: 0
     texture: {fileID: 8896499010014282184, guid: b4515789e97e94341b51296de18dec09, type: 3}
+    WidthMultiplier: 1.25
