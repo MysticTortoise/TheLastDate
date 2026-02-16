@@ -10,46 +10,53 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
-  m_Name: D5ComplimentPerfect
+  m_Name: D6ApologizeGreat
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
-      Message: Just gazing upon you ignites my heart. You are my sun, your presence
-        is the only thing that illuminates my soul. I am bewitched.
+      Message: I am so, so sorry about everything I've done to hurt you, I made you
+        feel like you were unimportant to me.
       SpeakerTitle: John Guy
     DialogueActionsStart:
     - {fileID: 11400000, guid: d0b317311b3fc9c4ba0d4e5bf9796464, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: 'Oh, wow... I don''t know what to say! '
+      Message: I'm determined to show you how much you matter tonight.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: I will kiss your feet! I'll weep to show I mean it! I'll murder anyone
+        who looks at you wrong!
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: I! CARE! FOR! YOU!
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Wow, John Guy... That's so sweet.
       SpeakerTitle: Jessica
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: Marry me, woman!
-      SpeakerTitle: John Guy
-    DialogueActionsStart: []
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: Marry me, woman!
-      SpeakerTitle: John Guy
-    DialogueActionsStart: []
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: Too far. But you're cute.
+      Message: Thank you for considering my feelings.
       SpeakerTitle: Jessica
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options:
-    - Option: Apologize for past behavior
-      Sequence: {fileID: 11400000, guid: 39ac69012b0e6bd40b266fc7178bd9cf, type: 2}
+    - Option: Complain about the service
+      Sequence: {fileID: 11400000, guid: a21eacc9042b9f845911b0741380afed, type: 2}
       Requirements: []
       AnyMet: 0
-    - Option: Small talk
-      Sequence: {fileID: 11400000, guid: 8bffdd81f90ea0b448f60ba13ed60c02, type: 2}
+    - Option: Ask about her day
+      Sequence: {fileID: 11400000, guid: 8cb061c7d8699fa48884a24cc6f67c31, type: 2}
       Requirements: []
       AnyMet: 0

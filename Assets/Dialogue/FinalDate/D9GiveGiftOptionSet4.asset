@@ -10,27 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
-  m_Name: D5ComplimentOk
+  m_Name: D9GiveGiftOptionSet4
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
-      Message: You look cute today.
+      Message: (I should choose a gift wisely)
       SpeakerTitle: John Guy
-    DialogueActionsStart:
-    - {fileID: 11400000, guid: 923d12441148ea745a20e43f8c222236, type: 2}
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: Thanks
-      SpeakerTitle: Jessica
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options:
-    - Option: Apologize for past behavior
-      Sequence: {fileID: 11400000, guid: 39ac69012b0e6bd40b266fc7178bd9cf, type: 2}
-      Requirements: []
+    - Option: Time Travel Book
+      Sequence: {fileID: 11400000, guid: ad3bf8a0687f6de47a6737e7ec8d4383, type: 2}
+      Requirements:
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: d9ce722e9e1b1b64fbae3c3b063f0e89, type: 2}
       AnyMet: 0
-    - Option: Small talk
-      Sequence: {fileID: 11400000, guid: 8bffdd81f90ea0b448f60ba13ed60c02, type: 2}
+    - Option: Something Else
+      Sequence: {fileID: 11400000, guid: aab720822ccb88341a83c8c6c061b58a, type: 2}
       Requirements: []
       AnyMet: 0

@@ -10,46 +10,48 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2c2129c14f24fcbb99369ba59fa86c4, type: 3}
-  m_Name: D5ComplimentPicker
+  m_Name: D12FinishDateSequencePicker
   m_EditorClassIdentifier: Assembly-CSharp::DialoguePickSequence
   PossibleRequirements:
   - Requirements:
-    - stat: 3
-      number: -5
-      GreaterThan: 1
-      Item: {fileID: 0}
-    - stat: 3
-      number: -1
-      GreaterThan: 0
-      Item: {fileID: 0}
-    Sequence: {fileID: 11400000, guid: e25ae6018c54c8b4da8ca5417255173b, type: 2}
-  - Requirements:
-    - stat: 3
+    - stat: 5
       number: 0
-      GreaterThan: 1
-      Item: {fileID: 0}
-    - stat: 3
-      number: 2
       GreaterThan: 0
       Item: {fileID: 0}
-    Sequence: {fileID: 11400000, guid: ba3a0ee0da7202d41a1faeabe8b51006, type: 2}
+    Sequence: {fileID: 11400000, guid: 1f5b0fd2b42d3334a84483a3f3eb57ac, type: 2}
   - Requirements:
-    - stat: 3
-      number: 3
+    - stat: 5
+      number: 1
       GreaterThan: 1
       Item: {fileID: 0}
-    - stat: 3
-      number: 4
+    - stat: 5
+      number: 7
       GreaterThan: 0
       Item: {fileID: 0}
-    Sequence: {fileID: 11400000, guid: b6277ffb5a4579f4b9e942cc183c6e51, type: 2}
+    Sequence: {fileID: 11400000, guid: 15b0ca6824ac63d4cb55ca62ce9e7c55, type: 2}
   - Requirements:
-    - stat: 3
-      number: 5
+    - stat: 5
+      number: 8
       GreaterThan: 1
       Item: {fileID: 0}
-    - stat: 3
-      number: 5
+    - stat: 5
+      number: 13
       GreaterThan: 0
       Item: {fileID: 0}
-    Sequence: {fileID: 11400000, guid: 53f1863e1d5df2443b24e2a2c7962b51, type: 2}
+    Sequence: {fileID: 11400000, guid: 17f772b0e9d2c9e4bb5fbe408afcbdc8, type: 2}
+  - Requirements:
+    - stat: 5
+      number: 14
+      GreaterThan: 1
+      Item: {fileID: 0}
+    - stat: 5
+      number: 16
+      GreaterThan: 0
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 7fd698def3991234190dc5f5f939154e, type: 2}
+  - Requirements:
+    - stat: 5
+      number: 17
+      GreaterThan: 1
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 23e7e0a143de6a1418ae2cbf777549ea, type: 2}

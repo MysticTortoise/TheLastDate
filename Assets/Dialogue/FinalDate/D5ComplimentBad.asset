@@ -26,10 +26,10 @@ MonoBehaviour:
     DialogueActionsEnd: []
     Options:
     - Option: Apologize for past behavior
-      Sequence: {fileID: 0}
+      Sequence: {fileID: 11400000, guid: 39ac69012b0e6bd40b266fc7178bd9cf, type: 2}
       Requirements: []
       AnyMet: 0
     - Option: Small talk
-      Sequence: {fileID: 0}
+      Sequence: {fileID: 11400000, guid: 8bffdd81f90ea0b448f60ba13ed60c02, type: 2}
       Requirements: []
       AnyMet: 0

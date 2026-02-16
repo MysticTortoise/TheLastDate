@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
+  m_Name: D9GiveGiftOptionSet2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogueNodes:
+  - Message:
+      Message: (I should choose a gift wisely)
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options:
+    - Option: Duct Tape
+      Sequence: {fileID: 11400000, guid: 8630d0094d1058d4da59be5b8915053d, type: 2}
+      Requirements:
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 10b8078c97274a24092101fbea3a7f2f, type: 2}
+      AnyMet: 0
+    - Option: Crackers
+      Sequence: {fileID: 11400000, guid: c98f2adea1a673b4b82a2e6a6e39a653, type: 2}
+      Requirements:
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 45df92780f424de4b81f38f9a7bc4c47, type: 2}
+      AnyMet: 0
+    - Option: Something Else
+      Sequence: {fileID: 11400000, guid: 0706fafc60187d54f85b639a3abaf5de, type: 2}
+      Requirements:
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 45df92780f424de4b81f38f9a7bc4c47, type: 2}
+      AnyMet: 0
