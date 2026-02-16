@@ -76,24 +76,22 @@ public class DatingSimManager : MonoBehaviour
         yield return null;
     }
 
-    private void EndGame()
-    {
-        guyPanel.SetActive(false);
-        winPanel.SetActive(true);
+private void EndGame()
+{
+    guyPanel.SetActive(false);
+    questionPanel.SetActive(false);   // ✅ ADD THIS
+    winPanel.SetActive(true);
 
-        winPanel.transform.Find("ScoreText").GetComponent<TextMeshProUGUI>().text = "Final Score:" + score;
+    winPanel.transform.Find("ScoreText").GetComponent<TextMeshProUGUI>().text = "Final Score:" + score;
 
-        if (score > 0)
-        {
-            winPanel.transform.Find("GuyImage").GetComponent<Image>().sprite = guy.blushImage;
-        }
-        else
-        {
-            winPanel.transform.Find("GuyImage").GetComponent<Image>().sprite = guy.image;
-        }
-        
-        statChanges.rizz = (score / 2);
-        PlayerGlobalHandler.GlobalHandler.AddStats(statChanges);
-        StartCoroutine(EndGameCoroutine());
-    }
+    if (score > 0)
+        winPanel.transform.Find("GuyImage").GetComponent<Image>().sprite = guy.blushImage;
+    else
+        winPanel.transform.Find("GuyImage").GetComponent<Image>().sprite = guy.image;
+
+    statChanges.rizz = (score / 2);
+    PlayerGlobalHandler.GlobalHandler.AddStats(statChanges);
+    StartCoroutine(EndGameCoroutine());
+}
+
 }
