@@ -3,11 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class StatUIImageBar : MonoBehaviour
-{ 
+{
     public enum StatType { Empathy, Smarts, Rizz, Looks }
-
-    [Header("References")]
-    public PlayerGlobalHandler playerGlobal;
 
     [Header("Which stat should this bar display?")]
     public StatType statToDisplay = StatType.Empathy;
@@ -28,20 +25,13 @@ public class StatUIImageBar : MonoBehaviour
 
     private int _lastIndex = int.MinValue;
 
-private void Awake()
-{
-    if (playerGlobal == null)
-        playerGlobal = PlayerGlobalHandler.GlobalHandler;
+    private void Awake()
+    {
+        images.RemoveAll(i => i == null);
 
-    if (playerGlobal == null)
-        playerGlobal = FindAnyObjectByType<PlayerGlobalHandler>();
-
-    images.RemoveAll(i => i == null);
-
-    EnsureStatsExist();
-    ForceRefresh();
-}
-
+        EnsureStatsExist();
+        ForceRefresh();
+    }
 
     private void OnEnable()
     {
@@ -51,19 +41,12 @@ private void Awake()
 
     private void Update()
     {
-        if (playerGlobal == null)
-        {
-            if (logIfMissing) Debug.LogWarning($"{name}: No PlayerGlobalHandler found.");
-            return;
-        }
-
         EnsureStatsExist();
-
         if (images.Count == 0) return;
 
         int statValue = GetSelectedStatValue();
 
-        // Map -5..5 -> 0..10 (then clamp to your image count)
+        // Map min..max -> 0..(max-min) then clamp to image count
         int desiredIndex = statValue - minStat;
         desiredIndex = Mathf.Clamp(desiredIndex, 0, images.Count - 1);
 
@@ -76,10 +59,20 @@ private void Awake()
 
     private void EnsureStatsExist()
     {
-        if (playerGlobal.stats == null)
+        // If your GlobalHandler is created elsewhere (like a singleton), we can only guard here.
+        if (PlayerGlobalHandler.GlobalHandler == null)
         {
-            if (logIfMissing) Debug.LogWarning($"{name}: playerGlobal.stats was null. Creating new StatBlock().");
-            playerGlobal.stats = new StatBlock();
+            if (logIfMissing)
+                Debug.LogWarning($"{name}: PlayerGlobalHandler.GlobalHandler was null (can't create it here).");
+            return;
+        }
+
+        if (PlayerGlobalHandler.GlobalHandler.stats == null)
+        {
+            if (logIfMissing)
+                Debug.LogWarning($"{name}: GlobalHandler.stats was null. Creating new StatBlock().");
+
+            PlayerGlobalHandler.GlobalHandler.stats = new StatBlock();
         }
     }
 
@@ -90,12 +83,16 @@ private void Awake()
 
     private int GetSelectedStatValue()
     {
+        // If GlobalHandler is still null, avoid null ref + pick a safe default
+        if (PlayerGlobalHandler.GlobalHandler == null || PlayerGlobalHandler.GlobalHandler.stats == null)
+            return 0;
+
         switch (statToDisplay)
         {
-            case StatType.Empathy: return playerGlobal.stats.empathy;
-            case StatType.Smarts:  return playerGlobal.stats.smarts;
-            case StatType.Rizz:    return playerGlobal.stats.rizz;
-            case StatType.Looks:   return playerGlobal.stats.looks;
+            case StatType.Empathy: return PlayerGlobalHandler.GlobalHandler.stats.empathy;
+            case StatType.Smarts:  return PlayerGlobalHandler.GlobalHandler.stats.smarts;
+            case StatType.Rizz:    return PlayerGlobalHandler.GlobalHandler.stats.rizz;   // <- new path
+            case StatType.Looks:   return PlayerGlobalHandler.GlobalHandler.stats.looks;
             default:               return 0;
         }
     }
