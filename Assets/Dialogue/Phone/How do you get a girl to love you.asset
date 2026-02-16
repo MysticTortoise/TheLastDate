@@ -39,6 +39,7 @@ MonoBehaviour:
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options:
-    - Option: 
-      Sequence: {fileID: 11400000, guid: 9c8b577cdc380ac48a0f9513720edefa, type: 2}
+    - Option: Thanks
+      Sequence: {fileID: 11400000, guid: af59d30795f9a0641ab2fe5d77adbc93, type: 2}
       Requirements: []
+      AnyMet: 0

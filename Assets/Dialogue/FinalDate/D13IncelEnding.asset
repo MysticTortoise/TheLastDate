@@ -118,12 +118,6 @@ MonoBehaviour:
     Options: []
   - Message:
       Message: A link to DoorDash Mountain Dew, lewd anime girl art, and most importantly....
-      SpeakerTitle: Reddit Incel
-    DialogueActionsStart: []
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: A link to DoorDash Mountain Dew, lewd anime girl art, and most importantly....
       SpeakerTitle: Incel
     DialogueActionsStart: []
     DialogueActionsEnd: []
@@ -141,7 +135,7 @@ MonoBehaviour:
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: (He Naruto Runs Into the Night)
+      Message: (He throws his arms back and runs off into the night.)
       SpeakerTitle: 
     DialogueActionsStart: []
     DialogueActionsEnd: []
