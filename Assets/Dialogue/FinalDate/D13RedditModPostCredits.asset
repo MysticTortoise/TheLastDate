@@ -16,32 +16,37 @@ MonoBehaviour:
   - Message:
       Message: I can't believe it! After everything I've done for her...
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Heh, lady troubles?
       SpeakerTitle: ???
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: bc3d41fcd61c6e249a3bc95899fc7074, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Who are you?!
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: 'A friend to the downtrodden of society, kind stranger. '
       SpeakerTitle: ???
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: bc3d41fcd61c6e249a3bc95899fc7074, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Those womenfolk are far too flighty. I tip my fedora to any man who
         puts up with them.
       SpeakerTitle: ???
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 20feb881f5bce8f4c8ed29147d63987e, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -53,13 +58,15 @@ MonoBehaviour:
   - Message:
       Message: The truth about what?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Females! We're better leaving them behind.
       SpeakerTitle: ???
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 20feb881f5bce8f4c8ed29147d63987e, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -78,25 +85,29 @@ MonoBehaviour:
   - Message:
       Message: I don't know if I want to.
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Trust me brother. Take the red pill.
       SpeakerTitle: ???
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 20feb881f5bce8f4c8ed29147d63987e, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: (He Slides Away)
       SpeakerTitle: 
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: bc3d41fcd61c6e249a3bc95899fc7074, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: He's gone...
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:

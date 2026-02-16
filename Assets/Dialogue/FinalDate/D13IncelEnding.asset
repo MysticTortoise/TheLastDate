@@ -16,25 +16,29 @@ MonoBehaviour:
   - Message:
       Message: I can't believe it! After everything I've done for her.
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Do not fret, John Guy. You've done well.
       SpeakerTitle: ???
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: bc3d41fcd61c6e249a3bc95899fc7074, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Who are you?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: A friend. An ally. A peer.
       SpeakerTitle: ???
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 20feb881f5bce8f4c8ed29147d63987e, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -46,74 +50,86 @@ MonoBehaviour:
   - Message:
       Message: Who is this "us"?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: What do you know about the involuntarily celibate community?
       SpeakerTitle: ???
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 20feb881f5bce8f4c8ed29147d63987e, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: You mean... incels?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Quite right, my good sir. We've been watching you.
       SpeakerTitle: Incel
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 20feb881f5bce8f4c8ed29147d63987e, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: What?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Watching you sit around, letting your body and your soul rot....
       SpeakerTitle: Incel
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: bc3d41fcd61c6e249a3bc95899fc7074, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Yes, yes... you have great potential.
       SpeakerTitle: Incel
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 20feb881f5bce8f4c8ed29147d63987e, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: You *like* that I do nothing?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Your inaction is fertile ground to the hatred of the world around
         you. Learn more, if you dare...
       SpeakerTitle: Incel
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 20feb881f5bce8f4c8ed29147d63987e, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: (He hands you a hard drive)
       SpeakerTitle: 
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: bc3d41fcd61c6e249a3bc95899fc7074, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: What's this?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: 'It holds everything you need to begin your journey. '
       SpeakerTitle: Incel
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 20feb881f5bce8f4c8ed29147d63987e, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -125,13 +141,15 @@ MonoBehaviour:
   - Message:
       Message: Reddit.
       SpeakerTitle: Redditor
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: bc3d41fcd61c6e249a3bc95899fc7074, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: Careful not to lose it, the power it contains is strong. Join us....
       SpeakerTitle: Redditor
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 20feb881f5bce8f4c8ed29147d63987e, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
