@@ -53,7 +53,7 @@ public class DatingSimManager : MonoBehaviour
         else {score--;}
         scoreTextBox.text = "Score: " + score;
         questions.Remove(currentQuestion);
-        Debug.Log(score);
+        //Debug.Log(score);
 
         if (questions.Count > 0)
         {
