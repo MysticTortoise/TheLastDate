@@ -42,4 +42,8 @@ MonoBehaviour:
       SpeakerTitle: John Guy
     DialogueActionsStart: []
     DialogueActionsEnd: []
-    Options: []
+    Options:
+    - Option: Head to car
+      Sequence: {fileID: 11400000, guid: b9e7a18b009fc7644818ee81c5514e88, type: 2}
+      Requirements: []
+      AnyMet: 0
