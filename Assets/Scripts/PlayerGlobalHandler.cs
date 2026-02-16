@@ -13,7 +13,7 @@ public class PlayerGlobalHandler : MonoBehaviour
         looks = 0,
         money = 0,
         rizz = 0,
-         smarts = 0,
+         smarts = 5,
     };
     private TimerHandler timerHandler;
     [NonSerialized] public List<ItemDefinition> heldItems = new();
