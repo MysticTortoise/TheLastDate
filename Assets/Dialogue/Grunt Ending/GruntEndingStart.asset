@@ -31,7 +31,8 @@ MonoBehaviour:
       Message: Let's test this baby out.
       SpeakerTitle: John Guy
     DialogueActionsStart: []
-    DialogueActionsEnd: []
+    DialogueActionsEnd:
+    - {fileID: 11400000, guid: f3960697e43dad043a341314d5f91881, type: 2}
     Options: []
   - Message:
       Message: (The time machine turns on, the bedroom bursts with bright light.

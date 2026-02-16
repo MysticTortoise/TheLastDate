@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 544c6b54e11058041bb3a7bac0510ea9
+guid: 1e989b748bf1a2d42af292980b336782
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8358598402453592017
-    second: Grunt Almost Kiss_0
+      213: -5043528495432702037
+    second: Bedroom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Grunt Almost Kiss_0
+      name: Bedroom_0
       rect:
         serializedVersion: 2
-        x: 875
+        x: 0
         y: 0
-        width: 1023
-        height: 1036
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1d7d46616f4bff370800000000000000
-      internalID: 8358598402453592017
+      spriteID: ba76c2f1e89c10ab0800000000000000
+      internalID: -5043528495432702037
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Grunt Almost Kiss_0: 8358598402453592017
+      Bedroom_0: -5043528495432702037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
