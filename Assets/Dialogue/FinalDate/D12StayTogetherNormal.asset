@@ -17,7 +17,7 @@ MonoBehaviour:
       Message: You really impressed me tonight.
       SpeakerTitle: Jessica
     DialogueActionsStart:
-    - {fileID: 11400000, guid: 0577b439fae384f4081a103de5ff4cf8, type: 2}
+    - {fileID: 11400000, guid: 7b7ca8bb4f57cb940acefe020d3bc544, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -29,7 +29,8 @@ MonoBehaviour:
   - Message:
       Message: That's everything I wanted to hear!
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
