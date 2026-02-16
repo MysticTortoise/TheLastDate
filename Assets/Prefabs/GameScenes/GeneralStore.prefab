@@ -90,7 +90,7 @@ SpriteRenderer:
   m_Size: {x: 12, y: 6.73}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2529744180713699371
 MonoBehaviour:
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab88fe06e0af45efa98cbcccb54e3241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerDialogueInstant
-  Sequence: {fileID: 11400000, guid: d32aad2e676fe974abda460993f53529, type: 2}
+  Sequence: {fileID: 11400000, guid: abd2693d50191434792c1fcdacdf22af, type: 2}
 --- !u!1 &8602646350378076995
 GameObject:
   m_ObjectHideFlags: 0

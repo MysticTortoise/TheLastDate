@@ -889,6 +889,7 @@ GameObject:
   - component: {fileID: 818567699}
   - component: {fileID: 818567698}
   - component: {fileID: 818567697}
+  - component: {fileID: 818567700}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -959,7 +960,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 818567698}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 818567700}
+        m_TargetAssemblyTypeName: GoBackToGameScript, Assembly-CSharp
+        m_MethodName: GoBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &818567698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -998,6 +1011,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 818567695}
   m_CullTransparentMesh: 1
+--- !u!114 &818567700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818567695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705b1472651e4a7aa5f3f9494d026eae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GoBackToGameScript
+  ReturnArea: {fileID: 8602646350378076995, guid: e3d1bbf952a7ebe45902f164556989a7, type: 3}
 --- !u!1 &851107395
 GameObject:
   m_ObjectHideFlags: 0
@@ -1351,7 +1377,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
