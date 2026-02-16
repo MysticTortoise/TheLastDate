@@ -14,18 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
-      Message: Hey.
+      Message: Hi.
       SpeakerTitle: Annoying Teen
-    DialogueActionsStart:
-    - {fileID: 11400000, guid: 0eb7de944bee0974f8853108bf3b6cfb, type: 2}
+    DialogueActionsStart: []
     DialogueActionsEnd: []
     Options:
-    - Option: Shop Clothing
-      Sequence: {fileID: 11400000, guid: 8c6949270d5be424390a2b480b90aa0c, type: 2}
+    - Option: Shop
+      Sequence: {fileID: 11400000, guid: af59d30795f9a0641ab2fe5d77adbc93, type: 2}
       Requirements: []
-    - Option: Clothing Store Chat
+    - Option: Chat
       Sequence: {fileID: 11400000, guid: 97ae6ded20ade9548b908e015d2febb6, type: 2}
       Requirements: []
-    - Option: Leave Clothing Store
+    - Option: Leave
       Sequence: {fileID: 11400000, guid: 0d6a66c86911128469816518152889fb, type: 2}
       Requirements: []

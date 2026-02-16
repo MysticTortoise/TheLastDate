@@ -288,7 +288,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoToAreaButton
   UseHoverSprite: 1
-  Scene: {fileID: 8602646350378076995, guid: 34e3f441b6e666e46a3670378fe77515, type: 3}
+  Scene: {fileID: 8602646350378076995, guid: 14d1eb8b377419c458aaff5c795f28ee, type: 3}
 --- !u!61 &757177550570525338
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -784,7 +784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GoToAreaButton
   UseHoverSprite: 1
-  Scene: {fileID: 8602646350378076995, guid: cf7678aa35290864d92aa482c154773c, type: 3}
+  Scene: {fileID: 8602646350378076995, guid: fd8f628254b080047a5962a3417926df, type: 3}
 --- !u!61 &4936890102942945032
 BoxCollider2D:
   m_ObjectHideFlags: 0

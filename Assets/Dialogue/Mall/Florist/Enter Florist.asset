@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
-  m_Name: EnterFlorist
+  m_Name: Enter Florist
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
-      Message: 'Hey. '
-      SpeakerTitle: Annpoying Teen
-    DialogueActionsStart:
-    - {fileID: 11400000, guid: 0eb7de944bee0974f8853108bf3b6cfb, type: 2}
+      Message: Hey.
+      SpeakerTitle: Annoying Teen
+    DialogueActionsStart: []
     DialogueActionsEnd: []
     Options:
-    - Option: Buy Flowers
-      Sequence: {fileID: 11400000, guid: 4daaf97afdc1e3a4fafa3c7726d6c644, type: 2}
+    - Option: Shop
+      Sequence: {fileID: 11400000, guid: af59d30795f9a0641ab2fe5d77adbc93, type: 2}
       Requirements: []
-    - Option: Florist Chat
+    - Option: Chat
       Sequence: {fileID: 11400000, guid: 1ba064880a89538489d4352ffb917a95, type: 2}
       Requirements: []
-    - Option: 'Leave Florist '
+    - Option: Leave
       Sequence: {fileID: 11400000, guid: 0d6a66c86911128469816518152889fb, type: 2}
       Requirements: []
