@@ -20,6 +20,14 @@ public class DatingSimManager : MonoBehaviour
     private DatingSimQuestion currentQuestion;
     private int score;
 
+    [SerializeField] private float minPitch = 0.8f;
+[SerializeField] private float maxPitch = 1.2f;
+[SerializeField] private float pitchPerPoint = 0.05f;
+
+
+    public AudioSource endSound;
+
+
     [SerializeField] private GameObject GoBackScene;
 
     void Start()
@@ -70,7 +78,7 @@ public class DatingSimManager : MonoBehaviour
 
     private IEnumerator EndGameCoroutine()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2.5f);
 
         PlayerGlobalHandler.LoadIntoMainGame(GoBackScene);
         yield return null;
@@ -79,7 +87,7 @@ public class DatingSimManager : MonoBehaviour
 private void EndGame()
 {
     guyPanel.SetActive(false);
-    questionPanel.SetActive(false);   // ✅ ADD THIS
+    questionPanel.SetActive(false);
     winPanel.SetActive(true);
 
     winPanel.transform.Find("ScoreText").GetComponent<TextMeshProUGUI>().text = "Final Score:" + score;
@@ -91,7 +99,17 @@ private void EndGame()
 
     statChanges.rizz = (score / 2);
     PlayerGlobalHandler.GlobalHandler.AddStats(statChanges);
+
+    // Set pitch based on score
+    if (endSound != null)
+    {
+        float calculatedPitch = 1f + (score * pitchPerPoint);
+        endSound.pitch = Mathf.Clamp(calculatedPitch, minPitch, maxPitch);
+        endSound.Play();
+    }
+
     StartCoroutine(EndGameCoroutine());
 }
+
 
 }
