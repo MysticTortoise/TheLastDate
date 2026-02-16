@@ -7,6 +7,9 @@ public class TriggerDialogueFunction : MonoBehaviour
 
     public void Trigger()
     {
+        if (DialogueManager.dialogueManager == null) return;
+        if (DialogueManager.dialogueManager.isDialogueUp) return;
+        
         DialogueManager.dialogueManager.SetActiveDialogueSequence(Sequence);
     }
 }
