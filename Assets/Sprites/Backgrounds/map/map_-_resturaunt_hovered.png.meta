@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cf729be025ac4de4e87ce0c22a8167b1
+guid: e3823c4d4aa6f104cb45f9f291e48de9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6167577936227312574
-    second: John Guy_Angry_0
+      213: -1217911186612887084
+    second: map_-_resturaunt_hovered_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: John Guy_Angry_0
+      name: map_-_resturaunt_hovered_0
       rect:
         serializedVersion: 2
-        x: 574
-        y: 0
-        width: 1380
-        height: 3746
+        x: 1199
+        y: 511
+        width: 627
+        height: 549
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 24c52a25b8c586aa0800000000000000
-      internalID: -6167577936227312574
+      spriteID: 4d1e6f18a3c191fe0800000000000000
+      internalID: -1217911186612887084
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      John Guy_Angry_0: -6167577936227312574
+      map_-_resturaunt_hovered_0: -1217911186612887084
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -206,7 +206,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141013326}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
@@ -711,6 +711,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 36.00023
       objectReference: {fileID: 0}
+    - target: {fileID: 5963373378049838052, guid: 89648702b4ffd2f469580be00411368b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 124.144
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963373378049838052, guid: 89648702b4ffd2f469580be00411368b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 42.521
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963373378049838052, guid: 89648702b4ffd2f469580be00411368b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 12.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963373378049838052, guid: 89648702b4ffd2f469580be00411368b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 201
+      objectReference: {fileID: 0}
     - target: {fileID: 6186952858814292234, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: OptionIndex
       value: 1
@@ -718,7 +734,7 @@ PrefabInstance:
     - target: {fileID: 6263399851217640449, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: DefaultScene
       value: 
-      objectReference: {fileID: 8602646350378076995, guid: a291aad34a25d87498f6a095a67e9955, type: 3}
+      objectReference: {fileID: 8602646350378076995, guid: dd1ce9f5dfc39754c8999e55a7c99e9c, type: 3}
     - target: {fileID: 6467673026416543633, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: m_SizeDelta.x
       value: 508.25
@@ -742,6 +758,10 @@ PrefabInstance:
     - target: {fileID: 7830361638466598018, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 1218
+      objectReference: {fileID: 0}
+    - target: {fileID: 7949331826011528605, guid: 89648702b4ffd2f469580be00411368b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8471354305265057957, guid: 89648702b4ffd2f469580be00411368b, type: 3}
       propertyPath: m_AnchoredPosition.y
