@@ -9,7 +9,7 @@ public class PlayerGlobalHandler : MonoBehaviour
     public StatBlock stats = new StatBlock
     {
         empathy = 5,
-        charm = 5,
+        charm = 0,
         looks = 5,
         money = 999,
         rizz = 5,
