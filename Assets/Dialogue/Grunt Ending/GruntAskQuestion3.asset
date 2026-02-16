@@ -12,4 +12,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
   m_Name: GruntAskQuestion3
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
-  dialogueNodes: []
+  dialogueNodes:
+  - Message:
+      Message: Do you work out? You look like you take care of yourself...
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: (He blushes)
+      SpeakerTitle: 
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: (He blushes)
+      SpeakerTitle: 
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: ab73d7c84fdc2784898f2f31022aa7a2, type: 2}
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: '*grunts*'
+      SpeakerTitle: Grunt
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 997258c100ec4c2478f0089661bc1515, type: 2}
+    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
+    DialogueActionsEnd: []
+    Options:
+    - Option: Ask Another Question
+      Sequence: {fileID: 11400000, guid: 9281ad75a08dfae4583950d5c19808d9, type: 2}
+      Requirements: []
+      AnyMet: 0
+    - Option: Continue
+      Sequence: {fileID: 11400000, guid: 752db28f7ea815147aeffef002b2017e, type: 2}
+      Requirements:
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 0af21123c62a7a44aa8520c22e7d77a6, type: 2}
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: aaca55a56af94d64ba71f9098bda7402, type: 2}
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 92e5775114269be47a22be07181248fe, type: 2}
+      AnyMet: 0

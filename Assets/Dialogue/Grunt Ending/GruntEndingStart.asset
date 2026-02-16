@@ -47,12 +47,18 @@ MonoBehaviour:
     DialogueActionsEnd: []
     Options: []
   - Message:
+      Message: Oh my god.. are you... a caveman?
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
       Message: ...
       SpeakerTitle: You are, aren't you? Oh my God!
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options:
     - Option: Ask The Caveman a Question
-      Sequence: {fileID: 0}
+      Sequence: {fileID: 11400000, guid: 9281ad75a08dfae4583950d5c19808d9, type: 2}
       Requirements: []
       AnyMet: 0
