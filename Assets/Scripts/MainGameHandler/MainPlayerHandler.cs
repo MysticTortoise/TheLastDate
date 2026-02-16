@@ -10,6 +10,7 @@ public class StatBlock
     public int smarts = 0;
     public int rizz = 0;
     public int looks = 0;
+    public int charm = 0;
 }
 
 public class MainPlayerHandler : MonoBehaviour

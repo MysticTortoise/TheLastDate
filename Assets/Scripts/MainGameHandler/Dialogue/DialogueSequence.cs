@@ -12,7 +12,8 @@ public enum PlayerStat
     Empathy,
     Smarts,
     Rizz,
-    Looks
+    Looks,
+    Charm
 }
 
 [Serializable]
@@ -36,6 +37,7 @@ public class DialogueRequirement
             PlayerStat.Smarts => MainPlayerHandler.PlayerHandler.playerStats.smarts,
             PlayerStat.Rizz => MainPlayerHandler.PlayerHandler.playerStats.rizz,
             PlayerStat.Looks => MainPlayerHandler.PlayerHandler.playerStats.looks,
+            PlayerStat.Charm => MainPlayerHandler.PlayerHandler.playerStats.charm,
             _ => throw new ArgumentOutOfRangeException()
         };
 
