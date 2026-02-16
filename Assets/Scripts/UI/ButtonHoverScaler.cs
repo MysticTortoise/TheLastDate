@@ -12,6 +12,10 @@ public class ButtonHoverScaler : MonoBehaviour, IPointerEnterHandler, IPointerEx
     private Vector3 originalScale;
     private Vector3 targetScale;
 
+
+    public bool playSoundOnHover = false;
+    public AudioSource buttonHover;
+
     void Awake()
     {
         originalScale = transform.localScale;
@@ -27,18 +31,25 @@ public class ButtonHoverScaler : MonoBehaviour, IPointerEnterHandler, IPointerEx
         );
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        currentHovered = this;
+public void OnPointerEnter(PointerEventData eventData)
+{
+    currentHovered = this;
 
-        foreach (ButtonHoverScaler button in FindObjectsByType<ButtonHoverScaler>(FindObjectsSortMode.None))
-        {
-            if (button == this)
-                button.targetScale = button.originalScale + Vector3.one * hoverAmount;
-            else
-                button.targetScale = button.originalScale - Vector3.one * shrinkAmount;
-        }
+    if (playSoundOnHover && buttonHover != null)
+    {
+        buttonHover.pitch = Random.Range(0.95f, 1.2f);
+        buttonHover.Play();
     }
+
+    foreach (ButtonHoverScaler button in FindObjectsByType<ButtonHoverScaler>(FindObjectsSortMode.None))
+    {
+        if (button == this)
+            button.targetScale = button.originalScale + Vector3.one * hoverAmount;
+        else
+            button.targetScale = button.originalScale - Vector3.one * shrinkAmount;
+    }
+}
+
 
     public void OnPointerExit(PointerEventData eventData)
     {

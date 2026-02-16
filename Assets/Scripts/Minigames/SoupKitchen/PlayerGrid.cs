@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerGrid : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class PlayerGrid : MonoBehaviour
     public int maxGrid = 5;
 
     public float gridSpacing = 2f;
+
+    public AudioSource step;
 
     void Update()
     {
@@ -22,6 +26,8 @@ public class PlayerGrid : MonoBehaviour
     {
         int newGrid = Mathf.Clamp(currentGrid + dir, minGrid, maxGrid);
         if (newGrid == currentGrid) return;
+
+        step.Play();
 
         currentGrid = newGrid;
         transform.position = new Vector3(currentGrid * gridSpacing, transform.position.y, transform.position.z);
