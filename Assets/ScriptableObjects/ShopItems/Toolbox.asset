@@ -16,4 +16,4 @@ MonoBehaviour:
   Description: A box of assorted tools.
   ShopDescription: Ugh, heavy...
   Cost: 20
-  Image: {fileID: 21300000, guid: 9813daf510dd553419fb4f1562b748a9, type: 3}
+  Image: {fileID: 21300000, guid: 3ffce025f5aac9049acb291c0c18ff8d, type: 3}

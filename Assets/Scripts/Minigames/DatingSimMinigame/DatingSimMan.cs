@@ -6,6 +6,7 @@ public class DatingSimMan : ScriptableObject
 {
     public string manName;
     public Sprite image;
+    public Sprite blushImage;
     public Personality type;
 }
 

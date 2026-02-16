@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
+  m_Name: D7ReadGreat
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogueNodes:
+  - Message:
+      Message: I have demolished three books today. My cranium is ever-expanding.
+      SpeakerTitle: John Guy
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: d0b317311b3fc9c4ba0d4e5bf9796464, type: 2}
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Oh, wow! You read quickly!
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: 'Together, we can consume all the information there is to know in
+        this world. '
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: We can learn all the information there is to know as a team.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: No one will be able to match us.
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: That's... a lot.
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: I like it.
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options:
+    - Option: Almost Over
+      Sequence: {fileID: 11400000, guid: 771d890e9ae4bc542957f96f6229ac3a, type: 2}
+      Requirements: []
+      AnyMet: 0

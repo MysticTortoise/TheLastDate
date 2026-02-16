@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
+  m_Name: D9GiveGiftOptionSet4
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogueNodes:
+  - Message:
+      Message: (I should choose a gift wisely)
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options:
+    - Option: Time Travel Book
+      Sequence: {fileID: 11400000, guid: ad3bf8a0687f6de47a6737e7ec8d4383, type: 2}
+      Requirements:
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: d9ce722e9e1b1b64fbae3c3b063f0e89, type: 2}
+      AnyMet: 0
+    - Option: Something Else
+      Sequence: {fileID: 11400000, guid: aab720822ccb88341a83c8c6c061b58a, type: 2}
+      Requirements: []
+      AnyMet: 0

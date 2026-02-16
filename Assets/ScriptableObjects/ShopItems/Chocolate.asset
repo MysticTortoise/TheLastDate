@@ -16,4 +16,4 @@ MonoBehaviour:
   Description: A bar of Chocolate.
   ShopDescription: I can't stand sweet stuff. Yuck.
   Cost: 20
-  Image: {fileID: 21300000, guid: 3aa48447975efa444825a094ecc1e7d3, type: 3}
+  Image: {fileID: 21300000, guid: 2f4dcad386d840343957521142d0f618, type: 3}

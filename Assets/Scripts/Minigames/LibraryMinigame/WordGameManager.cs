@@ -28,7 +28,7 @@ public class WordGameManager : MonoBehaviour
         string[] lines = words.text.Split("\n");
         foreach(string line in lines)
         {
-            dictionary.Add(line);
+            dictionary.Add(line.Replace("\r", ""));
         }
         backToGame = backButton.GetComponent<GoBackToGameScript>();
         buttonsClicked = new();

@@ -16,4 +16,4 @@ MonoBehaviour:
   Description: A junk power core. What even is a Power Core?
   ShopDescription: Do you really think this junk works?
   Cost: 20
-  Image: {fileID: 21300000, guid: 7b2655bf718c87f4e9472cd6827be515, type: 3}
+  Image: {fileID: 21300000, guid: af288402d0414894194dce3ea1e709ef, type: 3}

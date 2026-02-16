@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Lucas C.
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimMan
   manName: Lucas C.
+  image: {fileID: -1710703393645276207, guid: 699fcad832380ba429ccf2c926f6a41b, type: 3}
+  blushImage: {fileID: 6583821434110983244, guid: 699fcad832380ba429ccf2c926f6a41b, type: 3}
   type: 2

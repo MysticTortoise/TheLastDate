@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
+  m_Name: D12BreakupGood
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogueNodes:
+  - Message:
+      Message: Tonight was okay, but...
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: I haven't seen enough change from you.
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: You might be destined to be a bad boyfriend.
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: But I tried!
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Yeah.
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: Bye.
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options:
+    - Option: ???
+      Sequence: {fileID: 11400000, guid: 5d10d10e1e999c34b8e0c572ff74d28d, type: 2}
+      Requirements: []
+      AnyMet: 0

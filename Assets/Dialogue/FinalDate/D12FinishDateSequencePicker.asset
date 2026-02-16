@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c2129c14f24fcbb99369ba59fa86c4, type: 3}
+  m_Name: D12FinishDateSequencePicker
+  m_EditorClassIdentifier: Assembly-CSharp::DialoguePickSequence
+  PossibleRequirements:
+  - Requirements:
+    - stat: 5
+      number: 0
+      GreaterThan: 0
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 1f5b0fd2b42d3334a84483a3f3eb57ac, type: 2}
+  - Requirements:
+    - stat: 5
+      number: 1
+      GreaterThan: 1
+      Item: {fileID: 0}
+    - stat: 5
+      number: 7
+      GreaterThan: 0
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 15b0ca6824ac63d4cb55ca62ce9e7c55, type: 2}
+  - Requirements:
+    - stat: 5
+      number: 8
+      GreaterThan: 1
+      Item: {fileID: 0}
+    - stat: 5
+      number: 13
+      GreaterThan: 0
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 17f772b0e9d2c9e4bb5fbe408afcbdc8, type: 2}
+  - Requirements:
+    - stat: 5
+      number: 14
+      GreaterThan: 1
+      Item: {fileID: 0}
+    - stat: 5
+      number: 16
+      GreaterThan: 0
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 7fd698def3991234190dc5f5f939154e, type: 2}
+  - Requirements:
+    - stat: 5
+      number: 17
+      GreaterThan: 1
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 23e7e0a143de6a1418ae2cbf777549ea, type: 2}

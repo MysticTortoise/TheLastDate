@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c2129c14f24fcbb99369ba59fa86c4, type: 3}
+  m_Name: DateLooksPicker
+  m_EditorClassIdentifier: Assembly-CSharp::DialoguePickSequence
+  PossibleRequirements:
+  - Requirements:
+    - stat: 4
+      number: -5
+      GreaterThan: 1
+      Item: {fileID: 0}
+    - stat: 4
+      number: -1
+      GreaterThan: 0
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: c45046fb7450a0347a1bac4cc445609b, type: 2}
+  - Requirements:
+    - stat: 4
+      number: 0
+      GreaterThan: 1
+      Item: {fileID: 0}
+    - stat: 4
+      number: 2
+      GreaterThan: 0
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: f1a7671128251b9479d796bc53152f20, type: 2}
+  - Requirements:
+    - stat: 4
+      number: 3
+      GreaterThan: 1
+      Item: {fileID: 0}
+    - stat: 4
+      number: 4
+      GreaterThan: 0
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 804bbb5e9b2959c4d87c8ce9e5c95ce1, type: 2}
+  - Requirements:
+    - stat: 4
+      number: 5
+      GreaterThan: 1
+      Item: {fileID: 0}
+    - stat: 4
+      number: 5
+      GreaterThan: 0
+      Item: {fileID: 0}
+    Sequence: {fileID: 11400000, guid: 5fa09bc0c73ea9b4cb6e4541f15a9ea5, type: 2}

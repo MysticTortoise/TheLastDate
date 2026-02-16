@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
+  m_Name: D8AlmostOver
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
+  dialogueNodes:
+  - Message:
+      Message: The night's almost over...
+      SpeakerTitle: John Guy
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options: []
+  - Message:
+      Message: It is, isn't it?
+      SpeakerTitle: Jessica
+    DialogueActionsStart: []
+    DialogueActionsEnd: []
+    Options:
+    - Option: Give a gift
+      Sequence: {fileID: 11400000, guid: aab720822ccb88341a83c8c6c061b58a, type: 2}
+      Requirements:
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 5cf45f2472f2a6541aab0a8264ff2480, type: 2}
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 10b8078c97274a24092101fbea3a7f2f, type: 2}
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 5d43c597683888d4ca8ca8b35aa2cd2b, type: 2}
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 1a91d3c0bb30d4841aee16b15ed84a99, type: 2}
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: d9ce722e9e1b1b64fbae3c3b063f0e89, type: 2}
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 45df92780f424de4b81f38f9a7bc4c47, type: 2}
+      - stat: 0
+        number: 0
+        GreaterThan: 0
+        Item: {fileID: 11400000, guid: 45df92780f424de4b81f38f9a7bc4c47, type: 2}
+      AnyMet: 1
+    - Option: Walk Outside
+      Sequence: {fileID: 11400000, guid: c9acf5548f9fd1646904ee559f6376b8, type: 2}
+      Requirements: []
+      AnyMet: 1

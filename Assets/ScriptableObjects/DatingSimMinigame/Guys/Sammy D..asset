@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Sammy D.
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimMan
   manName: Sammy D.
+  image: {fileID: -7758949020370033757, guid: 699fcad832380ba429ccf2c926f6a41b, type: 3}
+  blushImage: {fileID: 7201246968153573079, guid: 699fcad832380ba429ccf2c926f6a41b, type: 3}
   type: 0

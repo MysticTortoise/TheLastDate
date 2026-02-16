@@ -4246,10 +4246,10 @@ RectTransform:
   - {fileID: 1998615885}
   - {fileID: 99415471}
   - {fileID: 2058152697}
-  - {fileID: 757262142}
   - {fileID: 860096525}
   - {fileID: 1171235345}
   - {fileID: 1628612807}
+  - {fileID: 757262142}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
