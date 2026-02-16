@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,12 +12,15 @@ public class WordGameManager : MonoBehaviour
     [HideInInspector] public List<Button> buttonsClicked;
     [HideInInspector] public string wordString;
     private int score;
+    private int intelligenceScore;
     [SerializeField] private TextMeshProUGUI scoreTextBox;
     [SerializeField] private TextAsset words;
+    [SerializeField] private TextMeshProUGUI realScoreTextBox;
     private HashSet<string> dictionary;
-    [SerializeField] private TextMeshProUGUI timerTextBox;
-    [SerializeField] private float time;
+    [SerializeField] private Button backButton;
+    private GoBackToGameScript backToGame;
     private StatBlock statChanges;
+    private int smartsChanges;
     void Start()
     {
         statChanges = new();
@@ -26,9 +30,11 @@ public class WordGameManager : MonoBehaviour
         {
             dictionary.Add(line);
         }
+        backToGame = backButton.GetComponent<GoBackToGameScript>();
         buttonsClicked = new();
         wordString = "";
         score = 0;
+        intelligenceScore = 0;
         graph = GetComponentInChildren<WordGraph>();
     }
 
@@ -55,50 +61,32 @@ public class WordGameManager : MonoBehaviour
     {
         if (dictionary.Contains(wordString))
         {
-           score += wordString.Length;
+            score += wordString.Length;
+            intelligenceScore += wordString.Length;
+            if (intelligenceScore >= 10)
+            {
+                intelligenceScore -= 10;
+                statChanges.smarts = 1;
+                PlayerGlobalHandler.GlobalHandler.AddStats(statChanges);
+                smartsChanges++;
+            }
+        }
+        else
+        {
+            score -= 5;
+            intelligenceScore -= 5;
+            if (intelligenceScore < 0)
+            {
+                intelligenceScore += 10;
+                statChanges.smarts = -1;
+                PlayerGlobalHandler.GlobalHandler.AddStats(statChanges);
+                smartsChanges--;
+            }
         }
         graph.OnRegen();
         wordString = "";
-        scoreTextBox.text = "Score: " + score;
-    }
-
-    void Update()
-    {
-        time -= Time.deltaTime;
-        timerTextBox.text = "Time: " + time;
-        if (time <= 0)
-        {
-            EndGame();
-        }
-    }
-
-    void EndGame()
-    {
-        if (score == 0)
-        {
-            statChanges.smarts = -2;
-        }
-        else if (score < 10)
-        {
-            statChanges.smarts = -1;  
-        }
-        else if (score <= 20)
-        {
-            statChanges.smarts = 0;
-        }
-        else if (score <= 30)
-        {
-            statChanges.smarts = 1;
-        }
-        else if (score <= 40)
-        {
-            statChanges.smarts = 2;
-        }
-        else if (score <= 50)
-        {
-            statChanges.smarts = 3;
-        }
-        PlayerGlobalHandler.GlobalHandler.AddStats(statChanges);
-        Debug.Log("Game Over");
+        scoreTextBox.text = "Change In Intelligence: " + smartsChanges;
+        realScoreTextBox.text = "Score: " + score;
     }
 }
+
