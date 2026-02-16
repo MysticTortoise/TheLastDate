@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using TMPro;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,8 +12,10 @@ public class WordGameManager : MonoBehaviour
     [HideInInspector] public List<Button> buttonsClicked;
     [HideInInspector] public string wordString;
     private int score;
+    private int intelligenceScore;
     [SerializeField] private TextMeshProUGUI scoreTextBox;
     [SerializeField] private TextAsset words;
+    [SerializeField] private TextMeshProUGUI realScoreTextBox;
     private HashSet<string> dictionary;
     [SerializeField] private Button backButton;
     private GoBackToGameScript backToGame;
@@ -25,12 +28,13 @@ public class WordGameManager : MonoBehaviour
         string[] lines = words.text.Split("\n");
         foreach(string line in lines)
         {
-            dictionary.Add(line);
+            dictionary.Add(line.Replace("\r", ""));
         }
         backToGame = backButton.GetComponent<GoBackToGameScript>();
         buttonsClicked = new();
         wordString = "";
         score = 0;
+        intelligenceScore = 0;
         graph = GetComponentInChildren<WordGraph>();
     }
 
@@ -58,9 +62,10 @@ public class WordGameManager : MonoBehaviour
         if (dictionary.Contains(wordString))
         {
             score += wordString.Length;
-            if (score >= 10)
+            intelligenceScore += wordString.Length;
+            if (intelligenceScore >= 10)
             {
-                score = Math.Abs(score%10);
+                intelligenceScore -= 10;
                 statChanges.smarts = 1;
                 PlayerGlobalHandler.GlobalHandler.AddStats(statChanges);
                 smartsChanges++;
@@ -69,9 +74,10 @@ public class WordGameManager : MonoBehaviour
         else
         {
             score -= 5;
-            if (score < 0)
+            intelligenceScore -= 5;
+            if (intelligenceScore < 0)
             {
-                score = Math.Abs(score%10);
+                intelligenceScore += 10;
                 statChanges.smarts = -1;
                 PlayerGlobalHandler.GlobalHandler.AddStats(statChanges);
                 smartsChanges--;
@@ -80,6 +86,7 @@ public class WordGameManager : MonoBehaviour
         graph.OnRegen();
         wordString = "";
         scoreTextBox.text = "Change In Intelligence: " + smartsChanges;
+        realScoreTextBox.text = "Score: " + score;
     }
 }
 

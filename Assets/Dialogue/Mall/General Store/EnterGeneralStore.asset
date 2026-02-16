@@ -15,7 +15,7 @@ MonoBehaviour:
   dialogueNodes:
   - Message:
       Message: Buy something. Or don't.
-      SpeakerTitle: Annoying Team
+      SpeakerTitle: Annoying Teen
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options:
