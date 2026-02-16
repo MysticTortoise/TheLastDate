@@ -48,6 +48,7 @@ public class PlayerGlobalHandler : MonoBehaviour
         stats.smarts += statsAdded.smarts;
         stats.rizz += statsAdded.rizz;
         stats.looks += statsAdded.looks;
+        stats.charm += statsAdded.charm;
     }
 
     public static PlayerGlobalHandler GlobalHandler;

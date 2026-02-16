@@ -32,12 +32,12 @@ public class DialogueRequirement
         
         float num = stat switch
         {
-            PlayerStat.Money => MainPlayerHandler.PlayerHandler.playerStats.money,
-            PlayerStat.Empathy => MainPlayerHandler.PlayerHandler.playerStats.empathy,
-            PlayerStat.Smarts => MainPlayerHandler.PlayerHandler.playerStats.smarts,
-            PlayerStat.Rizz => MainPlayerHandler.PlayerHandler.playerStats.rizz,
-            PlayerStat.Looks => MainPlayerHandler.PlayerHandler.playerStats.looks,
-            PlayerStat.Charm => MainPlayerHandler.PlayerHandler.playerStats.charm,
+            PlayerStat.Money => PlayerGlobalHandler.GlobalHandler.stats.money,
+            PlayerStat.Empathy => PlayerGlobalHandler.GlobalHandler.stats.empathy,
+            PlayerStat.Smarts => PlayerGlobalHandler.GlobalHandler.stats.smarts,
+            PlayerStat.Rizz => PlayerGlobalHandler.GlobalHandler.stats.rizz,
+            PlayerStat.Looks => PlayerGlobalHandler.GlobalHandler.stats.looks,
+            PlayerStat.Charm => PlayerGlobalHandler.GlobalHandler.stats.charm,
             _ => throw new ArgumentOutOfRangeException()
         };
 
@@ -62,6 +62,8 @@ public class DialogueOption
 
     public bool RequirementsMet()
     {
+        if (Requirements.Count <= 0)
+            return true;
         if (AnyMet)
             return Requirements.Any(re => re.IsMet());
         return Requirements.All(re => re.IsMet());

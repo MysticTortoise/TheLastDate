@@ -2,6 +2,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TimerHandler : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class TimerHandler : MonoBehaviour
     private const int StartingTimeMinutes = 10;
     
     public float timeLeft { private set; get; } = StartingTimeMinutes * 60;
-    private int lastMinute = StartingTimeMinutes;
+    private int lastMinute = (int)StartingTimeMinutes;
 
     private TextMeshProUGUI textUI;
     private Animator animator;
@@ -32,6 +33,12 @@ public class TimerHandler : MonoBehaviour
         {
             lastMinute = span.Minutes;
             animator.SetTrigger(RedFlashAnim);
+        }
+
+        if (timeLeft <= 0)
+        {
+            SceneManager.LoadScene("ItsTime");
+            Destroy(gameObject);
         }
     }
 }

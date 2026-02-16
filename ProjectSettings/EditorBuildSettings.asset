@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minigames/WorkMinigame.unity
     guid: 2443ce03a4d7f9c4e8ce3890646cbc70
+  - enabled: 1
+    path: Assets/Scenes/ItsTime.unity
+    guid: b3fb5d3178cac9643b465932128335b0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
