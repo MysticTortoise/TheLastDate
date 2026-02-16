@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,7 +27,7 @@ public class WordGraph : MonoBehaviour
         foreach (Button button in wordButtons)
         {
             button.GetComponentInChildren<TextMeshProUGUI>().text = GetRandomLetter().ToString();
-            if (ColorUtility.TryParseHtmlString("#FFFFFF", out Color newColor))
+            if (UnityEngine.ColorUtility.TryParseHtmlString("#FFFFFF", out Color newColor))
             {
                 button.GetComponent<Image>().color = newColor;
             }
