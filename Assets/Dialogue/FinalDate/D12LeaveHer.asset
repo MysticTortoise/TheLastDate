@@ -85,13 +85,6 @@ MonoBehaviour:
     DialogueActionsEnd: []
     Options: []
   - Message:
-      Message: Good luck with that.
-      SpeakerTitle: John Guy
-    DialogueActionsStart:
-    - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
       Message: I have someone else in mind... someone who can compete with me in
         my greatness.
       SpeakerTitle: John Guy
@@ -105,5 +98,5 @@ MonoBehaviour:
     DialogueActionsStart:
     - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 9a8f51fa8226d4845a6582e0dddc9435, type: 2}
     Options: []
