@@ -2131,6 +2131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WordGraph
   manager: {fileID: 99760430}
+  buttonAdjacent1: {fileID: 792577641}
+  buttonAdjacent2: {fileID: 17562211}
 --- !u!1 &731339024
 GameObject:
   m_ObjectHideFlags: 0
