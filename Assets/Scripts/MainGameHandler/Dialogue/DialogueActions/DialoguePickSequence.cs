@@ -17,6 +17,8 @@ public class DialoguePickSequence : DialogueActionBase
 
     private bool IsOptionValid(List<DialogueRequirement> requirements)
     {
+        if (requirements.Count <= 0)
+            return true;
         return requirements.All(requirement => requirement.IsMet());
     }
     
