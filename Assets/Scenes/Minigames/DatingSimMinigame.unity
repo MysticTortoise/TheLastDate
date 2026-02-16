@@ -1626,12 +1626,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 660289452}
+  - {fileID: 671346164}
   - {fileID: 1822643602}
   - {fileID: 1448802827}
   - {fileID: 1808115760}
   - {fileID: 475983913}
-  - {fileID: 660289452}
-  - {fileID: 671346164}
   - {fileID: 395027797}
   m_Father: {fileID: 1772927714}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
