@@ -10,21 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f861ef692791412891731b90b159bee1, type: 3}
-  m_Name: D10Book
+  m_Name: LoadParkingLotSequence
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
-      Message: Oh nice, a book!
-      SpeakerTitle: Jessica
+      Message: 
+      SpeakerTitle: 
     DialogueActionsStart:
-    - {fileID: 11400000, guid: 59eb05573a0c4134c9a723c3f8623f22, type: 2}
-    - {fileID: 11400000, guid: c3016eba87fdee94db1168f51f364283, type: 2}
-    DialogueActionsEnd: []
-    Options: []
-  - Message:
-      Message: I've never read anything about time travel before. Thanks!
-      SpeakerTitle: Jessica
-    DialogueActionsStart: []
-    DialogueActionsEnd:
     - {fileID: 11400000, guid: 5ffe4036eb43bf4498401993e25ff8ea, type: 2}
+    DialogueActionsEnd: []
     Options: []

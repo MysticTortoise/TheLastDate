@@ -16,7 +16,8 @@ MonoBehaviour:
   - Message:
       Message: Want me to walk you to your car?
       SpeakerTitle: John Guy
-    DialogueActionsStart: []
+    DialogueActionsStart:
+    - {fileID: 11400000, guid: 5c89e55df9ec3514abddb8afb954e9f4, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:

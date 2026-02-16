@@ -18,7 +18,7 @@ MonoBehaviour:
       SpeakerTitle: John Guy
     DialogueActionsStart:
     - {fileID: 11400000, guid: 923d12441148ea745a20e43f8c222236, type: 2}
-    - {fileID: 11400000, guid: 5c89e55df9ec3514abddb8afb954e9f4, type: 2}
+    - {fileID: 11400000, guid: 573c6bbcdedad6646be77b51f6be48a1, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -37,8 +37,7 @@ MonoBehaviour:
       Message: Well, I'd like to hear about it if you do. I love learning.
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd:
-    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
+    DialogueActionsEnd: []
     Options:
     - Option: Almost Over
       Sequence: {fileID: 11400000, guid: 771d890e9ae4bc542957f96f6229ac3a, type: 2}

@@ -15,4 +15,4 @@ MonoBehaviour:
   PersonID: 0
   PersonData:
     xPosition: 0
-    texture: {fileID: 21300000, guid: 5dc9d1eec37bb3047bbba137727cdb1f, type: 3}
+    texture: {fileID: 1478373880014762248, guid: 37abe4ec2e0465e4e847cc0d23ca9bad, type: 3}

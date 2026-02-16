@@ -17,15 +17,14 @@ MonoBehaviour:
       Message: Nice eyes.... they'd look better on my floor.
       SpeakerTitle: John Guy
     DialogueActionsStart:
-    - {fileID: 11400000, guid: 1b03020f035e5d044a49096e92fdeef1, type: 2}
+    - {fileID: 11400000, guid: 4c2fe3c3185413c4da934a5aa9c47ffd, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
       Message: What the heck?
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd:
-    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
+    DialogueActionsEnd: []
     Options:
     - Option: Apologize for past behavior
       Sequence: {fileID: 11400000, guid: 39ac69012b0e6bd40b266fc7178bd9cf, type: 2}

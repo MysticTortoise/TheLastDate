@@ -58,6 +58,6 @@ MonoBehaviour:
         Item: {fileID: 11400000, guid: 3340a5a9ec0a09d448ca5b8b56935c6f, type: 2}
       AnyMet: 1
     - Option: Walk Outside
-      Sequence: {fileID: 11400000, guid: c9acf5548f9fd1646904ee559f6376b8, type: 2}
+      Sequence: {fileID: 11400000, guid: ef12ffb191fbac64db81259d732d8aa9, type: 2}
       Requirements: []
-      AnyMet: 1
+      AnyMet: 0

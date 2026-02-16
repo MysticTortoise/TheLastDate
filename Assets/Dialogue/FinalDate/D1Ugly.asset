@@ -17,7 +17,7 @@ MonoBehaviour:
       Message: Why do you look like that? Did you even bother showering?
       SpeakerTitle: Jessica
     DialogueActionsStart:
-    - {fileID: 11400000, guid: 1b03020f035e5d044a49096e92fdeef1, type: 2}
+    - {fileID: 11400000, guid: 4c2fe3c3185413c4da934a5aa9c47ffd, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -35,8 +35,7 @@ MonoBehaviour:
   - Message:
       Message: You know what, whatever. I'll just try to ignore the smell.
       SpeakerTitle: Jessica
-    DialogueActionsStart:
-    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
+    DialogueActionsStart: []
     DialogueActionsEnd: []
     Options:
     - Option: '"I''m so glad you came!" '

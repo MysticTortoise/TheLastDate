@@ -18,7 +18,7 @@ MonoBehaviour:
       SpeakerTitle: John Guy
     DialogueActionsStart:
     - {fileID: 11400000, guid: 59eb05573a0c4134c9a723c3f8623f22, type: 2}
-    - {fileID: 11400000, guid: 7b7ca8bb4f57cb940acefe020d3bc544, type: 2}
+    - {fileID: 11400000, guid: c3016eba87fdee94db1168f51f364283, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -32,8 +32,7 @@ MonoBehaviour:
       Message: I appreciate that. Thank you.
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd:
-    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
+    DialogueActionsEnd: []
     Options:
     - Option: Complain about the service
       Sequence: {fileID: 11400000, guid: a21eacc9042b9f845911b0741380afed, type: 2}

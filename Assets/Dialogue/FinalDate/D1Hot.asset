@@ -18,7 +18,7 @@ MonoBehaviour:
       SpeakerTitle: Jessica
     DialogueActionsStart:
     - {fileID: 11400000, guid: d0b317311b3fc9c4ba0d4e5bf9796464, type: 2}
-    - {fileID: 11400000, guid: 0577b439fae384f4081a103de5ff4cf8, type: 2}
+    - {fileID: 11400000, guid: 0ed20ea86b48b524cb0338e97625acba, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -37,8 +37,7 @@ MonoBehaviour:
       Message: Stop, I'm already blushing...
       SpeakerTitle: Jessica
     DialogueActionsStart: []
-    DialogueActionsEnd:
-    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
+    DialogueActionsEnd: []
     Options:
     - Option: '"I''m so glad you came!"'
       Sequence: {fileID: 11400000, guid: b83b0f9fcccd03746b882b560a2dadb3, type: 2}

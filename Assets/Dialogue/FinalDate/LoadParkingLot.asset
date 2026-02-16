@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e580e1cad7444a06a9c264a628d59296, type: 3}
   m_Name: LoadParkingLot
   m_EditorClassIdentifier: Assembly-CSharp::DialogueActionLoadScene
-  Scene: {fileID: 0}
+  Scene: {fileID: 8602646350378076995, guid: e4d919590bce245428be1dffbda3cd5e, type: 3}

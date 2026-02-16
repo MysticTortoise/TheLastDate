@@ -18,7 +18,7 @@ MonoBehaviour:
       SpeakerTitle: Jessica
     DialogueActionsStart:
     - {fileID: 11400000, guid: d465d495edff74b4c9c88f4f94d57c60, type: 2}
-    - {fileID: 11400000, guid: 1b03020f035e5d044a49096e92fdeef1, type: 2}
+    - {fileID: 11400000, guid: 4c2fe3c3185413c4da934a5aa9c47ffd, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:
@@ -32,9 +32,5 @@ MonoBehaviour:
       SpeakerTitle: Jessica
     DialogueActionsStart: []
     DialogueActionsEnd:
-    - {fileID: 11400000, guid: 00b973a10f5deb147b0a7cfe206e51d0, type: 2}
-    Options:
-    - Option: Walk Outside
-      Sequence: {fileID: 11400000, guid: c9acf5548f9fd1646904ee559f6376b8, type: 2}
-      Requirements: []
-      AnyMet: 0
+    - {fileID: 11400000, guid: 5ffe4036eb43bf4498401993e25ff8ea, type: 2}
+    Options: []
