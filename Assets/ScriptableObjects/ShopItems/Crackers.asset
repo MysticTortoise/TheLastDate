@@ -16,4 +16,4 @@ MonoBehaviour:
   Description: A box of crackers.
   ShopDescription: ' I sneak a few bites of these when there''s no customers.'
   Cost: 20
-  Image: {fileID: -516747231411115888, guid: 947e5bbe971ec49c1936aa9a93e6ed0e, type: 3}
+  Image: {fileID: 21300000, guid: 09f004783ebe57b408129aaa4fd372a3, type: 3}

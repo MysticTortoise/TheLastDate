@@ -16,4 +16,4 @@ MonoBehaviour:
   Description: If I lacked empathy maybe I'd have a use for this.
   ShopDescription: ' What, are you trying to kidnap someone? Haha... ha...'
   Cost: 20
-  Image: {fileID: -516747231411115888, guid: 947e5bbe971ec49c1936aa9a93e6ed0e, type: 3}
+  Image: {fileID: 21300000, guid: abc4ea5acfcd27b49b998a15009eee3d, type: 3}

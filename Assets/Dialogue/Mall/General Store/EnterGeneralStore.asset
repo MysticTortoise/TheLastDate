@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSequence
   dialogueNodes:
   - Message:
-      Message: Hey.
+      Message: Buy something. Or don't.
       SpeakerTitle: Annoying Team
     DialogueActionsStart: []
     DialogueActionsEnd: []
     Options:
     - Option: Shop
-      Sequence: {fileID: 11400000, guid: 5f11c1c130809c04fbc68341f994d345, type: 2}
+      Sequence: {fileID: 11400000, guid: af59d30795f9a0641ab2fe5d77adbc93, type: 2}
       Requirements: []
     - Option: Chat
       Sequence: {fileID: 11400000, guid: eea936d74d2fa9742865268f051fecd5, type: 2}

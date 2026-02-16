@@ -11,6 +11,12 @@ public class ShopItem : EnvironmentButton
 
     protected new void Start()
     {
+        if (PlayerGlobalHandler.GlobalHandler.heldItems.Contains(ItemDef))
+        {
+            Destroy(gameObject);
+            return;
+        }
+        
         base.Start();
         GetComponent<SpriteRenderer>().sprite = ItemDef.Image;
     }
