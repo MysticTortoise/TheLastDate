@@ -19,6 +19,7 @@ MonoBehaviour:
     DialogueActionsStart:
     - {fileID: 11400000, guid: 923d12441148ea745a20e43f8c222236, type: 2}
     - {fileID: 11400000, guid: 573c6bbcdedad6646be77b51f6be48a1, type: 2}
+    - {fileID: 11400000, guid: 22ee33a1360cef64fb8ec698479f0ea0, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:

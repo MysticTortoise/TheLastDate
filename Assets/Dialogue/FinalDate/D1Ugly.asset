@@ -18,6 +18,7 @@ MonoBehaviour:
       SpeakerTitle: Jessica
     DialogueActionsStart:
     - {fileID: 11400000, guid: 4c2fe3c3185413c4da934a5aa9c47ffd, type: 2}
+    - {fileID: 11400000, guid: 22ee33a1360cef64fb8ec698479f0ea0, type: 2}
     DialogueActionsEnd: []
     Options: []
   - Message:

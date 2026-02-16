@@ -98,5 +98,6 @@ MonoBehaviour:
     DialogueActionsStart:
     - {fileID: 11400000, guid: db7f830d2265e6149a903610086c6bdb, type: 2}
     DialogueActionsEnd:
+    - {fileID: 11400000, guid: 7be65046bff2cca40937db2f2a5f2c3c, type: 2}
     - {fileID: 11400000, guid: b44614705eacd2d4e87eb31e2499d89f, type: 2}
     Options: []
