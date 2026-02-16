@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4463445821148722225}
   - component: {fileID: 253232201486190601}
-  - component: {fileID: 4666491667706951079}
   m_Layer: 0
   m_Name: GameObject (2)
   m_TagString: Untagged
@@ -92,19 +91,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &4666491667706951079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2206136495603370209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab88fe06e0af45efa98cbcccb54e3241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerDialogueInstant
-  Sequence: {fileID: 11400000, guid: c3d5d753071e03b499f99c76951b26d5, type: 2}
 --- !u!1 &2674771066395223918
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +219,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2018971641314355519}
   - component: {fileID: 1661558970956728869}
-  - component: {fileID: 1667245852013790286}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -315,19 +300,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1667245852013790286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7477813113015767835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab88fe06e0af45efa98cbcccb54e3241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerDialogueInstant
-  Sequence: {fileID: 11400000, guid: c3d5d753071e03b499f99c76951b26d5, type: 2}
 --- !u!1 &8602646350378076995
 GameObject:
   m_ObjectHideFlags: 0

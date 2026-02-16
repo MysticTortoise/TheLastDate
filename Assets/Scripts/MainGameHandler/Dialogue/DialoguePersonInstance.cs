@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class DialoguePersonInstance : MonoBehaviour
 {
     public float targetXPosition;
+    public float xWidthMultiplier;
 
     [SerializeField] private float MoveSpeed;
     [SerializeField] private float AlphaSpeed;

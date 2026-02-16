@@ -12,6 +12,7 @@ public class DialoguePersonData
 {
     public float xPosition;
     public Sprite texture;
+    public float WidthMultiplier = 1;
 }
 
 public class DialogueManager : MonoBehaviour
@@ -100,6 +101,10 @@ public class DialogueManager : MonoBehaviour
         person.gameObject.SetActive(true);
         person.targetXPosition = data.xPosition;
         person.GetComponent<Image>().sprite = data.texture;
+        person.GetComponent<RectTransform>().sizeDelta = new Vector2(
+            dialoguePersonTemplate.GetComponent<RectTransform>().sizeDelta.x * data.WidthMultiplier,
+            dialoguePersonTemplate.GetComponent<RectTransform>().sizeDelta.y
+            );
     }
 
     public void SetActiveDialogueSequence(DialogueSequence sequence)
