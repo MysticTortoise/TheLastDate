@@ -42,7 +42,10 @@ public class WordGameManager : MonoBehaviour
         }
         else if (buttonsClicked[buttonsClicked.Count - 1] == button)
         {
-            button.GetComponent<Image>().color = Color.grey;
+            if (ColorUtility.TryParseHtmlString("#FFFFFF", out Color newColor))
+            {
+                button.GetComponent<Image>().color = newColor;
+            }
             wordString = wordString.Substring(0, wordString.Length - 1);
             buttonsClicked.Remove(button);
         }

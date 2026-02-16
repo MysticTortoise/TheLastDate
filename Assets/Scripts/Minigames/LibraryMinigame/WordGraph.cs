@@ -24,7 +24,10 @@ public class WordGraph : MonoBehaviour
         foreach (Button button in wordButtons)
         {
             button.GetComponentInChildren<TextMeshProUGUI>().text = GetRandomLetter().ToString();
-            button.GetComponent<Image>().color = Color.grey;
+            if (ColorUtility.TryParseHtmlString("#FFFFFF", out Color newColor))
+            {
+                button.GetComponent<Image>().color = newColor;
+            }
             adgacencyGraph.Add(button.name, new());
         }
 
@@ -32,7 +35,8 @@ public class WordGraph : MonoBehaviour
         {
             foreach(Button otherButton in wordButtons)
             {
-                if ((Math.Abs(button.transform.position.y - otherButton.transform.position.y) <= 65) && (Math.Abs(button.transform.position.x - otherButton.transform.position.x) <= 114) && (otherButton != button))
+                Debug.Log((Math.Abs(button.transform.position.y - otherButton.transform.position.y)));
+                if ((Math.Abs(button.transform.position.y - otherButton.transform.position.y) <= 60) && (Math.Abs(button.transform.position.x - otherButton.transform.position.x) <= 60) && (otherButton != button))
                 {
                     adgacencyGraph[button.name].AddLast(otherButton);
                 }
