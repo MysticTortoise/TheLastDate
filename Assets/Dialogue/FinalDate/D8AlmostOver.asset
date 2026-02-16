@@ -55,7 +55,7 @@ MonoBehaviour:
       - stat: 0
         number: 0
         GreaterThan: 0
-        Item: {fileID: 11400000, guid: 45df92780f424de4b81f38f9a7bc4c47, type: 2}
+        Item: {fileID: 11400000, guid: 3340a5a9ec0a09d448ca5b8b56935c6f, type: 2}
       AnyMet: 1
     - Option: Walk Outside
       Sequence: {fileID: 11400000, guid: c9acf5548f9fd1646904ee559f6376b8, type: 2}
