@@ -53,10 +53,10 @@ public class PlayerGlobalHandler : MonoBehaviour
     public void AddStats(StatBlock statsAdded)
     {
         stats.money += statsAdded.money;
-        stats.empathy += statsAdded.empathy;
-        stats.smarts += statsAdded.smarts;
-        stats.rizz += statsAdded.rizz;
-        stats.looks += statsAdded.looks;
+        stats.empathy = Mathf.Clamp(stats.empathy + statsAdded.empathy, -5, 5);
+        stats.smarts = Mathf.Clamp(stats.smarts + statsAdded.smarts, -5, 5);
+        stats.rizz = Mathf.Clamp(stats.rizz + statsAdded.rizz, -5, 5);
+        stats.looks = Mathf.Clamp(stats.looks + statsAdded.looks, -5, 5);
         stats.charm += statsAdded.charm;
     }
 
