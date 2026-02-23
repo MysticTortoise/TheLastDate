@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
   question: What is your favorite video game?
   answers:
-  - I Love Playing Shooters With my Friends
-  - I Haven't Played Many in a While I am Just So Busy With School
-  - IDK I Play a Lot
-  - I Love Madden and 2K
+  - I love party games like Jackbox!
+  - When I'm not studying, I relax with Baldurs Gate
+  - Video games suck major ballz
+  - I love Madden and 2K
   questionPersonalities: 01000000020000000300000000000000

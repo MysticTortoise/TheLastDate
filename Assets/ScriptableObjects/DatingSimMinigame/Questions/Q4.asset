@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3244641bc68a34b41922ff374ce4dce5, type: 3}
   m_Name: Q4
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
-  question: What are your thoughts on the political and economic state of the world?
+  question: Lets talk politics
   answers:
-  - What do you Think?
-  - I Don't Care for Politics
-  - I Don't Really Like to Share My Opinions
+  - Great, I love a healthy, respectful debate.
+  - I'm homophobic
+  - The polarization of political opinions in America is a troubling, ever-growing
+    issue that negatively impacts us all. We need to reform our two-party system
+    and electoral college in order to-
   - I Voted for Lebron
   questionPersonalities: 01000000030000000200000000000000

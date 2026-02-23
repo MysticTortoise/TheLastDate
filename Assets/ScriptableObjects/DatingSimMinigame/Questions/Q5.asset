@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
   question: What is your favorite thing about me?
   answers:
-  - You are Literally the Most Boring Generic Person of all Time
-  - I Feel Like I can Talk to you for Hours
-  - You Look Like you Work Out
-  - You Seem Super Composed
+  - You are literally the most boring generic person of all time
+  - I feel like I can talk to you for hours
+  - You look like you could pick me up with one hand
+  - You seem super knowledgeable
   questionPersonalities: 03000000010000000000000002000000

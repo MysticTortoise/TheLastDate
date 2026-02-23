@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
   question: How do you like to spend your weekends?
   answers:
-  - Shooting Hoops
-  - Studying
-  - Partying it Up
-  - I Just Like to Chill
+  - Shooting hoops
+  - I unwind with a good book or game
+  - Going to the clurb
+  - I just kinda fart around
   questionPersonalities: 00000000020000000100000003000000

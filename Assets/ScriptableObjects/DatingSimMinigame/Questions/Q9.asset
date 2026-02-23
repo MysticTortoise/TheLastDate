@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
   question: Have I seen you before?
   answers:
-  - I do some Intramural Sports, do you as Well
-  - No, Who the Fuck are you
-  - I Study in the Library on Weekdays, so Maybe
-  - I Party Every Weekend, so Maybe we Ran into each Other There
-  questionPersonalities: 02000000030000000200000001000000
+  - I do some intramural sports, do you as well?
+  - No, who the fuck are you?
+  - I study in the library on weekdays, so maybe
+  - I party every weekend, maybe we ran into each other there.
+  questionPersonalities: 00000000030000000200000001000000

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3244641bc68a34b41922ff374ce4dce5, type: 3}
   m_Name: Q3
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
-  question: Did you watch the game last night?
+  question: Do you play sports?
   answers:
-  - Nah I Fucking Hate Sports
-  - Hell Yeah I love Sportsball
-  - Nah, I don't Really Watch That Stuff
-  - I Cannot Beleive That They Actually Came Back
+  - Nah, but I follow some esports teams
+  - I'll play if my friends invite me to
+  - Does gooning count
+  - Hell yeah I love sportsball
   questionPersonalities: 02000000010000000300000000000000

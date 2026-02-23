@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
   question: Where do you go to relax?
   answers:
-  - The Library
+  - I just stay in my room
   - My Bros House
   - The Gym
-  - I just Stay in my Room.
-  questionPersonalities: 03000000010000000200000003000000
+  - Between yo thighs baby boy
+  questionPersonalities: 02000000010000000000000003000000

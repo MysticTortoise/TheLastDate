@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DatingSimQuestion
   question: Do you like to read?
   answers:
-  - Yeah, I do all the Time
-  - When I Have the Time, but It's not my Priority
-  - I Don't Really Care for it
-  - It's a Waste of Time
-  questionPersonalities: 02000000010000000000000003000000
+  - Yeah, I do it all the time
+  - I'm more of an audio based learner
+  - Book pages make a nice crunch sound when I munch 'em
+  - Reading can't teach you how to do a kickflip
+  questionPersonalities: 02000000010000000300000000000000
