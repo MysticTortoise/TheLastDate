@@ -14,41 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialoguePickSequence
   PossibleRequirements:
   - Requirements:
-    - stat: 4
+    - stat: 2
       number: -5
       GreaterThan: 1
       Item: {fileID: 0}
-    - stat: 4
+    - stat: 2
       number: -1
       GreaterThan: 0
       Item: {fileID: 0}
     Sequence: {fileID: 11400000, guid: 64ff9a1331190a74593b119e986cfeb3, type: 2}
   - Requirements:
-    - stat: 4
+    - stat: 2
       number: 0
       GreaterThan: 1
       Item: {fileID: 0}
-    - stat: 4
+    - stat: 2
       number: 2
       GreaterThan: 0
       Item: {fileID: 0}
     Sequence: {fileID: 11400000, guid: 0c66a701b6559d4439c761817e3e213e, type: 2}
   - Requirements:
-    - stat: 4
+    - stat: 2
       number: 3
       GreaterThan: 1
       Item: {fileID: 0}
-    - stat: 4
+    - stat: 2
       number: 4
       GreaterThan: 0
       Item: {fileID: 0}
     Sequence: {fileID: 11400000, guid: 6d24fdaae027f014682bbfe2f97d9dab, type: 2}
   - Requirements:
-    - stat: 4
+    - stat: 2
       number: 5
       GreaterThan: 1
       Item: {fileID: 0}
-    - stat: 4
+    - stat: 2
       number: 5
       GreaterThan: 0
       Item: {fileID: 0}

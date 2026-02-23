@@ -20,7 +20,6 @@ public class PlayerGlobalHandler : MonoBehaviour
 
     private bool hasStarted;
 
-
     private void OnEnable()
     {
         if (GlobalHandler != null)

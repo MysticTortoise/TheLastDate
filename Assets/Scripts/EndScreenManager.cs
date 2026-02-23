@@ -22,6 +22,8 @@ public class EndScreenManager : MonoBehaviour
 
     public void TitleScreen()
     {
+        Destroy(PlayerGlobalHandler.GlobalHandler.gameObject);
+        PlayerGlobalHandler.GlobalHandler = null;
         SceneManager.LoadScene("Title");
     }
 }

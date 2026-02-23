@@ -77,5 +77,5 @@ MonoBehaviour:
     - {fileID: 11400000, guid: e75801ed4da2f4c418aa052a0deb2709, type: 2}
     DialogueActionsEnd:
     - {fileID: 11400000, guid: fbcf83ddcad850b49a864fa37f08030f, type: 2}
-    - {fileID: 11400000, guid: 9a8f51fa8226d4845a6582e0dddc9435, type: 2}
+    - {fileID: 11400000, guid: a8b4e4a7d006ed842886a6d9741e6f3b, type: 2}
     Options: []
