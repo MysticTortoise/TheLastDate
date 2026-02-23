@@ -9,6 +9,7 @@ public class StrengthManager : MonoBehaviour
 
     [Header("Looks")]
     public int maxLooks = 5;
+    public int minLooks = -5;
 
     [Header("Looks Indicators")]
     public GameObject looksIndicator1;
@@ -26,19 +27,18 @@ public class StrengthManager : MonoBehaviour
     public GameObject win;
     public bool HasWon { get; private set; }
 
-void Awake()
-{
-    // Find slider
-    if (gymSlider == null)
+    void Awake()
     {
-        var go = GameObject.FindGameObjectWithTag(sliderTag);
-        if (go != null) gymSlider = go.GetComponent<Slider>();
+        // Find slider
+        if (gymSlider == null)
+        {
+            var go = GameObject.FindGameObjectWithTag(sliderTag);
+            if (go != null) gymSlider = go.GetComponent<Slider>();
+        }
+
+        if (gymSlider == null)
+            Debug.LogWarning($"StrengthManager: No Slider found with tag '{sliderTag}' (or missing Slider component).");
     }
-
-    if (gymSlider == null)
-        Debug.LogWarning($"StrengthManager: No Slider found with tag '{sliderTag}' (or missing Slider component).");
-}
-
 
     void Start()
     {
@@ -46,6 +46,10 @@ void Awake()
 
         if (win != null)
             win.SetActive(false);
+
+        // By default at Start() of strength manager gym slider will be set to .1
+        if (gymSlider != null)
+            gymSlider.value = Mathf.Clamp(0.1f, gymSlider.minValue, gymSlider.maxValue);
 
         RefreshIndicators();
     }
@@ -56,27 +60,49 @@ void Awake()
         if (gymSlider == null) return;
         if (PlayerGlobalHandler.GlobalHandler == null || PlayerGlobalHandler.GlobalHandler.stats == null) return;
 
-        // Use threshold to avoid float weirdness (esp if slider is 0..1)
         if (gymSlider.value >= gymSlider.maxValue - 0.0001f)
         {
-            gymSlider.value = gymSlider.minValue;
-
+            // Gain +1 Looks
             int before = PlayerGlobalHandler.GlobalHandler.stats.looks;
 
-            // Increment GLOBAL looks
-            PlayerGlobalHandler.GlobalHandler.stats.looks = Mathf.Min(PlayerGlobalHandler.GlobalHandler.stats.looks + 1, maxLooks);
+            ModifyLooks(+1);
 
             int after = PlayerGlobalHandler.GlobalHandler.stats.looks;
 
-            // Popup only if it actually increased (not clamped at max)
-            if (after > before)
-                SpawnLooksPopup(+1);
-
-            RefreshIndicators();
-
-            if (PlayerGlobalHandler.GlobalHandler.stats.looks >= maxLooks)
-                TriggerWin();
+            // Only reset slider to 0.1 if looks actually increased
+            if (after > before && gymSlider != null)
+            {
+                float newStart = 0.1f;
+                gymSlider.value = Mathf.Clamp(newStart, gymSlider.minValue, gymSlider.maxValue);
+            }
+            else
+            {
+                // If we were already at max looks, just reset normally
+                gymSlider.value = gymSlider.minValue;
+            }
         }
+    }
+
+    public void ModifyLooks(int delta, bool showPopup = true)
+    {
+        if (PlayerGlobalHandler.GlobalHandler == null || PlayerGlobalHandler.GlobalHandler.stats == null) return;
+        if (delta == 0) return;
+
+        int before = PlayerGlobalHandler.GlobalHandler.stats.looks;
+
+        int after = Mathf.Clamp(before + delta, minLooks, maxLooks);
+        PlayerGlobalHandler.GlobalHandler.stats.looks = after;
+
+        int actualDelta = after - before;
+
+        // Only show popup if the value actually changed (not clamped)
+        if (showPopup && actualDelta != 0)
+            SpawnLooksPopup(actualDelta);
+
+        RefreshIndicators();
+
+        if (!HasWon && after >= maxLooks)
+            TriggerWin();
     }
 
     void SpawnLooksPopup(int delta)
@@ -94,6 +120,7 @@ void Awake()
         TextPopupSetTMP setter = go.GetComponent<TextPopupSetTMP>();
         if (setter != null)
         {
+            // This will produce "+1 Looks" or "-1 Looks"
             string sign = delta > 0 ? "+" : "";
             setter.SetText($"{sign}{delta} Looks");
         }
@@ -122,7 +149,7 @@ void Awake()
         if (looksIndicator4 != null) looksIndicator4.SetActive(false);
         if (looksIndicator5 != null) looksIndicator5.SetActive(false);
 
-        // Turn ON based on looks
+        // Turn ON based on looks (negative looks shows none, which is fine)
         if (looks >= 1 && looksIndicator1 != null) looksIndicator1.SetActive(true);
         if (looks >= 2 && looksIndicator2 != null) looksIndicator2.SetActive(true);
         if (looks >= 3 && looksIndicator3 != null) looksIndicator3.SetActive(true);
@@ -144,7 +171,8 @@ void Awake()
             if (PlayerGlobalHandler.GlobalHandler == null || PlayerGlobalHandler.GlobalHandler.stats == null)
                 return;
 
-            PlayerGlobalHandler.GlobalHandler.stats.looks = Mathf.Clamp(value, 0, maxLooks);
+            // Updated clamp to allow negatives down to minLooks
+            PlayerGlobalHandler.GlobalHandler.stats.looks = Mathf.Clamp(value, minLooks, maxLooks);
         }
     }
 }

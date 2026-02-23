@@ -47,6 +47,9 @@ public class QTE : MonoBehaviour
     private Slider _gymSlider;
     private Collider2D _col;
 
+    // NEW: StrengthManager reference
+    private StrengthManager _strengthManager;
+
     void Awake()
     {
         _col = GetComponent<Collider2D>();
@@ -56,6 +59,10 @@ public class QTE : MonoBehaviour
 
         if (_gymSlider == null)
             Debug.LogWarning($"QTE: No Slider found with tag '{sliderTag}' (or it has no Slider component).");
+
+        _strengthManager = FindAnyObjectByType<StrengthManager>();
+        if (_strengthManager == null)
+            Debug.LogWarning("QTE: No StrengthManager found in the scene (looks won't decrease on miss).");
     }
 
     void OnEnable()
@@ -141,7 +148,20 @@ public class QTE : MonoBehaviour
     {
         _resolved = true;
 
+        // Check if slider is empty BEFORE changing it
+        bool sliderWasEmpty = false;
+
+        if (_gymSlider != null)
+            sliderWasEmpty = Mathf.Approximately(_gymSlider.value, _gymSlider.minValue);
+
+        // Apply normal gym decrease
         AdjustGym(-missDecrease);
+
+        // ONLY lose looks if slider was already empty
+        if (sliderWasEmpty && _strengthManager != null)
+        {
+            _strengthManager.ModifyLooks(-1, showPopup: true);
+        }
 
         if (showPopupOnMiss)
             SpawnPopup();
